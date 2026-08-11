@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moodly - 검사 결과</title>
+
+    <!-- Pretendard -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         모바일 웹앱 전체 영역
+    ========================== -->
+    <div class="app result-app">
+
+        <!-- =========================
+             Header
+        ========================== -->
+        <header class="header result-header">
+
+            <!-- 뒤로가기 -->
+            <button
+                type="button"
+                class="back-button"
+                aria-label="뒤로가기"
+                onclick="history.back()"
+            >
+                <i data-lucide="chevron-left"></i>
+            </button>
+
+            <h1 class="page-title">
+                분석 결과
+            </h1>
+
+        </header>
+
+
+        <!-- =========================
+             Main
+        ========================== -->
+        <main class="main result-main">
+
+
+            <!-- =========================
+                 결과 유형
+            ========================== -->
+            <section class="result-type-section">
+
+                <p class="result-eyebrow">
+                    당신의 공간 스타일은...
+                </p>
+
+                <h2 class="result-title" data-result="name">
+                    코지 힐링형 (Cozy Healing)
+                </h2>
+
+
+                <!-- 결과 태그 -->
+                <div class="result-tags">
+
+                    <span class="result-tag">
+                        #안정감
+                    </span>
+
+                    <span class="result-tag">
+                        #편안함
+                    </span>
+
+                    <span class="result-tag">
+                        #따뜻함
+                    </span>
+
+                </div>
+
+
+                <p class="result-description">
+                    "집은 나를 가장 편안하게 쉬게 해주는<br>
+                    안식처입니다."
+                </p>
+
+            </section>
+
+
+            <!-- =========================
+                 결과 대표 이미지
+            ========================== -->
+            <section class="result-hero-image">
+
+                <img
+                    src="c:\Users\hi\Desktop\홈화면\kozi-style.png.png"
+                    alt="코지 힐링형 공간"
+                    data-result="image"
+                >
+
+            </section>
+
+
+            <!-- =========================
+                 나의 성향 요약
+            ========================== -->
+            <section class="result-summary-section">
+
+                <div class="result-card">
+
+                    <h3>
+                        나의 성향 요약
+                    </h3>
+
+
+                    <ul class="summary-list">
+
+                        <li>
+                            <strong>라이프스타일</strong>
+                            <span data-result="lifestyle">
+                                여유롭고 안정적인 생활
+                            </span>
+                        </li>
+
+                        <li>
+                            <strong>공간 키워드</strong>
+                            <span data-result="keywords">
+                                우드 / 패브릭 / 따뜻한 조명
+                            </span>
+                        </li>
+
+                        <li>
+                            <strong>잘 맞는 컬러</strong>
+
+                            <span class="color-dots">
+
+                                <span
+                                    class="color-dot"
+                                    style="background-color: #B59B80;"
+                                ></span>
+
+                                <span
+                                    class="color-dot"
+                                    style="background-color: #3D2D20;"
+                                ></span>
+
+                                <span
+                                    class="color-dot"
+                                    style="background-color: #C1BDB8;"
+                                ></span>
+
+                                <span
+                                    class="color-dot"
+                                    style="background-color: #B8BBB5;"
+                                ></span>
+
+                            </span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 성향 점수
+            ========================== -->
+            <section class="personality-score-section">
+
+                <div class="result-card">
+
+                    <div class="score-item">
+
+                        <span class="score-name">
+                            실용성
+                        </span>
+
+                        <div class="score-dots" aria-label="실용성 4점">
+
+                            <span class="score-dot active"></span>
+                            <span class="score-dot active"></span>
+                            <span class="score-dot active"></span>
+                            <span class="score-dot half"></span>
+                            <span class="score-dot"></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="score-item">
+
+                        <span class="score-name">
+                            안정감
+                        </span>
+
+                        <div class="score-dots" aria-label="안정감 4점">
+
+                            <span class="score-dot active"></span>
+                            <span class="score-dot active"></span>
+                            <span class="score-dot active"></span>
+                            <span class="score-dot half"></span>
+                            <span class="score-dot"></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="score-item">
+
+                        <span class="score-name">
+                            자연친화
+                        </span>
+
+                        <div class="score-dots" aria-label="자연친화 4점">
+
+                            <span class="score-dot active"></span>
+                            <span class="score-dot active"></span>
+                            <span class="score-dot active"></span>
+                            <span class="score-dot half"></span>
+                            <span class="score-dot"></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="score-item">
+
+                        <span class="score-name">
+                            감성
+                        </span>
+
+                        <div class="score-dots" aria-label="감성 3점">
+
+                            <span class="score-dot active"></span>
+                            <span class="score-dot active"></span>
+                            <span class="score-dot active"></span>
+                            <span class="score-dot"></span>
+                            <span class="score-dot"></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="score-item">
+
+                        <span class="score-name">
+                            정리정돈
+                        </span>
+
+                        <div class="score-dots" aria-label="정리정돈 4점">
+
+                            <span class="score-dot active"></span>
+                            <span class="score-dot active"></span>
+                            <span class="score-dot active"></span>
+                            <span class="score-dot half"></span>
+                            <span class="score-dot"></span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 추천 인테리어 스타일
+            ========================== -->
+            <section class="recommend-style-section">
+
+                <div class="section-title">
+                    <h3>추천 인테리어 스타일</h3>
+                </div>
+
+
+                <div class="recommend-style-list">
+
+                    <!-- 추천 스타일 1 -->
+                    <a href="#" class="recommend-style-card">
+
+                        <div class="recommend-style-image">
+                            <img
+                                src="images/style-cozy.jpg"
+                                alt="코지 힐링형"
+                            >
+                        </div>
+
+                        <div class="recommend-style-text">
+
+                            <strong>
+                                코지 힐링
+                            </strong>
+
+                            <span>
+                                #안정감<br>
+                                #따뜻함
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- 추천 스타일 2 -->
+                    <a href="#" class="recommend-style-card">
+
+                        <div class="recommend-style-image">
+                            <img
+                                src="images/style-natural.jpg"
+                                alt="우드톤 내추럴"
+                            >
+                        </div>
+
+                        <div class="recommend-style-text">
+
+                            <strong>
+                                우드톤
+                            </strong>
+
+                            <span>
+                                #우드톤<br>
+                                #따뜻한 조명
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- 추천 스타일 3 -->
+                    <a href="#" class="recommend-style-card">
+
+                        <div class="recommend-style-image">
+                            <img
+                                src="images/style-minimal.jpg"
+                                alt="아늑한 휴식공간"
+                            >
+                        </div>
+
+                        <div class="recommend-style-text">
+
+                            <strong>
+                                아늑한
+                            </strong>
+
+                            <span>
+                                #아늑함<br>
+                                #휴식공간
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 추천 컬러 팔레트
+            ========================== -->
+            <section class="color-palette-section">
+
+                <div class="section-title">
+                    <h3>추천 컬러 팔레트</h3>
+                </div>
+
+
+                <div class="color-palette-list">
+
+                    <div class="palette-card">
+                        <div
+                            class="palette-color"
+                            style="background-color: #F7F6F2;"
+                        ></div>
+                        <span>#F7F6F2</span>
+                    </div>
+
+
+                    <div class="palette-card">
+                        <div
+                            class="palette-color"
+                            style="background-color: #E3CFB2;"
+                        ></div>
+                        <span>#E3CFB2</span>
+                    </div>
+
+
+                    <div class="palette-card">
+                        <div
+                            class="palette-color"
+                            style="background-color: #B59B80;"
+                        ></div>
+                        <span>#B59B80</span>
+                    </div>
+
+
+                    <div class="palette-card">
+                        <div
+                            class="palette-color"
+                            style="background-color: #3D2D20;"
+                        ></div>
+                        <span>#3D2D20</span>
+                    </div>
+
+
+                    <div class="palette-card">
+                        <div
+                            class="palette-color"
+                            style="background-color: #445A41;"
+                        ></div>
+                        <span>#445A41</span>
+                    </div>
+
+
+                    <div class="palette-card">
+                        <div
+                            class="palette-color"
+                            style="background-color: #C1BDB8;"
+                        ></div>
+                        <span>#C1BDB8</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 추천 가구
+            ========================== -->
+            <section class="recommend-furniture-section">
+
+                <div class="section-title">
+                    <h3>추천 가구</h3>
+                </div>
+
+
+                <div class="product-card-list">
+
+                    <!-- 원목 테이블 -->
+                    <a href="shopping.html" class="product-card">
+
+                        <div class="product-image">
+                            <img
+                                src="images/furniture-table.jpg"
+                                alt="원목 테이블"
+                            >
+                        </div>
+
+                        <strong>
+                            원목 테이블
+                        </strong>
+
+                        <span>
+                            #따뜻한 우드톤
+                        </span>
+
+                    </a>
+
+
+                    <!-- 패브릭 소파 -->
+                    <a href="shopping.html" class="product-card">
+
+                        <div class="product-image">
+                            <img
+                                src="images/furniture-sofa.jpg"
+                                alt="패브릭 소파"
+                            >
+                        </div>
+
+                        <strong>
+                            패브릭 소파
+                        </strong>
+
+                        <span>
+                            #편안한 휴식 공간
+                        </span>
+
+                    </a>
+
+
+                    <!-- 우드 체어 -->
+                    <a href="shopping.html" class="product-card">
+
+                        <div class="product-image">
+                            <img
+                                src="images/furniture-chair.jpg"
+                                alt="우드 체어"
+                            >
+                        </div>
+
+                        <strong>
+                            우드 체어
+                        </strong>
+
+                        <span>
+                            #자연스러운 포인트
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 추천 소품
+            ========================== -->
+            <section class="recommend-props-section">
+
+                <div class="section-title">
+                    <h3>추천 소품</h3>
+                </div>
+
+
+                <div class="product-card-list">
+
+                    <!-- 러그 -->
+                    <a href="shopping.html" class="product-card">
+
+                        <div class="product-image">
+                            <img
+                                src="images/prop-rug.jpg"
+                                alt="러그"
+                            >
+                        </div>
+
+                        <strong>
+                            러그
+                        </strong>
+
+                        <span>
+                            #포근한 질감
+                        </span>
+
+                    </a>
+
+
+                    <!-- 식물 -->
+                    <a href="shopping.html" class="product-card">
+
+                        <div class="product-image">
+                            <img
+                                src="images/prop-plant.jpg"
+                                alt="식물"
+                            >
+                        </div>
+
+                        <strong>
+                            식물
+                        </strong>
+
+                        <span>
+                            #자연의 생기
+                        </span>
+
+                    </a>
+
+
+                    <!-- 패브릭 커튼 -->
+                    <a href="shopping.html" class="product-card">
+
+                        <div class="product-image">
+                            <img
+                                src="images/prop-curtain.jpg"
+                                alt="패브릭 커튼"
+                            >
+                        </div>
+
+                        <strong>
+                            패브릭 커튼
+                        </strong>
+
+                        <span>
+                            #부드러운 채광
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 공간 연출 팁
+            ========================== -->
+            <section class="space-tip-section">
+
+                <div class="result-card tip-card">
+
+                    <h3>
+                        공간 연출 팁
+                    </h3>
+
+
+                    <ul class="tip-list">
+
+                        <li>
+                            가구는 벽면을 따라 배치하면 공간이 넓어 보입니다.
+                        </li>
+
+                        <li>
+                            간접조명을 사용하면 더욱 아늑한 분위기를 만들 수 있습니다.
+                        </li>
+
+                        <li>
+                            소품은 5개 이하로 유지하면 미니멀한 느낌을 살릴 수 있습니다.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 다른 유형과의 궁합
+            ========================== -->
+            <section class="compatibility-section">
+
+                <div class="section-title">
+                    <h3>다른 유형과의 궁합</h3>
+                </div>
+
+
+                <div class="compatibility-list">
+
+                    <!-- 잘 맞는 스타일 -->
+                    <div class="compatibility-card">
+
+                        <span class="compatibility-label">
+                            잘 맞는 스타일
+                        </span>
+
+                        <p>
+                            ♥ 내추럴 리빙형<br>
+                            ♥ 모던 시크형
+                        </p>
+
+                    </div>
+
+
+                    <!-- 조화가 어려운 스타일 -->
+                    <div class="compatibility-card">
+
+                        <span class="compatibility-label">
+                            조화가 어려운 스타일
+                        </span>
+
+                        <p>
+                            ▲ 컴팩트 실용형<br>
+                            ▲ 크리에이티브 스튜디오형
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 AI 맞춤 제안
+            ========================== -->
+            <section class="ai-recommendation-section">
+
+                <div class="result-card ai-card">
+
+                    <h3>
+                        AI 맞춤 제안
+                    </h3>
+
+                    <p>
+                        당신은 자연 소재와 따뜻한 색감을 선호합니다.<br>
+                        현재 방에 우드톤 가구와 패브릭 소품을 추가하면
+                        더욱 편안한 분위기를 만들 수 있습니다.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 결과 하단 버튼
+            ========================== -->
+            <section class="result-action-section">
+
+                <button
+                    type="button"
+                    class="secondary-button share-button"
+                >
+                    결과 공유하기
+                </button>
+
+
+                <button
+                    type="button"
+                    class="primary-button save-button"
+                >
+                    내 공간 저장하기
+                </button>
+
+            </section>
+
+
+        </main>
+
+
+        <!-- =========================
+             Bottom Navigation
+        ========================== -->
+        <nav class="bottom-nav" aria-label="하단 메뉴">
+
+            <!-- 홈 -->
+            <a
+                href="index.html"
+                class="nav-item"
+                aria-label="홈"
+            >
+                <i data-lucide="house"></i>
+                <span>홈</span>
+            </a>
+
+
+            <!-- 진단 -->
+            <a
+                href="test.html"
+                class="nav-item active"
+                aria-label="진단"
+            >
+                <i data-lucide="circle-check"></i>
+                <span>진단</span>
+            </a>
+
+
+            <!-- 쇼핑 -->
+            <a
+                href="shopping.html"
+                class="nav-item"
+                aria-label="쇼핑"
+            >
+                <i data-lucide="shopping-bag"></i>
+                <span>쇼핑</span>
+            </a>
+
+
+            <!-- 마이페이지 -->
+            <a
+                href="mypage.html"
+                class="nav-item"
+                aria-label="마이페이지"
+            >
+                <i data-lucide="user-round"></i>
+                <span>마이</span>
+            </a>
+
+        </nav>
+
+    </div>
+
+
+    <!-- =========================
+         Lucide Icons
+    ========================== -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+    <!-- =========================
+         JavaScript
+    ========================== -->
+    <script src="js/main.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>

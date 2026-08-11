@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moodly - 공간 스타일 진단</title>
+
+    <!-- Pretendard -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         모바일 웹앱 전체 영역
+    ========================== -->
+    <div class="app">
+
+        <!-- =========================
+             Header
+        ========================== -->
+        <header class="header test-header">
+
+            <h1 class="page-title">
+                공간 스타일 진단
+            </h1>
+
+        </header>
+
+
+        <!-- =========================
+             Main
+        ========================== -->
+        <main class="main test-main">
+
+            <!-- =========================
+                 검사 소개
+            ========================== -->
+            <section class="test-intro">
+
+                <!-- 대표 이미지 -->
+                <div class="test-image">
+
+                    <img
+                        src="c:\Users\hi\Desktop\beforestart.png.png"
+                        alt="따뜻한 분위기의 공간 스타일 이미지"
+                    >
+
+                </div>
+
+
+                <!-- 제목 -->
+                <div class="test-intro-text">
+
+                    <h2>
+                        나만의 공간 스타일 찾기
+                    </h2>
+
+                    <p>
+                        간단한 질문에 답하면<br>
+                        당신에게 꼭 맞는 공간 스타일을 추천해드려요!
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 검사 정보
+            ========================== -->
+            <section class="test-info">
+
+                <!-- 소요 시간 -->
+                <div class="info-item">
+
+                    <div class="info-icon">
+                        <i data-lucide="clock-3"></i>
+                    </div>
+
+                    <span class="info-label">
+                        약 5~7분 소요
+                    </span>
+
+                </div>
+
+
+                <!-- 질문 수 -->
+                <div class="info-item">
+
+                    <div class="info-icon">
+                        <i data-lucide="circle-dot"></i>
+                    </div>
+
+                    <span class="info-label">
+                        8가지 유형
+                    </span>
+
+                </div>
+
+
+                <!-- 스타일 추천 -->
+                <div class="info-item">
+
+                    <div class="info-icon">
+                        <i data-lucide="house"></i>
+                    </div>
+
+                    <span class="info-label">
+                        스타일 추천
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 검사 시작 버튼
+            ========================== -->
+            <section class="test-start-section">
+
+                <a
+                    href="question.html"
+                    class="primary-button test-start-button"
+                >
+                    검사 시작하기
+                    <i data-lucide="arrow-right"></i>
+                </a>
+
+            </section>
+
+
+            <!-- =========================
+                 이런 분께 추천해요
+            ========================== -->
+            <section class="recommend-section">
+
+                <div class="recommend-card">
+
+                    <h2>
+                        이런 분께 추천해요!
+                    </h2>
+
+
+                    <ul class="recommend-list">
+
+                        <li>
+                            <span class="bullet">•</span>
+                            <span>
+                                내 취향에 맞는 인테리어가 고민되는 분
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="bullet">•</span>
+                            <span>
+                                취향을 한눈에 분석한 리포트가 궁금한 분
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="bullet">•</span>
+                            <span>
+                                어떤 가구와 소품이 잘 어울릴지 고민되는 분
+                            </span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- =========================
+             Bottom Navigation
+        ========================== -->
+        <nav class="bottom-nav" aria-label="하단 메뉴">
+
+            <!-- 홈 -->
+            <a
+                href="index.html"
+                class="nav-item"
+                aria-label="홈"
+            >
+                <i data-lucide="house"></i>
+                <span>홈</span>
+            </a>
+
+
+            <!-- 진단 -->
+            <a
+                href="test.html"
+                class="nav-item active"
+                aria-label="진단"
+            >
+                <i data-lucide="circle-check"></i>
+                <span>진단</span>
+            </a>
+
+
+            <!-- 쇼핑 -->
+            <a
+                href="shopping.html"
+                class="nav-item"
+                aria-label="쇼핑"
+            >
+                <i data-lucide="shopping-bag"></i>
+                <span>쇼핑</span>
+            </a>
+
+
+            <!-- 마이페이지 -->
+            <a
+                href="mypage.html"
+                class="nav-item"
+                aria-label="마이페이지"
+            >
+                <i data-lucide="user-round"></i>
+                <span>마이</span>
+            </a>
+
+        </nav>
+
+    </div>
+
+
+    <!-- =========================
+         Lucide Icons
+    ========================== -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+    <!-- =========================
+         JavaScript
+    ========================== -->
+    <script src="js/main.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>

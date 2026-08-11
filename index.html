@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moodly - 공간 스타일 진단</title>
+
+    <!-- Pretendard -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- 모바일 웹앱 전체 영역 -->
+    <div class="app">
+
+        <!-- =========================
+             Header
+        ========================== -->
+        <header class="header home-header">
+            <h1 class="logo">Moodly</h1>
+        </header>
+
+
+        <!-- =========================
+             Main
+        ========================== -->
+        <main class="main home-main">
+
+            <!-- 메인 히어로 영역 -->
+            <section class="hero-section">
+
+                <div class="hero-image">
+                    <img
+                        src="c:\Users\hi\Desktop\홈화면\home-main.png.png"
+                        alt="따뜻하고 편안한 분위기의 거실"
+                    >
+                </div>
+
+                <div class="hero-content">
+
+                    <h2>
+                        당신의 무드가<br>
+                        공간이 되다
+                    </h2>
+
+                    <p>
+                        취향과 라이프스타일을<br>
+                        나에게 꼭 맞는 공간 스타일을 찾아보세요!
+                    </p>
+
+                    <a href="test.html" class="primary-button">
+                        공간 스타일 진단 시작하기
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 오늘의 공간 스타일
+            ========================== -->
+            <section class="style-section">
+
+                <div class="section-title">
+                    <h2>오늘의 공간 스타일</h2>
+                </div>
+
+
+                <div class="style-card-list">
+
+                    <!-- 코지 힐링형 -->
+                    <a href="result.html" class="style-card">
+
+                        <div class="style-card-image">
+                            <img
+                                src="c:\Users\hi\Desktop\홈화면\kozi-style.png.png"
+                                alt="코지 힐링형 인테리어"
+                            >
+                        </div>
+
+                        <div class="style-card-text">
+                            <strong>코지<br>힐링형</strong>
+                        </div>
+
+                    </a>
+
+
+                    <!-- 내추럴 리빙형 -->
+                    <a href="result.html" class="style-card">
+
+                        <div class="style-card-image">
+                            <img
+                                src="c:\Users\hi\Desktop\홈화면\natural-style.png.png"
+                                alt="내추럴 리빙형 인테리어"
+                            >
+                        </div>
+
+                        <div class="style-card-text">
+                            <strong>내추럴<br>리빙형</strong>
+                        </div>
+
+                    </a>
+
+
+                    <!-- 미니멀 라이프형 -->
+                    <a href="result.html" class="style-card">
+
+                        <div class="style-card-image">
+                            <img
+                                src="c:\Users\hi\Desktop\홈화면\mini-style.png.png"
+                                alt="미니멀 라이프형 인테리어"
+                            >
+                        </div>
+
+                        <div class="style-card-text">
+                            <strong>미니멀<br>라이프</strong>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 인기 스타일 TOP 3
+            ========================== -->
+            <section class="popular-section">
+
+                <div class="section-title">
+                    <h2>인기 스타일 TOP 3</h2>
+                </div>
+
+
+                <div class="popular-list">
+
+                    <!-- 모던 시크형 -->
+                    <a href="result.html" class="popular-item">
+
+                        <div class="popular-image">
+                            <img
+                                src="images/style-modern.jpg"
+                                alt="모던 시크형 인테리어"
+                            >
+                        </div>
+
+                        <span>모던 시크형</span>
+
+                    </a>
+
+
+                    <!-- 소셜라운지형 -->
+                    <a href="result.html" class="popular-item">
+
+                        <div class="popular-image">
+                            <img
+                                src="images/style-social.jpg"
+                                alt="소셜라운지형 인테리어"
+                            >
+                        </div>
+
+                        <span>소셜라운지형</span>
+
+                    </a>
+
+
+                    <!-- 스마트 실용형 -->
+                    <a href="result.html" class="popular-item">
+
+                        <div class="popular-image">
+                            <img
+                                src="images/style-smart.jpg"
+                                alt="스마트 실용형 인테리어"
+                            >
+                        </div>
+
+                        <span>스마트실용형</span>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- =========================
+             Bottom Navigation
+        ========================== -->
+        <nav class="bottom-nav" aria-label="하단 메뉴">
+
+            <!-- 홈 -->
+            <a href="index.html" class="nav-item active" aria-label="홈">
+                <i data-lucide="house"></i>
+                <span>홈</span>
+            </a>
+
+
+            <!-- 검사 -->
+            <a href="test.html" class="nav-item" aria-label="진단">
+                <i data-lucide="circle-check"></i>
+                <span>진단</span>
+            </a>
+
+
+            <!-- 쇼핑 -->
+            <a href="shopping.html" class="nav-item" aria-label="쇼핑">
+                <i data-lucide="shopping-bag"></i>
+                <span>쇼핑</span>
+            </a>
+
+
+            <!-- 마이페이지 -->
+            <a href="mypage.html" class="nav-item" aria-label="마이페이지">
+                <i data-lucide="user-round"></i>
+                <span>마이</span>
+            </a>
+
+        </nav>
+
+    </div>
+
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>

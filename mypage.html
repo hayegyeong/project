@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moodly - 마이페이지</title>
+
+    <!-- Pretendard -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         모바일 웹앱 전체 영역
+    ========================== -->
+    <div class="app mypage-app">
+
+        <!-- =========================
+             Header
+        ========================== -->
+        <header class="header mypage-header">
+
+            <h1 class="page-title">
+                마이페이지
+            </h1>
+
+            <button
+                type="button"
+                class="settings-button"
+                aria-label="설정"
+            >
+                <i data-lucide="settings"></i>
+            </button>
+
+        </header>
+
+
+        <!-- =========================
+             Main
+        ========================== -->
+        <main class="main mypage-main">
+
+
+            <!-- =========================
+                 프로필
+            ========================== -->
+            <section class="profile-section">
+
+                <div class="profile-card">
+
+                    <!-- 프로필 이미지 -->
+                    <div class="profile-image">
+
+                        <img
+                            src="images/profile.jpg"
+                            alt="프로필 이미지"
+                        >
+
+                    </div>
+
+
+                    <!-- 사용자 정보 -->
+                    <div class="profile-info">
+
+                        <h2>
+                            예경님
+                        </h2>
+
+                        <p>
+                            나만의 공간을 만들어가고 있어요
+                        </p>
+
+                    </div>
+
+
+                    <!-- 프로필 수정 -->
+                    <button
+                        type="button"
+                        class="profile-edit-button"
+                        aria-label="프로필 수정"
+                    >
+                        <i data-lucide="pencil"></i>
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 나의 공간 스타일
+            ========================== -->
+            <section class="my-style-section">
+
+                <div class="section-title">
+
+                    <h2>
+                        나의 공간 스타일
+                    </h2>
+
+                    <a
+                        href="result.html"
+                        class="section-more"
+                    >
+                        결과 보기
+                        <i data-lucide="chevron-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="my-style-card">
+
+                    <!-- 스타일 이미지 -->
+                    <div class="my-style-image">
+
+                        <img
+                            src="images/result-cozy.jpg"
+                            alt="나의 공간 스타일"
+                        >
+
+                    </div>
+
+
+                    <!-- 스타일 정보 -->
+                    <div class="my-style-content">
+
+                        <span class="style-label">
+                            MY STYLE
+                        </span>
+
+                        <h3>
+                            코지 힐링형
+                        </h3>
+
+                        <p>
+                            따뜻하고 편안한 분위기를 선호해요.
+                        </p>
+
+
+                        <div class="style-keywords">
+
+                            <span>
+                                #안정감
+                            </span>
+
+                            <span>
+                                #따뜻함
+                            </span>
+
+                            <span>
+                                #편안함
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 저장한 공간
+            ========================== -->
+            <section class="saved-space-section">
+
+                <div class="section-title">
+
+                    <h2>
+                        저장한 공간
+                    </h2>
+
+                    <a
+                        href="#"
+                        class="section-more"
+                    >
+                        전체보기
+                        <i data-lucide="chevron-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="saved-space-list">
+
+                    <!-- 저장 공간 1 -->
+                    <a
+                        href="#"
+                        class="saved-space-card"
+                    >
+
+                        <div class="saved-space-image">
+
+                            <img
+                                src="images/saved-space-01.jpg"
+                                alt="저장한 인테리어 공간"
+                            >
+
+                            <button
+                                type="button"
+                                class="favorite-button active"
+                                aria-label="찜 해제"
+                            >
+                                <i data-lucide="heart"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="saved-space-info">
+
+                            <strong>
+                                따뜻한 우드 거실
+                            </strong>
+
+                            <span>
+                                코지 힐링형
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- 저장 공간 2 -->
+                    <a
+                        href="#"
+                        class="saved-space-card"
+                    >
+
+                        <div class="saved-space-image">
+
+                            <img
+                                src="images/saved-space-02.jpg"
+                                alt="저장한 인테리어 공간"
+                            >
+
+                            <button
+                                type="button"
+                                class="favorite-button active"
+                                aria-label="찜 해제"
+                            >
+                                <i data-lucide="heart"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="saved-space-info">
+
+                            <strong>
+                                내추럴한 휴식 공간
+                            </strong>
+
+                            <span>
+                                내추럴 리빙형
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- 저장 공간 3 -->
+                    <a
+                        href="#"
+                        class="saved-space-card"
+                    >
+
+                        <div class="saved-space-image">
+
+                            <img
+                                src="images/saved-space-03.jpg"
+                                alt="저장한 인테리어 공간"
+                            >
+
+                            <button
+                                type="button"
+                                class="favorite-button active"
+                                aria-label="찜 해제"
+                            >
+                                <i data-lucide="heart"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="saved-space-info">
+
+                            <strong>
+                                깔끔한 미니멀 공간
+                            </strong>
+
+                            <span>
+                                미니멀 라이프형
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 찜한 상품
+            ========================== -->
+            <section class="wishlist-section">
+
+                <div class="section-title">
+
+                    <h2>
+                        찜한 상품
+                    </h2>
+
+                    <a
+                        href="shopping.html"
+                        class="section-more"
+                    >
+                        전체보기
+                        <i data-lucide="chevron-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="wishlist-list">
+
+                    <!-- 상품 1 -->
+                    <a
+                        href="shopping.html"
+                        class="wishlist-card"
+                    >
+
+                        <div class="wishlist-image">
+
+                            <img
+                                src="images/furniture-table.jpg"
+                                alt="원목 테이블"
+                            >
+
+                            <span class="wishlist-heart">
+                                <i data-lucide="heart"></i>
+                            </span>
+
+                        </div>
+
+                        <div class="wishlist-info">
+
+                            <strong>
+                                원목 테이블
+                            </strong>
+
+                            <span>
+                                129,000원
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- 상품 2 -->
+                    <a
+                        href="shopping.html"
+                        class="wishlist-card"
+                    >
+
+                        <div class="wishlist-image">
+
+                            <img
+                                src="images/furniture-sofa.jpg"
+                                alt="패브릭 소파"
+                            >
+
+                            <span class="wishlist-heart">
+                                <i data-lucide="heart"></i>
+                            </span>
+
+                        </div>
+
+                        <div class="wishlist-info">
+
+                            <strong>
+                                패브릭 소파
+                            </strong>
+
+                            <span>
+                                459,000원
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- 상품 3 -->
+                    <a
+                        href="shopping.html"
+                        class="wishlist-card"
+                    >
+
+                        <div class="wishlist-image">
+
+                            <img
+                                src="images/prop-plant.jpg"
+                                alt="플랜트 화분"
+                            >
+
+                            <span class="wishlist-heart">
+                                <i data-lucide="heart"></i>
+                            </span>
+
+                        </div>
+
+                        <div class="wishlist-info">
+
+                            <strong>
+                                플랜트 화분
+                            </strong>
+
+                            <span>
+                                39,000원
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 최근 진단 기록
+            ========================== -->
+            <section class="history-section">
+
+                <div class="section-title">
+
+                    <h2>
+                        최근 진단 기록
+                    </h2>
+
+                </div>
+
+
+                <div class="history-list">
+
+                    <!-- 진단 기록 1 -->
+                    <a
+                        href="result.html"
+                        class="history-item"
+                    >
+
+                        <div class="history-icon">
+                            <i data-lucide="clipboard-check"></i>
+                        </div>
+
+                        <div class="history-content">
+
+                            <strong>
+                                공간 스타일 진단
+                            </strong>
+
+                            <span>
+                                코지 힐링형 · 2026.08.11
+                            </span>
+
+                        </div>
+
+                        <i
+                            data-lucide="chevron-right"
+                            class="history-arrow"
+                        ></i>
+
+                    </a>
+
+
+                    <!-- 진단 기록 2 -->
+                    <a
+                        href="result.html"
+                        class="history-item"
+                    >
+
+                        <div class="history-icon">
+                            <i data-lucide="clipboard-check"></i>
+                        </div>
+
+                        <div class="history-content">
+
+                            <strong>
+                                공간 스타일 진단
+                            </strong>
+
+                            <span>
+                                내추럴 리빙형 · 2026.07.24
+                            </span>
+
+                        </div>
+
+                        <i
+                            data-lucide="chevron-right"
+                            class="history-arrow"
+                        ></i>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 메뉴
+            ========================== -->
+            <section class="mypage-menu-section">
+
+                <div class="menu-list">
+
+                    <!-- 프로필 관리 -->
+                    <a
+                        href="#"
+                        class="menu-item"
+                    >
+
+                        <div class="menu-item-left">
+
+                            <i data-lucide="user-round"></i>
+
+                            <span>
+                                프로필 관리
+                            </span>
+
+                        </div>
+
+                        <i data-lucide="chevron-right"></i>
+
+                    </a>
+
+
+                    <!-- 알림 설정 -->
+                    <a
+                        href="#"
+                        class="menu-item"
+                    >
+
+                        <div class="menu-item-left">
+
+                            <i data-lucide="bell"></i>
+
+                            <span>
+                                알림 설정
+                            </span>
+
+                        </div>
+
+                        <i data-lucide="chevron-right"></i>
+
+                    </a>
+
+
+                    <!-- 저장한 공간 -->
+                    <a
+                        href="#"
+                        class="menu-item"
+                    >
+
+                        <div class="menu-item-left">
+
+                            <i data-lucide="bookmark"></i>
+
+                            <span>
+                                저장한 공간
+                            </span>
+
+                        </div>
+
+                        <i data-lucide="chevron-right"></i>
+
+                    </a>
+
+
+                    <!-- 찜한 상품 -->
+                    <a
+                        href="shopping.html"
+                        class="menu-item"
+                    >
+
+                        <div class="menu-item-left">
+
+                            <i data-lucide="heart"></i>
+
+                            <span>
+                                찜한 상품
+                            </span>
+
+                        </div>
+
+                        <i data-lucide="chevron-right"></i>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 고객 지원
+            ========================== -->
+            <section class="support-section">
+
+                <div class="menu-list">
+
+                    <a
+                        href="#"
+                        class="menu-item"
+                    >
+
+                        <div class="menu-item-left">
+
+                            <i data-lucide="circle-help"></i>
+
+                            <span>
+                                자주 묻는 질문
+                            </span>
+
+                        </div>
+
+                        <i data-lucide="chevron-right"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="menu-item"
+                    >
+
+                        <div class="menu-item-left">
+
+                            <i data-lucide="message-circle"></i>
+
+                            <span>
+                                문의하기
+                            </span>
+
+                        </div>
+
+                        <i data-lucide="chevron-right"></i>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 로그아웃
+            ========================== -->
+            <section class="logout-section">
+
+                <button
+                    type="button"
+                    class="logout-button"
+                >
+                    로그아웃
+                </button>
+
+            </section>
+
+        </main>
+
+
+        <!-- =========================
+             Bottom Navigation
+        ========================== -->
+        <nav class="bottom-nav" aria-label="하단 메뉴">
+
+            <!-- 홈 -->
+            <a
+                href="index.html"
+                class="nav-item"
+                aria-label="홈"
+            >
+                <i data-lucide="house"></i>
+                <span>홈</span>
+            </a>
+
+
+            <!-- 진단 -->
+            <a
+                href="test.html"
+                class="nav-item"
+                aria-label="진단"
+            >
+                <i data-lucide="circle-check"></i>
+                <span>진단</span>
+            </a>
+
+
+            <!-- 쇼핑 -->
+            <a
+                href="shopping.html"
+                class="nav-item"
+                aria-label="쇼핑"
+            >
+                <i data-lucide="shopping-bag"></i>
+                <span>쇼핑</span>
+            </a>
+
+
+            <!-- 마이페이지 -->
+            <a
+                href="mypage.html"
+                class="nav-item active"
+                aria-label="마이페이지"
+            >
+                <i data-lucide="user-round"></i>
+                <span>마이</span>
+            </a>
+
+        </nav>
+
+    </div>
+
+
+    <!-- ========================= 
+         Lucide Icons
+    ========================== -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+    <!-- =========================
+         JavaScript
+    ========================== -->
+    <script src="js/main.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>

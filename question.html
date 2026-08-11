@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moodly - 공간 스타일 진단</title>
+
+    <!-- Pretendard -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         모바일 웹앱 전체 영역
+    ========================== -->
+    <div class="app">
+
+        <!-- =========================
+             Header
+        ========================== -->
+        <header class="header question-header">
+
+            <h1 class="page-title">
+                공간 스타일 진단
+            </h1>
+
+        </header>
+
+
+        <!-- =========================
+             Main
+        ========================== -->
+        <main class="main question-main">
+
+            <!-- =========================
+                 검사 진행 상태
+            ========================== -->
+            <section class="progress-section">
+
+                <div class="progress-info">
+
+                    <span class="question-count">
+                        1 / 25
+                    </span>
+
+                </div>
+
+
+                <!-- 프로그레스 바 -->
+                <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuemin="1"
+                    aria-valuemax="25"
+                    aria-valuenow="1"
+                >
+                    <div
+                        class="progress-value"
+                        style="width: 4%;"
+                    ></div>
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 질문 영역
+            ========================== -->
+            <section class="question-section">
+
+                <h2 class="question-title">
+                    주말에 집에서 가장 많이 하는 활동은?
+                </h2>
+
+
+                <!-- =========================
+                     답변 선택지
+                ========================== -->
+                <div class="answer-list">
+
+                    <!-- A -->
+                    <label class="answer-item">
+
+                        <input
+                            type="radio"
+                            name="answer"
+                            value="A"
+                        >
+
+                        <span class="answer-text">
+                            A. 푹 쉬며 휴식을 취한다.
+                        </span>
+
+                    </label>
+
+
+                    <!-- B -->
+                    <label class="answer-item">
+
+                        <input
+                            type="radio"
+                            name="answer"
+                            value="B"
+                        >
+
+                        <span class="answer-text">
+                            B. 취미나 자기계발을 한다.
+                        </span>
+
+                    </label>
+
+
+                    <!-- C -->
+                    <label class="answer-item">
+
+                        <input
+                            type="radio"
+                            name="answer"
+                            value="C"
+                        >
+
+                        <span class="answer-text">
+                            C. 친구나 가족과 시간을 보낸다.
+                        </span>
+
+                    </label>
+
+
+                    <!-- D -->
+                    <label class="answer-item">
+
+                        <input
+                            type="radio"
+                            name="answer"
+                            value="D"
+                        >
+
+                        <span class="answer-text">
+                            D. 외출 준비만 하고 집에는 거의 없다.
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 이전 / 다음 버튼
+            ========================== -->
+            <section class="question-navigation">
+
+                <button
+                    type="button"
+                    class="secondary-button previous-button"
+                    disabled
+                >
+                    이전
+                </button>
+
+
+                <button
+                    type="button"
+                    class="primary-button next-button"
+                >
+                    다음
+                </button>
+
+            </section>
+
+        </main>
+
+
+        <!-- =========================
+             Bottom Navigation
+        ========================== -->
+        <nav class="bottom-nav" aria-label="하단 메뉴">
+
+            <!-- 홈 -->
+            <a
+                href="index.html"
+                class="nav-item"
+                aria-label="홈"
+            >
+                <i data-lucide="house"></i>
+                <span>홈</span>
+            </a>
+
+
+            <!-- 진단 -->
+            <a
+                href="test.html"
+                class="nav-item active"
+                aria-label="진단"
+            >
+                <i data-lucide="circle-check"></i>
+                <span>진단</span>
+            </a>
+
+
+            <!-- 쇼핑 -->
+            <a
+                href="shopping.html"
+                class="nav-item"
+                aria-label="쇼핑"
+            >
+                <i data-lucide="shopping-bag"></i>
+                <span>쇼핑</span>
+            </a>
+
+
+            <!-- 마이페이지 -->
+            <a
+                href="mypage.html"
+                class="nav-item"
+                aria-label="마이페이지"
+            >
+                <i data-lucide="user-round"></i>
+                <span>마이</span>
+            </a>
+
+        </nav>
+
+    </div>
+
+
+    <!-- =========================
+         Lucide Icons
+    ========================== -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+    <!-- =========================
+         JavaScript
+    ========================== -->
+    <script src="js/main.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>

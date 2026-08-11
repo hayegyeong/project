@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moodly - 쇼핑</title>
+
+    <!-- Pretendard -->
+    <link
+        rel="stylesheet"
+        as="style"
+        crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         모바일 웹앱 전체 영역
+    ========================== -->
+    <div class="app shopping-app">
+
+        <!-- =========================
+             Header
+        ========================== -->
+        <header class="header shopping-header">
+
+            <h1 class="page-title">
+                쇼핑
+            </h1>
+
+            <button
+                type="button"
+                class="search-button"
+                aria-label="상품 검색"
+            >
+                <i data-lucide="search"></i>
+            </button>
+
+        </header>
+
+
+        <!-- =========================
+             Main
+        ========================== -->
+        <main class="main shopping-main">
+
+
+            <!-- =========================
+                 쇼핑 소개
+            ========================== -->
+            <section class="shopping-intro">
+
+                <p class="shopping-eyebrow">
+                    MOODLY SHOP
+                </p>
+
+                <h2>
+                    나의 공간에 어울리는<br>
+                    가구와 소품을 찾아보세요.
+                </h2>
+
+                <p class="shopping-description">
+                    당신의 공간 스타일에 맞는 아이템을<br>
+                    Moodly가 추천해드려요.
+                </p>
+
+            </section>
+
+
+            <!-- =========================
+                 검색 영역
+            ========================== -->
+            <section class="shopping-search-section">
+
+                <div class="search-box">
+
+                    <i data-lucide="search"></i>
+
+                    <input
+                        type="search"
+                        class="shopping-search-input"
+                        placeholder="가구나 소품을 검색해보세요"
+                        aria-label="상품 검색"
+                    >
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 카테고리
+            ========================== -->
+            <section class="category-section">
+
+                <div class="category-list">
+
+                    <button
+                        type="button"
+                        class="category-button active"
+                        data-category="all"
+                    >
+                        전체
+                    </button>
+
+                    <button
+                        type="button"
+                        class="category-button"
+                        data-category="furniture"
+                    >
+                        가구
+                    </button>
+
+                    <button
+                        type="button"
+                        class="category-button"
+                        data-category="lighting"
+                    >
+                        조명
+                    </button>
+
+                    <button
+                        type="button"
+                        class="category-button"
+                        data-category="fabric"
+                    >
+                        패브릭
+                    </button>
+
+                    <button
+                        type="button"
+                        class="category-button"
+                        data-category="prop"
+                    >
+                        소품
+                    </button>
+
+                    <button
+                        type="button"
+                        class="category-button"
+                        data-category="plant"
+                    >
+                        식물
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 나에게 추천
+            ========================== -->
+            <section class="shopping-recommend-section">
+
+                <div class="section-title">
+
+                    <div>
+                        <span class="section-eyebrow">
+                            FOR YOU
+                        </span>
+
+                        <h2>
+                            나에게 추천하는 아이템
+                        </h2>
+                    </div>
+
+                    <a
+                        href="#"
+                        class="section-more"
+                    >
+                        더보기
+                        <i data-lucide="chevron-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="recommended-product-list">
+
+                    <!-- 추천 상품 1 -->
+                    <article
+                        class="shopping-product-card"
+                        data-category="furniture"
+                    >
+
+                        <div class="product-image">
+
+                            <img
+                                src="images/furniture-table.jpg"
+                                alt="원목 테이블"
+                            >
+
+                            <button
+                                type="button"
+                                class="favorite-button"
+                                aria-label="원목 테이블 찜하기"
+                            >
+                                <i data-lucide="heart"></i>
+                            </button>
+
+                            <span class="product-badge">
+                                추천
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                MOODLY PICK
+                            </span>
+
+                            <h3>
+                                내추럴 원목 테이블
+                            </h3>
+
+                            <p class="product-description">
+                                따뜻한 우드톤으로 편안한 분위기를 만들어주는 테이블
+                            </p>
+
+                            <strong class="product-price">
+                                129,000원
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 추천 상품 2 -->
+                    <article
+                        class="shopping-product-card"
+                        data-category="furniture"
+                    >
+
+                        <div class="product-image">
+
+                            <img
+                                src="images/furniture-sofa.jpg"
+                                alt="패브릭 소파"
+                            >
+
+                            <button
+                                type="button"
+                                class="favorite-button"
+                                aria-label="패브릭 소파 찜하기"
+                            >
+                                <i data-lucide="heart"></i>
+                            </button>
+
+                            <span class="product-badge">
+                                추천
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                MOODLY PICK
+                            </span>
+
+                            <h3>
+                                베이지 패브릭 소파
+                            </h3>
+
+                            <p class="product-description">
+                                부드러운 패브릭 소재의 편안한 2인용 소파
+                            </p>
+
+                            <strong class="product-price">
+                                459,000원
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 추천 상품 3 -->
+                    <article
+                        class="shopping-product-card"
+                        data-category="plant"
+                    >
+
+                        <div class="product-image">
+
+                            <img
+                                src="images/prop-plant.jpg"
+                                alt="그린 식물"
+                            >
+
+                            <button
+                                type="button"
+                                class="favorite-button"
+                                aria-label="그린 식물 찜하기"
+                            >
+                                <i data-lucide="heart"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                MOODLY PICK
+                            </span>
+
+                            <h3>
+                                내추럴 그린 플랜트
+                            </h3>
+
+                            <p class="product-description">
+                                공간에 자연스러운 생기를 더해주는 실내 식물
+                            </p>
+
+                            <strong class="product-price">
+                                39,000원
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 인기 상품
+            ========================== -->
+            <section class="popular-product-section">
+
+                <div class="section-title">
+
+                    <div>
+                        <span class="section-eyebrow">
+                            BEST
+                        </span>
+
+                        <h2>
+                            인기 아이템
+                        </h2>
+                    </div>
+
+                    <a
+                        href="#"
+                        class="section-more"
+                    >
+                        더보기
+                        <i data-lucide="chevron-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="product-grid">
+
+                    <!-- 상품 1 -->
+                    <article
+                        class="shopping-product-card grid-product"
+                        data-category="lighting"
+                    >
+
+                        <div class="product-image">
+
+                            <img
+                                src="images/lighting-01.jpg"
+                                alt="스탠드 조명"
+                            >
+
+                            <button
+                                type="button"
+                                class="favorite-button"
+                                aria-label="스탠드 조명 찜하기"
+                            >
+                                <i data-lucide="heart"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Moodly
+                            </span>
+
+                            <h3>
+                                우드 스탠드 조명
+                            </h3>
+
+                            <strong class="product-price">
+                                89,000원
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 상품 2 -->
+                    <article
+                        class="shopping-product-card grid-product"
+                        data-category="fabric"
+                    >
+
+                        <div class="product-image">
+
+                            <img
+                                src="images/prop-rug.jpg"
+                                alt="베이지 러그"
+                            >
+
+                            <button
+                                type="button"
+                                class="favorite-button"
+                                aria-label="베이지 러그 찜하기"
+                            >
+                                <i data-lucide="heart"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Moodly
+                            </span>
+
+                            <h3>
+                                소프트 베이지 러그
+                            </h3>
+
+                            <strong class="product-price">
+                                79,000원
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 상품 3 -->
+                    <article
+                        class="shopping-product-card grid-product"
+                        data-category="prop"
+                    >
+
+                        <div class="product-image">
+
+                            <img
+                                src="images/prop-curtain.jpg"
+                                alt="패브릭 커튼"
+                            >
+
+                            <button
+                                type="button"
+                                class="favorite-button"
+                                aria-label="패브릭 커튼 찜하기"
+                            >
+                                <i data-lucide="heart"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Moodly
+                            </span>
+
+                            <h3>
+                                내추럴 패브릭 커튼
+                            </h3>
+
+                            <strong class="product-price">
+                                59,000원
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 상품 4 -->
+                    <article
+                        class="shopping-product-card grid-product"
+                        data-category="furniture"
+                    >
+
+                        <div class="product-image">
+
+                            <img
+                                src="images/furniture-chair.jpg"
+                                alt="우드 체어"
+                            >
+
+                            <button
+                                type="button"
+                                class="favorite-button"
+                                aria-label="우드 체어 찜하기"
+                            >
+                                <i data-lucide="heart"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Moodly
+                            </span>
+
+                            <h3>
+                                내추럴 우드 체어
+                            </h3>
+
+                            <strong class="product-price">
+                                119,000원
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 상품 5 -->
+                    <article
+                        class="shopping-product-card grid-product"
+                        data-category="plant"
+                    >
+
+                        <div class="product-image">
+
+                            <img
+                                src="images/prop-plant-02.jpg"
+                                alt="미니 화분"
+                            >
+
+                            <button
+                                type="button"
+                                class="favorite-button"
+                                aria-label="미니 화분 찜하기"
+                            >
+                                <i data-lucide="heart"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Moodly
+                            </span>
+
+                            <h3>
+                                미니 그린 화분
+                            </h3>
+
+                            <strong class="product-price">
+                                24,000원
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 상품 6 -->
+                    <article
+                        class="shopping-product-card grid-product"
+                        data-category="lighting"
+                    >
+
+                        <div class="product-image">
+
+                            <img
+                                src="images/lighting-02.jpg"
+                                alt="테이블 조명"
+                            >
+
+                            <button
+                                type="button"
+                                class="favorite-button"
+                                aria-label="테이블 조명 찜하기"
+                            >
+                                <i data-lucide="heart"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Moodly
+                            </span>
+
+                            <h3>
+                                미니 테이블 램프
+                            </h3>
+
+                            <strong class="product-price">
+                                69,000원
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 스타일별 쇼핑
+            ========================== -->
+            <section class="style-shopping-section">
+
+                <div class="section-title">
+
+                    <div>
+                        <span class="section-eyebrow">
+                            STYLE
+                        </span>
+
+                        <h2>
+                            스타일별 아이템
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div class="style-shopping-list">
+
+                    <!-- 코지 힐링 -->
+                    <a
+                        href="#"
+                        class="style-shopping-card"
+                    >
+
+                        <img
+                            src="images/style-cozy.jpg"
+                            alt="코지 힐링 스타일"
+                        >
+
+                        <div class="style-shopping-overlay">
+
+                            <strong>
+                                코지 힐링
+                            </strong>
+
+                            <span>
+                                편안하고 따뜻한 공간
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- 내추럴 리빙 -->
+                    <a
+                        href="#"
+                        class="style-shopping-card"
+                    >
+
+                        <img
+                            src="images/style-natural.jpg"
+                            alt="내추럴 리빙 스타일"
+                        >
+
+                        <div class="style-shopping-overlay">
+
+                            <strong>
+                                내추럴 리빙
+                            </strong>
+
+                            <span>
+                                자연스럽고 편안한 공간
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- 미니멀 라이프 -->
+                    <a
+                        href="#"
+                        class="style-shopping-card"
+                    >
+
+                        <img
+                            src="images/style-minimal.jpg"
+                            alt="미니멀 라이프 스타일"
+                        >
+
+                        <div class="style-shopping-overlay">
+
+                            <strong>
+                                미니멀 라이프
+                            </strong>
+
+                            <span>
+                                깔끔하고 정돈된 공간
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 하단 안내
+            ========================== -->
+            <section class="shopping-notice-section">
+
+                <div class="notice-card">
+
+                    <i data-lucide="sparkles"></i>
+
+                    <div>
+
+                        <strong>
+                            나의 공간 스타일이 궁금하다면?
+                        </strong>
+
+                        <p>
+                            아직 진단하지 않았다면<br>
+                            공간 스타일 진단을 먼저 받아보세요.
+                        </p>
+
+                        <a
+                            href="test.html"
+                            class="notice-link"
+                        >
+                            진단하러 가기
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+
+        <!-- =========================
+             Bottom Navigation
+        ========================== -->
+        <nav class="bottom-nav" aria-label="하단 메뉴">
+
+            <!-- 홈 -->
+            <a
+                href="index.html"
+                class="nav-item"
+                aria-label="홈"
+            >
+                <i data-lucide="house"></i>
+                <span>홈</span>
+            </a>
+
+
+            <!-- 진단 -->
+            <a
+                href="test.html"
+                class="nav-item"
+                aria-label="진단"
+            >
+                <i data-lucide="circle-check"></i>
+                <span>진단</span>
+            </a>
+
+
+            <!-- 쇼핑 -->
+            <a
+                href="shopping.html"
+                class="nav-item active"
+                aria-label="쇼핑"
+            >
+                <i data-lucide="shopping-bag"></i>
+                <span>쇼핑</span>
+            </a>
+
+
+            <!-- 마이페이지 -->
+            <a
+                href="mypage.html"
+                class="nav-item"
+                aria-label="마이페이지"
+            >
+                <i data-lucide="user-round"></i>
+                <span>마이</span>
+            </a>
+
+        </nav>
+
+    </div>
+
+
+    <!-- =========================
+         Lucide Icons
+    ========================== -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+    <!-- =========================
+         JavaScript
+    ========================== -->
+    <script src="js/main.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
