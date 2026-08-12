@@ -2359,3 +2359,161 @@ input:focus-visible {
     }
 
 }
+/* =========================================================
+   🛒 쇼핑 - 카테고리 / 상품 더보기
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   전체 상품 영역
+   --------------------------------------------------------- */
+
+.all-products-section {
+    margin-top: 40px;
+}
+
+
+/* ---------------------------------------------------------
+   상품 더보기 버튼
+   --------------------------------------------------------- */
+
+.product-more-button {
+    width: 100%;
+    margin-top: 24px;
+
+    min-height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    border: 1px solid #e5e0da;
+    border-radius: 12px;
+
+    background: #ffffff;
+    color: #333333;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* 버튼 눌렀을 때 */
+
+.product-more-button:active {
+    transform: scale(0.98);
+}
+
+
+/* 마우스 올렸을 때 */
+
+.product-more-button:hover {
+    background: #faf8f5;
+    border-color: #d8d0c8;
+}
+
+
+/* 아이콘 */
+
+.product-more-button svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* ---------------------------------------------------------
+   카테고리 버튼
+   --------------------------------------------------------- */
+
+.category-list {
+    display: flex;
+
+    gap: 8px;
+
+    overflow-x: auto;
+
+    padding-bottom: 4px;
+
+    scrollbar-width: none;
+}
+
+.category-list::-webkit-scrollbar {
+    display: none;
+}
+
+
+.category-button {
+    flex-shrink: 0;
+
+    padding: 9px 16px;
+
+    border: 1px solid #e6e1dc;
+
+    border-radius: 999px;
+
+    background: #ffffff;
+
+    color: #777777;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+
+/* 선택된 카테고리 */
+
+.category-button.active {
+    background: #333333;
+
+    border-color: #333333;
+
+    color: #ffffff;
+
+    font-weight: 600;
+}
+
+
+/* ---------------------------------------------------------
+   상품 숨김 애니메이션을 위한 기본 처리
+   --------------------------------------------------------- */
+
+.all-products-section .shopping-product-card {
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* ---------------------------------------------------------
+   모바일 화면
+   --------------------------------------------------------- */
+
+@media (max-width: 480px) {
+
+    .product-more-button {
+        min-height: 46px;
+
+        font-size: 13px;
+    }
+
+    .category-button {
+        padding: 8px 14px;
+
+        font-size: 12px;
+    }
+
+}

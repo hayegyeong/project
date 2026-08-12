@@ -1,12 +1,13 @@
 /* =========================================================
-MOODLY
-Main JavaScript
-Vanilla JavaScript
-========================================================= */
+   MOODLY
+   Main JavaScript
+   Vanilla JavaScript
+   ========================================================= */
+
 
 /* =========================================================
-01. DOM READY
-========================================================= */
+   01. DOM READY
+   ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -15,9 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+
 /* =========================================================
-02. LUCIDE ICON
-========================================================= */
+   02. LUCIDE ICON
+   ========================================================= */
 
 function initLucide() {
 
@@ -27,9 +29,10 @@ function initLucide() {
 
 }
 
+
 /* =========================================================
-03. PAGE INITIALIZATION
-========================================================= */
+   03. PAGE INITIALIZATION
+   ========================================================= */
 
 function initPage() {
 
@@ -65,9 +68,10 @@ function initPage() {
 
 }
 
+
 /* =========================================================
-04. CURRENT PAGE
-========================================================= */
+   04. CURRENT PAGE
+   ========================================================= */
 
 function getCurrentPage() {
 
@@ -82,13 +86,11 @@ function getCurrentPage() {
 
 }
 
+
 /* =========================================================
-05. TEST DATA
-========================================================= */
-/* =========================================================
-05. TEST DATA
-8가지 공간 스타일 진단
-========================================================= */
+   05. TEST DATA
+   8가지 공간 스타일 진단
+   ========================================================= */
 
 const questions = [
 
@@ -621,41 +623,25 @@ const questions = [
     }
 
 ];
+
+
 /* =========================================================
-06. RESULT DATA
-========================================================= */
+   06. RESULT DATA
+   ========================================================= */
 
 const resultData = {
 
-    /* =====================================================
-       01. 코지 힐링
-    ===================================================== */
-
     cozy: {
-
         title: "코지 힐링형",
         subtitle: "따뜻하고 편안한 공간을 좋아하는 당신",
-
         description:
             "포근하고 편안한 분위기 속에서 안정감을 느끼는 타입이에요. " +
             "부드러운 패브릭과 따뜻한 조명, 베이지와 아이보리 계열의 색감을 활용하면 " +
             "나만의 편안한 휴식 공간을 만들 수 있어요.",
-
-        tags: [
-            "안정감",
-            "편안함",
-            "따뜻함"
-        ],
-
-        lifestyle:
-            "여유롭고 안정적인 생활",
-
-        keywords:
-            "패브릭 / 우드 / 따뜻한 조명",
-
-        image:
-            "images/style-cozy.jpg",
-
+        tags: ["안정감", "편안함", "따뜻함"],
+        lifestyle: "여유롭고 안정적인 생활",
+        keywords: "패브릭 / 우드 / 따뜻한 조명",
+        image: "images/style-cozy.jpg",
         color: [
             "#F7F1E8",
             "#E3CFB2",
@@ -663,7 +649,6 @@ const resultData = {
             "#8D7460",
             "#C1BDB8"
         ],
-
         styles: [
             {
                 name: "코지 힐링",
@@ -681,39 +666,19 @@ const resultData = {
                 image: "images/style-emotional.jpg"
             }
         ]
-
     },
 
-
-    /* =====================================================
-       02. 미니멀 라이프
-    ===================================================== */
-
     minimal: {
-
         title: "미니멀 라이프형",
         subtitle: "깔끔하고 정돈된 공간을 좋아하는 당신",
-
         description:
             "불필요한 것을 줄이고 필요한 것에 집중하는 타입이에요. " +
             "화이트와 그레이 같은 뉴트럴 컬러와 간결한 가구를 활용하면 " +
             "더욱 편안하고 효율적인 공간을 만들 수 있어요.",
-
-        tags: [
-            "깔끔함",
-            "정돈",
-            "심플함"
-        ],
-
-        lifestyle:
-            "효율적이고 정돈된 생활",
-
-        keywords:
-            "화이트 / 수납 / 심플한 가구",
-
-        image:
-            "images/style-minimal.jpg",
-
+        tags: ["깔끔함", "정돈", "심플함"],
+        lifestyle: "효율적이고 정돈된 생활",
+        keywords: "화이트 / 수납 / 심플한 가구",
+        image: "images/style-minimal.jpg",
         color: [
             "#F7F7F5",
             "#E8E6E1",
@@ -721,7 +686,6 @@ const resultData = {
             "#9D9A93",
             "#55534F"
         ],
-
         styles: [
             {
                 name: "미니멀 라이프",
@@ -739,38 +703,18 @@ const resultData = {
                 image: "images/style-modern.jpg"
             }
         ]
-
     },
 
-
-    /* =====================================================
-       03. 내추럴 리빙
-    ===================================================== */
-
     natural: {
-
         title: "내추럴 리빙형",
         subtitle: "자연스럽고 편안한 공간을 좋아하는 당신",
-
         description:
             "자연과 가까운 분위기를 좋아하고 편안한 공간에서 에너지를 얻는 타입이에요. " +
             "우드와 라탄, 식물 등의 자연 소재를 활용하면 취향을 더욱 잘 표현할 수 있어요.",
-
-        tags: [
-            "자연",
-            "우드",
-            "그린"
-        ],
-
-        lifestyle:
-            "자연과 함께하는 편안한 생활",
-
-        keywords:
-            "우드 / 라탄 / 식물",
-
-        image:
-            "images/style-natural.jpg",
-
+        tags: ["자연", "우드", "그린"],
+        lifestyle: "자연과 함께하는 편안한 생활",
+        keywords: "우드 / 라탄 / 식물",
+        image: "images/style-natural.jpg",
         color: [
             "#E7E0CF",
             "#C6B994",
@@ -778,7 +722,6 @@ const resultData = {
             "#687256",
             "#445A41"
         ],
-
         styles: [
             {
                 name: "내추럴 리빙",
@@ -796,39 +739,19 @@ const resultData = {
                 image: "images/style-social.jpg"
             }
         ]
-
     },
 
-
-    /* =====================================================
-       04. 모던 무드
-    ===================================================== */
-
     modern: {
-
         title: "모던 무드형",
         subtitle: "세련되고 감각적인 공간을 좋아하는 당신",
-
         description:
             "자신만의 개성을 공간에 표현하고 싶어 하는 타입이에요. " +
             "감각적인 조명과 디자인 가구, 뉴트럴 컬러를 활용하면 " +
             "세련된 분위기를 완성할 수 있어요.",
-
-        tags: [
-            "세련됨",
-            "감각",
-            "개성"
-        ],
-
-        lifestyle:
-            "트렌드와 개성을 중요하게 생각하는 생활",
-
-        keywords:
-            "메탈 / 뉴트럴 / 디자인 가구",
-
-        image:
-            "images/style-modern.jpg",
-
+        tags: ["세련됨", "감각", "개성"],
+        lifestyle: "트렌드와 개성을 중요하게 생각하는 생활",
+        keywords: "메탈 / 뉴트럴 / 디자인 가구",
+        image: "images/style-modern.jpg",
         color: [
             "#ECEAE6",
             "#C8C4BD",
@@ -836,7 +759,6 @@ const resultData = {
             "#5C5750",
             "#3F3A35"
         ],
-
         styles: [
             {
                 name: "모던 무드",
@@ -854,38 +776,18 @@ const resultData = {
                 image: "images/style-minimal.jpg"
             }
         ]
-
     },
 
-
-    /* =====================================================
-       05. 크리에이티브 스튜디오
-    ===================================================== */
-
     creative: {
-
         title: "크리에이티브 스튜디오형",
         subtitle: "개성과 아이디어를 자유롭게 표현하는 당신",
-
         description:
             "정해진 스타일보다 나만의 취향과 개성을 중요하게 생각하는 타입이에요. " +
             "독특한 오브제와 컬러, 아트 포스터 등을 활용해 개성 있는 공간을 만들어보세요.",
-
-        tags: [
-            "창의성",
-            "개성",
-            "자유로움"
-        ],
-
-        lifestyle:
-            "새로운 것을 시도하고 자유롭게 표현하는 생활",
-
-        keywords:
-            "아트 / 컬러 / 오브제",
-
-        image:
-            "images/style-creative.jpg",
-
+        tags: ["창의성", "개성", "자유로움"],
+        lifestyle: "새로운 것을 시도하고 자유롭게 표현하는 생활",
+        keywords: "아트 / 컬러 / 오브제",
+        image: "images/style-creative.jpg",
         color: [
             "#F1E5D7",
             "#D6B5A5",
@@ -893,7 +795,6 @@ const resultData = {
             "#756A85",
             "#41404A"
         ],
-
         styles: [
             {
                 name: "크리에이티브 스튜디오",
@@ -911,38 +812,18 @@ const resultData = {
                 image: "images/style-emotional.jpg"
             }
         ]
-
     },
 
-
-    /* =====================================================
-       06. 소셜 리빙
-    ===================================================== */
-
     social: {
-
         title: "소셜 리빙형",
         subtitle: "사람들과 함께하는 공간을 좋아하는 당신",
-
         description:
             "혼자만의 공간보다 가족이나 친구와 함께 시간을 보내는 것을 중요하게 생각하는 타입이에요. " +
             "넓은 소파와 큰 테이블처럼 함께 사용할 수 있는 가구를 활용하면 좋아요.",
-
-        tags: [
-            "소통",
-            "공유",
-            "활기"
-        ],
-
-        lifestyle:
-            "사람들과 함께하며 즐거움을 나누는 생활",
-
-        keywords:
-            "소파 / 테이블 / 넓은 거실",
-
-        image:
-            "images/style-social.jpg",
-
+        tags: ["소통", "공유", "활기"],
+        lifestyle: "사람들과 함께하며 즐거움을 나누는 생활",
+        keywords: "소파 / 테이블 / 넓은 거실",
+        image: "images/style-social.jpg",
         color: [
             "#F4E8D8",
             "#E4C8A8",
@@ -950,7 +831,6 @@ const resultData = {
             "#8C735A",
             "#5B5047"
         ],
-
         styles: [
             {
                 name: "소셜 리빙",
@@ -968,38 +848,18 @@ const resultData = {
                 image: "images/style-cozy.jpg"
             }
         ]
-
     },
 
-
-    /* =====================================================
-       07. 스마트 라이프
-    ===================================================== */
-
     smart: {
-
         title: "스마트 라이프형",
         subtitle: "편리함과 효율적인 공간을 중요하게 생각하는 당신",
-
         description:
             "공간의 아름다움뿐만 아니라 기능과 효율을 중요하게 생각하는 타입이에요. " +
             "스마트 기기와 효율적인 수납, 다기능 가구를 활용하면 생활이 더욱 편리해져요.",
-
-        tags: [
-            "효율성",
-            "기능성",
-            "편리함"
-        ],
-
-        lifestyle:
-            "효율적이고 편리한 생활",
-
-        keywords:
-            "스마트기기 / 수납 / 다기능 가구",
-
-        image:
-            "images/style-smart.jpg",
-
+        tags: ["효율성", "기능성", "편리함"],
+        lifestyle: "효율적이고 편리한 생활",
+        keywords: "스마트기기 / 수납 / 다기능 가구",
+        image: "images/style-smart.jpg",
         color: [
             "#F2F3F3",
             "#D8DDDF",
@@ -1007,7 +867,6 @@ const resultData = {
             "#68737B",
             "#39434A"
         ],
-
         styles: [
             {
                 name: "스마트 라이프",
@@ -1025,39 +884,19 @@ const resultData = {
                 image: "images/style-modern.jpg"
             }
         ]
-
     },
 
-
-    /* =====================================================
-       08. 감성 아틀리에
-    ===================================================== */
-
     emotional: {
-
         title: "감성 아틀리에형",
         subtitle: "분위기와 감성을 중요하게 생각하는 당신",
-
         description:
             "공간에서 느껴지는 분위기와 감정을 중요하게 생각하는 타입이에요. " +
             "은은한 조명과 향, 패브릭, 좋아하는 소품을 활용하면 " +
             "나만의 감성적인 공간을 만들 수 있어요.",
-
-        tags: [
-            "감성",
-            "분위기",
-            "취향"
-        ],
-
-        lifestyle:
-            "나만의 취향과 분위기를 즐기는 생활",
-
-        keywords:
-            "조명 / 향 / 패브릭",
-
-        image:
-            "images/style-emotional.jpg",
-
+        tags: ["감성", "분위기", "취향"],
+        lifestyle: "나만의 취향과 분위기를 즐기는 생활",
+        keywords: "조명 / 향 / 패브릭",
+        image: "images/style-emotional.jpg",
         color: [
             "#F1E5DF",
             "#D8C0B8",
@@ -1065,7 +904,6 @@ const resultData = {
             "#806A6A",
             "#51464A"
         ],
-
         styles: [
             {
                 name: "감성 아틀리에",
@@ -1083,15 +921,14 @@ const resultData = {
                 image: "images/style-creative.jpg"
             }
         ]
-
     }
 
 };
 
 
 /* =========================================================
-07. TEST PAGE
-========================================================= */
+   07. TEST PAGE
+   ========================================================= */
 
 function initTestPage() {
 
@@ -1103,19 +940,16 @@ function initTestPage() {
 
         button.addEventListener("click", event => {
 
+            clearTestData();
+
             if (
                 button.tagName.toLowerCase() === "a" &&
                 button.getAttribute("href") === "question.html"
             ) {
-
-                clearTestData();
                 return;
-
             }
 
             event.preventDefault();
-
-            clearTestData();
 
             window.location.href = "question.html";
 
@@ -1127,10 +961,11 @@ function initTestPage() {
 
 
 /* =========================================================
-08. QUESTION PAGE
-========================================================= */
+   08. QUESTION PAGE
+   ========================================================= */
 
 let currentQuestion = 0;
+
 
 function initQuestionPage() {
 
@@ -1142,9 +977,7 @@ function initQuestionPage() {
         savedQuestion >= 0 &&
         savedQuestion < questions.length
     ) {
-
         currentQuestion = savedQuestion;
-
     }
 
     renderQuestion();
@@ -1153,8 +986,8 @@ function initQuestionPage() {
 
 
 /* =========================================================
-질문 렌더링
-========================================================= */
+   질문 렌더링
+   ========================================================= */
 
 function renderQuestion() {
 
@@ -1256,17 +1089,15 @@ function renderQuestion() {
     }
 
     updateNextButton();
-
     updatePreviousButton();
-
     initQuestionNavigation();
 
 }
 
 
 /* =========================================================
-답변 저장
-========================================================= */
+   답변 저장
+   ========================================================= */
 
 function saveAnswer(
     questionIndex,
@@ -1288,8 +1119,8 @@ function saveAnswer(
 
 
 /* =========================================================
-답변 불러오기
-========================================================= */
+   답변 불러오기
+   ========================================================= */
 
 function getSavedAnswers() {
 
@@ -1312,8 +1143,8 @@ function getSavedAnswers() {
 
 
 /* =========================================================
-다음 버튼
-========================================================= */
+   다음 버튼
+   ========================================================= */
 
 function updateNextButton() {
 
@@ -1338,8 +1169,8 @@ function updateNextButton() {
 
 
 /* =========================================================
-이전 버튼
-========================================================= */
+   이전 버튼
+   ========================================================= */
 
 function updatePreviousButton() {
 
@@ -1352,15 +1183,19 @@ function updatePreviousButton() {
         return;
     }
 
-    previousButton.disabled =
-        currentQuestion === 0;
+    /*
+        첫 번째 문제에서도 버튼을 비활성화하지 않음.
+        클릭하면 test.html로 이동.
+    */
+
+    previousButton.disabled = false;
 
 }
 
 
 /* =========================================================
-질문 이동
-========================================================= */
+   질문 이동
+   ========================================================= */
 
 function initQuestionNavigation() {
 
@@ -1428,6 +1263,11 @@ function initQuestionNavigation() {
 
         previousButton.onclick = () => {
 
+            /*
+                첫 번째 문제에서 이전 버튼을 누르면
+                테스트 시작 화면으로 이동
+            */
+
             if (currentQuestion <= 0) {
 
                 window.location.href =
@@ -1459,8 +1299,8 @@ function initQuestionNavigation() {
 
 
 /* =========================================================
-09. FINISH TEST
-========================================================= */
+   09. FINISH TEST
+   ========================================================= */
 
 function finishTest() {
 
@@ -1486,37 +1326,83 @@ function finishTest() {
 
 
 /* =========================================================
-10. CALCULATE RESULT
-========================================================= */
+   10. CALCULATE RESULT
+   ========================================================= */
+
+/*
+    ★ 중요 ★
+
+    기존 코드에서는
+
+    cozy → emotional + natural
+    minimal → smart + modern
+    natural → social + cozy
+    modern → creative + smart
+
+    처럼 추가 점수를 줬기 때문에
+    특정 유형이 지나치게 높은 점수를 얻는 문제가 있었음.
+
+    이번 버전에서는 추가 보정 점수를 제거함.
+
+    대신 각 유형이 답변에 등장하는 횟수가 다르기 때문에
+    "등장 빈도 보정"을 적용함.
+
+    따라서 cozy 답변이 많다고 해서
+    무조건 cozy가 되는 문제가 줄어듦.
+*/
+
 
 function calculateResult(answers) {
 
-    const scores = {
+    const types = [
+        "cozy",
+        "minimal",
+        "natural",
+        "modern",
+        "creative",
+        "social",
+        "smart",
+        "emotional"
+    ];
 
-        cozy: 0,
-        minimal: 0,
-        natural: 0,
-        modern: 0,
-        creative: 0,
-        social: 0,
-        smart: 0,
-        emotional: 0
 
-    };
+    const scores = {};
+
+    types.forEach(type => {
+        scores[type] = 0;
+    });
 
 
     /*
-        기존 질문의 답변 유형을 그대로 사용하면서
-        8가지 스타일로 확장하기 위한 보정 점수
+        각 유형이 전체 질문에서 몇 번 등장하는지 계산
+    */
 
-        cozy      → 안정감 / 휴식
-        minimal   → 정돈 / 실용
-        natural   → 자연 / 편안함
-        modern    → 세련 / 개성
+    const appearanceCount = {};
 
-        위 기본 성향을 바탕으로
-        creative / social / smart / emotional도
-        함께 점수를 계산한다.
+    types.forEach(type => {
+        appearanceCount[type] = 0;
+    });
+
+
+    questions.forEach(question => {
+
+        question.answers.forEach(answer => {
+
+            if (
+                appearanceCount.hasOwnProperty(answer.type)
+            ) {
+
+                appearanceCount[answer.type]++;
+
+            }
+
+        });
+
+    });
+
+
+    /*
+        실제 답변 점수 계산
     */
 
     answers.forEach(answer => {
@@ -1525,42 +1411,42 @@ function calculateResult(answers) {
             return;
         }
 
-
-        if (scores.hasOwnProperty(answer)) {
-
-            scores[answer]++;
-
+        if (!scores.hasOwnProperty(answer)) {
+            return;
         }
 
+        scores[answer]++;
 
-        if (answer === "cozy") {
-
-            scores.emotional++;
-            scores.natural++;
-
-        }
+    });
 
 
-        if (answer === "minimal") {
+    /*
+        등장 횟수가 적은 스타일이
+        불리하지 않도록 비율로 보정
 
-            scores.smart++;
-            scores.modern++;
+        예:
+        cozy 10번 등장 중 5번 선택
+        → 50%
 
-        }
+        smart 5번 등장 중 3번 선택
+        → 60%
 
+        이런 식으로 계산
+    */
 
-        if (answer === "natural") {
+    const normalizedScores = {};
 
-            scores.social++;
-            scores.cozy++;
+    types.forEach(type => {
 
-        }
+        if (appearanceCount[type] > 0) {
 
+            normalizedScores[type] =
+                scores[type] /
+                appearanceCount[type];
 
-        if (answer === "modern") {
+        } else {
 
-            scores.creative++;
-            scores.smart++;
+            normalizedScores[type] = 0;
 
         }
 
@@ -1568,7 +1454,7 @@ function calculateResult(answers) {
 
 
     /*
-        가장 높은 점수의 유형을 결과로 선택
+        가장 높은 비율의 스타일 찾기
     */
 
     let resultType =
@@ -1578,15 +1464,31 @@ function calculateResult(answers) {
         -1;
 
 
-    Object.keys(scores).forEach(type => {
+    types.forEach(type => {
+
+        const score =
+            normalizedScores[type];
+
+
+        /*
+            동점일 경우
+            실제 선택 횟수가 많은 유형을 우선
+        */
 
         if (
-            scores[type] >
-            highestScore
+            score > highestScore
         ) {
 
             highestScore =
-                scores[type];
+                score;
+
+            resultType =
+                type;
+
+        } else if (
+            score === highestScore &&
+            scores[type] > scores[resultType]
+        ) {
 
             resultType =
                 type;
@@ -1596,8 +1498,22 @@ function calculateResult(answers) {
     });
 
 
+    /*
+        결과 페이지에서 사용할 점수 저장
+    */
+
     localStorage.setItem(
         "moodlyScores",
+        JSON.stringify(normalizedScores)
+    );
+
+
+    /*
+        실제 선택 횟수도 저장
+    */
+
+    localStorage.setItem(
+        "moodlyRawScores",
         JSON.stringify(scores)
     );
 
@@ -1605,9 +1521,11 @@ function calculateResult(answers) {
     return resultType;
 
 }
+
+
 /* =========================================================
-11. RESULT PAGE
-========================================================= */
+   11. RESULT PAGE
+   ========================================================= */
 
 function initResultPage() {
 
@@ -1627,9 +1545,10 @@ function initResultPage() {
 
 }
 
-/* ---------------------------------------------------------
-결과 화면 출력
---------------------------------------------------------- */
+
+/* =========================================================
+   결과 화면 출력
+   ========================================================= */
 
 function renderResult(result) {
 
@@ -1648,6 +1567,7 @@ function renderResult(result) {
         result.description
     );
 
+
     const resultImage =
         document.querySelector(
             ".result-hero-image img"
@@ -1655,13 +1575,19 @@ function renderResult(result) {
 
     if (resultImage) {
 
-        resultImage.src = result.image;
-        resultImage.alt = result.title;
+        resultImage.src =
+            result.image;
+
+        resultImage.alt =
+            result.title;
 
     }
 
+
     const tagContainer =
-        document.querySelector(".result-tags");
+        document.querySelector(
+            ".result-tags"
+        );
 
     if (tagContainer) {
 
@@ -1672,14 +1598,18 @@ function renderResult(result) {
             const span =
                 document.createElement("span");
 
-            span.className = "result-tag";
-            span.textContent = tag;
+            span.className =
+                "result-tag";
+
+            span.textContent =
+                tag;
 
             tagContainer.appendChild(span);
 
         });
 
     }
+
 
     const styleContainer =
         document.querySelector(
@@ -1700,13 +1630,16 @@ function renderResult(result) {
 
             card.innerHTML = `
                 <div class="recommend-style-image">
+
                     <img
                         src="${style.image}"
                         alt="${style.name}"
                     >
+
                 </div>
 
                 <div class="recommend-style-text">
+
                     <strong>
                         ${style.name}
                     </strong>
@@ -1714,6 +1647,7 @@ function renderResult(result) {
                     <span>
                         ${style.description}
                     </span>
+
                 </div>
             `;
 
@@ -1722,6 +1656,7 @@ function renderResult(result) {
         });
 
     }
+
 
     const paletteContainer =
         document.querySelector(
@@ -1757,59 +1692,94 @@ function renderResult(result) {
 
     }
 
+
     renderScore();
 
     initLucide();
 
 }
 
-/* ---------------------------------------------------------
-점수 렌더링
---------------------------------------------------------- */
+
+/* =========================================================
+   점수 렌더링
+   ========================================================= */
 
 function renderScore() {
 
     const scoreContainer =
-        document.querySelector(".score-list");
+        document.querySelector(
+            ".score-list"
+        );
 
     if (!scoreContainer) {
         return;
     }
 
-    const scores =
-        JSON.parse(
-            localStorage.getItem("moodlyScores") || "{}"
-        );
+
+    let scores = {};
+
+    try {
+
+        scores =
+            JSON.parse(
+                localStorage.getItem(
+                    "moodlyScores"
+                ) || "{}"
+            );
+
+    } catch (error) {
+
+        scores = {};
+
+    }
+
 
     const names = {
 
         cozy: "코지",
         minimal: "미니멀",
         natural: "내추럴",
-        modern: "모던"
+        modern: "모던",
+        creative: "크리에이티브",
+        social: "소셜",
+        smart: "스마트",
+        emotional: "감성"
 
     };
 
+
     scoreContainer.innerHTML = "";
+
 
     Object.keys(names).forEach(type => {
 
         const score =
             scores[type] || 0;
 
+
         const item =
             document.createElement("div");
 
-        item.className = "score-item";
+        item.className =
+            "score-item";
+
+
+        /*
+            0 ~ 1 사이의 비율을
+            5개의 점으로 표현
+        */
+
+        const dotCount =
+            Math.round(score * 5);
+
 
         let dots = "";
+
 
         for (let i = 0; i < 5; i++) {
 
             const active =
-                i < Math.round(
-                    score / questions.length * 20
-                );
+                i < dotCount;
 
             dots += `
                 <span
@@ -1821,6 +1791,7 @@ function renderScore() {
 
         }
 
+
         item.innerHTML = `
             <span class="score-name">
                 ${names[type]}
@@ -1831,15 +1802,17 @@ function renderScore() {
             </div>
         `;
 
+
         scoreContainer.appendChild(item);
 
     });
 
 }
 
-/* ---------------------------------------------------------
-결과 버튼
---------------------------------------------------------- */
+
+/* =========================================================
+   결과 버튼
+   ========================================================= */
 
 function initResultButtons() {
 
@@ -1848,54 +1821,63 @@ function initResultButtons() {
             ".restart-button, .retry-button"
         );
 
+
     restartButtons.forEach(button => {
 
-        button.addEventListener("click", () => {
+        button.addEventListener(
+            "click",
+            () => {
 
-            clearTestData();
+                clearTestData();
 
-            window.location.href =
-                "test.html";
+                window.location.href =
+                    "test.html";
 
-        });
+            }
+        );
 
     });
+
 
     const shoppingButtons =
         document.querySelectorAll(
             ".result-shopping-button"
         );
 
+
     shoppingButtons.forEach(button => {
 
-        button.addEventListener("click", () => {
+        button.addEventListener(
+            "click",
+            () => {
 
-            window.location.href =
-                "shopping.html";
+                window.location.href =
+                    "shopping.html";
 
-        });
+            }
+        );
 
     });
 
 }
 
+
 /* =========================================================
-12. SHOPPING PAGE
-========================================================= */
+   12. SHOPPING PAGE
+   ========================================================= */
 
 function initShoppingPage() {
 
     initCategoryFilter();
-
     initProductSearch();
-
     initFavoriteButtons();
 
 }
 
-/* ---------------------------------------------------------
-카테고리 필터
---------------------------------------------------------- */
+
+/* =========================================================
+   카테고리 필터
+   ========================================================= */
 
 function initCategoryFilter() {
 
@@ -1909,54 +1891,70 @@ function initCategoryFilter() {
             ".shopping-product-card"
         );
 
+
     if (!buttons.length) {
         return;
     }
 
+
     buttons.forEach(button => {
 
-        button.addEventListener("click", () => {
+        button.addEventListener(
+            "click",
+            () => {
 
-            buttons.forEach(item => {
+                buttons.forEach(item => {
 
-                item.classList.remove("active");
+                    item.classList.remove(
+                        "active"
+                    );
 
-            });
+                });
 
-            button.classList.add("active");
 
-            const category =
-                button.dataset.category;
+                button.classList.add(
+                    "active"
+                );
 
-            products.forEach(product => {
 
-                const productCategory =
-                    product.dataset.category;
+                const category =
+                    button.dataset.category;
 
-                if (
-                    category === "all" ||
-                    category === productCategory
-                ) {
 
-                    product.style.display = "";
+                products.forEach(product => {
 
-                } else {
+                    const productCategory =
+                        product.dataset.category;
 
-                    product.style.display = "none";
 
-                }
+                    if (
+                        category === "all" ||
+                        category === productCategory
+                    ) {
 
-            });
+                        product.style.display =
+                            "";
 
-        });
+                    } else {
+
+                        product.style.display =
+                            "none";
+
+                    }
+
+                });
+
+            }
+        );
 
     });
 
 }
 
-/* ---------------------------------------------------------
-상품 검색
---------------------------------------------------------- */
+
+/* =========================================================
+   상품 검색
+   ========================================================= */
 
 function initProductSearch() {
 
@@ -1965,9 +1963,11 @@ function initProductSearch() {
             ".shopping-search-input"
         );
 
+
     if (!searchInput) {
         return;
     }
+
 
     searchInput.addEventListener(
         "input",
@@ -1978,31 +1978,37 @@ function initProductSearch() {
                     .trim()
                     .toLowerCase();
 
+
             const products =
                 document.querySelectorAll(
                     ".shopping-product-card"
                 );
+
 
             products.forEach(product => {
 
                 const title =
                     product.querySelector("h3");
 
+
                 const text =
                     title
                         ? title.textContent.toLowerCase()
                         : "";
+
 
                 if (
                     !keyword ||
                     text.includes(keyword)
                 ) {
 
-                    product.style.display = "";
+                    product.style.display =
+                        "";
 
                 } else {
 
-                    product.style.display = "none";
+                    product.style.display =
+                        "none";
 
                 }
 
@@ -2013,9 +2019,10 @@ function initProductSearch() {
 
 }
 
-/* ---------------------------------------------------------
-찜 버튼
---------------------------------------------------------- */
+
+/* =========================================================
+   찜 버튼
+   ========================================================= */
 
 function initFavoriteButtons() {
 
@@ -2024,8 +2031,10 @@ function initFavoriteButtons() {
             ".favorite-button, .wishlist-heart"
         );
 
+
     const favorites =
         getFavorites();
+
 
     buttons.forEach(button => {
 
@@ -2034,17 +2043,22 @@ function initFavoriteButtons() {
                 ".shopping-product-card, .wishlist-card"
             );
 
+
         const productName =
             getProductName(productCard);
+
 
         if (
             productName &&
             favorites.includes(productName)
         ) {
 
-            button.classList.add("active");
+            button.classList.add(
+                "active"
+            );
 
         }
+
 
         button.addEventListener(
             "click",
@@ -2053,9 +2067,11 @@ function initFavoriteButtons() {
                 event.preventDefault();
                 event.stopPropagation();
 
+
                 if (!productName) {
                     return;
                 }
+
 
                 toggleFavorite(
                     productName,
@@ -2067,13 +2083,15 @@ function initFavoriteButtons() {
 
     });
 
+
     initLucide();
 
 }
 
-/* ---------------------------------------------------------
-상품명
---------------------------------------------------------- */
+
+/* =========================================================
+   상품명
+   ========================================================= */
 
 function getProductName(card) {
 
@@ -2081,8 +2099,10 @@ function getProductName(card) {
         return null;
     }
 
+
     const title =
         card.querySelector("h3");
+
 
     return title
         ? title.textContent.trim()
@@ -2090,9 +2110,10 @@ function getProductName(card) {
 
 }
 
-/* ---------------------------------------------------------
-찜 목록 가져오기
---------------------------------------------------------- */
+
+/* =========================================================
+   찜 목록 가져오기
+   ========================================================= */
 
 function getFavorites() {
 
@@ -2112,9 +2133,10 @@ function getFavorites() {
 
 }
 
-/* ---------------------------------------------------------
-찜 토글
---------------------------------------------------------- */
+
+/* =========================================================
+   찜 토글
+   ========================================================= */
 
 function toggleFavorite(
     productName,
@@ -2124,35 +2146,56 @@ function toggleFavorite(
     let favorites =
         getFavorites();
 
+
     const index =
         favorites.indexOf(productName);
 
+
     if (index === -1) {
 
-        favorites.push(productName);
+        favorites.push(
+            productName
+        );
 
-        button.classList.add("active");
+        button.classList.add(
+            "active"
+        );
 
     } else {
 
-        favorites.splice(index, 1);
+        favorites.splice(
+            index,
+            1
+        );
 
-        button.classList.remove("active");
+        button.classList.remove(
+            "active"
+        );
 
     }
+
 
     localStorage.setItem(
         "moodlyFavorites",
         JSON.stringify(favorites)
     );
 
+
+    /*
+        마이페이지에서 찜 개수도
+        즉시 갱신
+    */
+
+    renderFavoriteCount();
+
     initLucide();
 
 }
 
+
 /* =========================================================
-13. MY PAGE
-========================================================= */
+   13. MY PAGE
+   ========================================================= */
 
 function initMyPage() {
 
@@ -2164,9 +2207,10 @@ function initMyPage() {
 
 }
 
-/* ---------------------------------------------------------
-나의 결과
---------------------------------------------------------- */
+
+/* =========================================================
+   나의 결과
+   ========================================================= */
 
 function renderMyResult() {
 
@@ -2175,56 +2219,76 @@ function renderMyResult() {
             "moodlyResult"
         );
 
+
     if (!resultType) {
         return;
     }
 
+
     const result =
         resultData[resultType];
+
 
     if (!result) {
         return;
     }
+
 
     setText(
         ".my-style-content h3",
         result.title
     );
 
+
     setText(
         ".my-style-content p",
         result.description
     );
+
 
     const image =
         document.querySelector(
             ".my-style-image img"
         );
 
+
     if (image) {
 
-        image.src = result.image;
-        image.alt = result.title;
+        image.src =
+            result.image;
+
+        image.alt =
+            result.title;
 
     }
+
 
     const keywords =
         document.querySelector(
             ".style-keywords"
         );
 
+
     if (keywords) {
 
         keywords.innerHTML = "";
 
+
         result.tags.forEach(tag => {
 
             const span =
-                document.createElement("span");
+                document.createElement(
+                    "span"
+                );
 
-            span.textContent = tag;
 
-            keywords.appendChild(span);
+            span.textContent =
+                tag;
+
+
+            keywords.appendChild(
+                span
+            );
 
         });
 
@@ -2232,31 +2296,36 @@ function renderMyResult() {
 
 }
 
-/* ---------------------------------------------------------
-찜 개수
---------------------------------------------------------- */
+
+/* =========================================================
+   찜 개수
+   ========================================================= */
 
 function renderFavoriteCount() {
 
     const count =
         getFavorites().length;
 
+
     const countElements =
         document.querySelectorAll(
             ".favorite-count"
         );
 
+
     countElements.forEach(element => {
 
-        element.textContent = count;
+        element.textContent =
+            count;
 
     });
 
 }
 
-/* ---------------------------------------------------------
-마이페이지 버튼
---------------------------------------------------------- */
+
+/* =========================================================
+   마이페이지 버튼
+   ========================================================= */
 
 function initMyPageButtons() {
 
@@ -2264,6 +2333,7 @@ function initMyPageButtons() {
         document.querySelectorAll(
             ".my-result-button"
         );
+
 
     resultButtons.forEach(button => {
 
@@ -2294,9 +2364,10 @@ function initMyPageButtons() {
 
 }
 
+
 /* =========================================================
-14. HOME PAGE
-========================================================= */
+   14. HOME PAGE
+   ========================================================= */
 
 function initHomePage() {
 
@@ -2305,10 +2376,12 @@ function initHomePage() {
             "moodlyResult"
         );
 
+
     if (resultType) {
 
         const result =
             resultData[resultType];
+
 
         if (result) {
 
@@ -2323,9 +2396,10 @@ function initHomePage() {
 
 }
 
+
 /* =========================================================
-15. COMMON TEXT HELPER
-========================================================= */
+   15. COMMON TEXT HELPER
+   ========================================================= */
 
 function setText(
     selector,
@@ -2333,19 +2407,24 @@ function setText(
 ) {
 
     const element =
-        document.querySelector(selector);
+        document.querySelector(
+            selector
+        );
+
 
     if (element) {
 
-        element.textContent = text;
+        element.textContent =
+            text;
 
     }
 
 }
 
+
 /* =========================================================
-16. CLEAR TEST DATA
-========================================================= */
+   16. CLEAR TEST DATA
+   ========================================================= */
 
 function clearTestData() {
 
@@ -2353,15 +2432,32 @@ function clearTestData() {
         "moodlyAnswers"
     );
 
+
     localStorage.removeItem(
         "moodlyCurrentQuestion"
     );
 
+
+    localStorage.removeItem(
+        "moodlyResult"
+    );
+
+
+    localStorage.removeItem(
+        "moodlyScores"
+    );
+
+
+    localStorage.removeItem(
+        "moodlyRawScores"
+    );
+
 }
 
+
 /* =========================================================
-17. PAGE LINK HANDLER
-========================================================= */
+   17. PAGE LINK HANDLER
+   ========================================================= */
 
 document.addEventListener(
     "click",
@@ -2372,18 +2468,23 @@ document.addEventListener(
                 "[data-page]"
             );
 
+
         if (!target) {
             return;
         }
 
+
         const page =
             target.dataset.page;
+
 
         if (!page) {
             return;
         }
 
+
         event.preventDefault();
+
 
         window.location.href =
             page;
@@ -2391,9 +2492,10 @@ document.addEventListener(
     }
 );
 
+
 /* =========================================================
-18. IMAGE ERROR HANDLING
-========================================================= */
+   18. IMAGE ERROR HANDLING
+   ========================================================= */
 
 document.addEventListener(
     "error",
@@ -2402,12 +2504,15 @@ document.addEventListener(
         const target =
             event.target;
 
+
         if (
             target.tagName &&
             target.tagName.toLowerCase() === "img"
         ) {
 
-            target.style.display = "none";
+            target.style.display =
+                "none";
+
 
             if (
                 target.parentElement
@@ -2425,9 +2530,10 @@ document.addEventListener(
     true
 );
 
+
 /* =========================================================
-19. PREVENT FORM SUBMIT
-========================================================= */
+   19. PREVENT FORM SUBMIT
+   ========================================================= */
 
 document.addEventListener(
     "submit",
@@ -2437,3 +2543,290 @@ document.addEventListener(
 
     }
 );
+/* =========================================================
+   🛒 MOODLY SHOP
+   카테고리 필터 + 더보기 기능
+   ========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* =====================================================
+       필요한 요소 가져오기
+    ===================================================== */
+
+    const categoryButtons =
+        document.querySelectorAll(".category-button");
+
+    const productGrid =
+        document.getElementById("allProductGrid");
+
+    const moreButton =
+        document.getElementById("productMoreButton");
+
+
+    /* =====================================================
+       쇼핑 페이지가 아닌 경우 종료
+       
+       다른 페이지에서 main.js를 같이 사용해도
+       오류가 발생하지 않도록 하는 부분
+    ===================================================== */
+
+    if (!productGrid || !moreButton) {
+        return;
+    }
+
+
+    /* =====================================================
+       전체 상품 가져오기
+       
+       ⭐ 여기 안에는 product-01 ~ product-50
+          총 50개가 들어있음
+    ===================================================== */
+
+    const products =
+        productGrid.querySelectorAll(".shopping-product-card");
+
+
+    /* =====================================================
+       설정
+       
+       처음에는 카테고리별로 6개만 보여줌.
+       
+       "상품 더보기"를 누르면
+       해당 카테고리의 전체 상품을 보여줌.
+    ===================================================== */
+
+    const INITIAL_COUNT = 6;
+
+
+    /* 현재 선택된 카테고리 */
+
+    let currentCategory = "all";
+
+
+    /* 전체 상품을 보고 있는지 */
+
+    let showAll = false;
+
+
+    /* =====================================================
+       상품 화면 업데이트
+    ===================================================== */
+
+    function updateProducts() {
+
+        /*
+         * 현재 카테고리에 맞는 상품만 찾기
+         */
+
+        const filteredProducts = [];
+
+
+        products.forEach(function (product) {
+
+            const category =
+                product.dataset.category;
+
+
+            /*
+             * 전체를 누르면 모든 상품
+             *
+             * 가구를 누르면 furniture
+             * 조명을 누르면 lighting
+             * 패브릭을 누르면 fabric
+             * 소품을 누르면 prop
+             * 식물을 누르면 plant
+             */
+
+            if (
+                currentCategory === "all" ||
+                category === currentCategory
+            ) {
+
+                filteredProducts.push(product);
+
+            }
+
+
+            /*
+             * 일단 모든 상품 숨기기
+             */
+
+            product.style.display = "none";
+
+        });
+
+
+        /* =================================================
+           상품 보여주기
+        ================================================= */
+
+        filteredProducts.forEach(function (product, index) {
+
+            /*
+             * 더보기를 누른 상태라면 전부 보여줌.
+             *
+             * 아직 더보기를 누르지 않았다면
+             * 처음 6개만 보여줌.
+             */
+
+            if (
+                showAll ||
+                index < INITIAL_COUNT
+            ) {
+
+                product.style.display = "";
+
+            }
+
+        });
+
+
+        /* =================================================
+           더보기 버튼 상태 변경
+        ================================================= */
+
+        /*
+         * 상품이 6개 이하라면
+         * 더보기 버튼이 필요 없음
+         */
+
+        if (
+            filteredProducts.length <= INITIAL_COUNT
+        ) {
+
+            moreButton.style.display = "none";
+
+            return;
+        }
+
+
+        /*
+         * 상품이 6개보다 많으면
+         * 더보기 버튼 표시
+         */
+
+        moreButton.style.display = "flex";
+
+
+        /* =================================================
+           버튼 글자 변경
+        ================================================= */
+
+        if (showAll) {
+
+            moreButton.innerHTML = `
+                접기
+                <i data-lucide="chevron-up"></i>
+            `;
+
+        } else {
+
+            moreButton.innerHTML = `
+                상품 더보기
+                <i data-lucide="chevron-down"></i>
+            `;
+
+        }
+
+
+        /*
+         * 버튼의 Lucide 아이콘 다시 생성
+         */
+
+        if (typeof lucide !== "undefined") {
+            lucide.createIcons();
+        }
+
+    }
+
+
+    /* =====================================================
+       ⭐ 카테고리 버튼 클릭
+    ===================================================== */
+
+    categoryButtons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+
+            /* ---------------------------------------------
+               모든 버튼에서 active 제거
+            --------------------------------------------- */
+
+            categoryButtons.forEach(function (btn) {
+
+                btn.classList.remove("active");
+
+            });
+
+
+            /* ---------------------------------------------
+               지금 누른 버튼에 active 추가
+            --------------------------------------------- */
+
+            this.classList.add("active");
+
+
+            /* ---------------------------------------------
+               현재 카테고리 저장
+            --------------------------------------------- */
+
+            currentCategory =
+                this.dataset.category;
+
+
+            /*
+             * 카테고리를 바꾸면
+             * 다시 처음 6개만 보여줌.
+             */
+
+            showAll = false;
+
+
+            /*
+             * 상품 다시 그리기
+             */
+
+            updateProducts();
+
+        });
+
+    });
+
+
+    /* =====================================================
+       ⭐ 더보기 버튼 클릭
+    ===================================================== */
+
+    moreButton.addEventListener("click", function () {
+
+
+        /*
+         * 현재 상태 반대로 변경
+         *
+         * false → true : 전체 상품
+         * true → false : 다시 6개
+         */
+
+        showAll = !showAll;
+
+
+        /*
+         * 상품 다시 표시
+         */
+
+        updateProducts();
+
+    });
+
+
+    /* =====================================================
+       ⭐ 처음 페이지에 들어왔을 때
+       
+       전체 상품 6개만 보여줌
+    ===================================================== */
+
+    updateProducts();
+
+});
