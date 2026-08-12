@@ -1,12 +1,11 @@
 /* =========================================================
-   MOODLY
-   Main JavaScript
-   Vanilla JavaScript
+MOODLY
+Main JavaScript
+Vanilla JavaScript
 ========================================================= */
 
-
 /* =========================================================
-   01. DOM READY
+01. DOM READY
 ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -16,9 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-
 /* =========================================================
-   02. LUCIDE ICON
+02. LUCIDE ICON
 ========================================================= */
 
 function initLucide() {
@@ -29,9 +27,8 @@ function initLucide() {
 
 }
 
-
 /* =========================================================
-   03. PAGE INITIALIZATION
+03. PAGE INITIALIZATION
 ========================================================= */
 
 function initPage() {
@@ -68,9 +65,8 @@ function initPage() {
 
 }
 
-
 /* =========================================================
-   04. CURRENT PAGE
+04. CURRENT PAGE
 ========================================================= */
 
 function getCurrentPage() {
@@ -86,17 +82,13 @@ function getCurrentPage() {
 
 }
 
-
 /* =========================================================
-   05. TEST DATA
+05. TEST DATA
 ========================================================= */
-
-/*
-    공간 스타일 진단 질문
-
-    A / B / C / D 선택에 따라
-    각각의 공간 성향 점수를 계산한다.
-*/
+/* =========================================================
+05. TEST DATA
+8가지 공간 스타일 진단
+========================================================= */
 
 const questions = [
 
@@ -104,20 +96,20 @@ const questions = [
         question: "주말에 집에서 가장 많이 하는 활동은?",
         answers: [
             {
-                text: "푹 쉬며 휴식을 취한다.",
+                text: "푹 쉬며 편안하게 휴식을 취한다.",
                 type: "cozy"
             },
             {
-                text: "취미나 자기계발을 한다.",
+                text: "방을 정리하거나 계획을 세운다.",
                 type: "minimal"
             },
             {
-                text: "친구나 가족과 시간을 보낸다.",
+                text: "식물을 돌보거나 요리를 한다.",
                 type: "natural"
             },
             {
-                text: "외출 준비만 하고 집에는 거의 없다.",
-                type: "modern"
+                text: "새로운 취미나 작업을 한다.",
+                type: "creative"
             }
         ]
     },
@@ -130,16 +122,16 @@ const questions = [
                 type: "cozy"
             },
             {
-                text: "나의 취향을 표현하는 공간",
-                type: "modern"
+                text: "깔끔하고 효율적으로 생활하는 공간",
+                type: "minimal"
             },
             {
-                text: "사람들과 함께하는 공간",
+                text: "자연과 가까워질 수 있는 공간",
                 type: "natural"
             },
             {
-                text: "깔끔하게 정리된 생활 공간",
-                type: "minimal"
+                text: "나의 개성을 표현하는 공간",
+                type: "creative"
             }
         ]
     },
@@ -160,8 +152,8 @@ const questions = [
                 type: "natural"
             },
             {
-                text: "세련되고 감각적인 디자인",
-                type: "modern"
+                text: "독특하고 개성 있는 디자인",
+                type: "creative"
             }
         ]
     },
@@ -174,16 +166,16 @@ const questions = [
                 type: "cozy"
             },
             {
-                text: "디자인과 형태",
-                type: "modern"
+                text: "공간을 효율적으로 사용할 수 있는지",
+                type: "smart"
             },
             {
                 text: "소재와 질감",
                 type: "natural"
             },
             {
-                text: "공간을 많이 차지하지 않는지",
-                type: "minimal"
+                text: "디자인과 형태",
+                type: "modern"
             }
         ]
     },
@@ -215,10 +207,10 @@ const questions = [
         answers: [
             {
                 text: "아기자기해서 좋다.",
-                type: "cozy"
+                type: "emotional"
             },
             {
-                text: "조금 복잡해 보인다.",
+                text: "조금 복잡해 보여서 줄이고 싶다.",
                 type: "minimal"
             },
             {
@@ -226,8 +218,8 @@ const questions = [
                 type: "natural"
             },
             {
-                text: "포인트가 된다면 좋다.",
-                type: "modern"
+                text: "독특한 소품이라면 오히려 좋다.",
+                type: "creative"
             }
         ]
     },
@@ -241,7 +233,7 @@ const questions = [
             },
             {
                 text: "밝고 깔끔한 조명",
-                type: "minimal"
+                type: "smart"
             },
             {
                 text: "자연광과 비슷한 조명",
@@ -258,20 +250,20 @@ const questions = [
         question: "집에서 가장 좋아하는 공간은?",
         answers: [
             {
-                text: "침실",
+                text: "침실이나 편안한 휴식 공간",
                 type: "cozy"
             },
             {
-                text: "작업 공간",
-                type: "minimal"
+                text: "깔끔한 작업 공간",
+                type: "smart"
             },
             {
-                text: "거실",
+                text: "햇빛이 들어오는 거실이나 베란다",
                 type: "natural"
             },
             {
-                text: "나만의 취미 공간",
-                type: "modern"
+                text: "친구들과 함께 모일 수 있는 거실",
+                type: "social"
             }
         ]
     },
@@ -292,8 +284,8 @@ const questions = [
                 type: "natural"
             },
             {
-                text: "심플한 플라스틱이나 가죽",
-                type: "minimal"
+                text: "독특한 질감이나 아트 소재",
+                type: "creative"
             }
         ]
     },
@@ -302,7 +294,7 @@ const questions = [
         question: "집이 어수선해졌을 때 나는?",
         answers: [
             {
-                text: "일단 쉬고 나중에 정리한다.",
+                text: "일단 쉬고 나중에 천천히 정리한다.",
                 type: "cozy"
             },
             {
@@ -314,8 +306,8 @@ const questions = [
                 type: "natural"
             },
             {
-                text: "눈에 보이는 것부터 빠르게 치운다.",
-                type: "modern"
+                text: "효율적인 방법을 찾아 빠르게 정리한다.",
+                type: "smart"
             }
         ]
     },
@@ -324,7 +316,7 @@ const questions = [
         question: "인테리어 사진을 볼 때 가장 눈에 들어오는 것은?",
         answers: [
             {
-                text: "편안한 분위기",
+                text: "편안하고 따뜻한 분위기",
                 type: "cozy"
             },
             {
@@ -346,7 +338,7 @@ const questions = [
         question: "나의 소비 스타일과 가장 가까운 것은?",
         answers: [
             {
-                text: "오래 사용할 수 있는 편안한 제품",
+                text: "오래 사용할 수 있는 편안한 제품을 산다.",
                 type: "cozy"
             },
             {
@@ -359,7 +351,7 @@ const questions = [
             },
             {
                 text: "새롭고 독특한 제품을 좋아한다.",
-                type: "modern"
+                type: "creative"
             }
         ]
     },
@@ -377,10 +369,10 @@ const questions = [
             },
             {
                 text: "함께 이야기하며 시간을 보낸다.",
-                type: "natural"
+                type: "social"
             },
             {
-                text: "예쁜 공간을 보여준다.",
+                text: "예쁘게 꾸민 공간을 보여준다.",
                 type: "modern"
             }
         ]
@@ -402,8 +394,8 @@ const questions = [
                 type: "natural"
             },
             {
-                text: "디자인 체어",
-                type: "modern"
+                text: "기능이 다양한 스마트 가구",
+                type: "smart"
             }
         ]
     },
@@ -424,8 +416,8 @@ const questions = [
                 type: "natural"
             },
             {
-                text: "감각적으로 꾸민 나만의 공간",
-                type: "modern"
+                text: "감성적으로 꾸민 나만의 공간",
+                type: "emotional"
             }
         ]
     },
@@ -446,8 +438,8 @@ const questions = [
                 type: "natural"
             },
             {
-                text: "독특한 조명이나 가구",
-                type: "modern"
+                text: "독특한 조명이나 예술 작품",
+                type: "creative"
             }
         ]
     },
@@ -461,15 +453,15 @@ const questions = [
             },
             {
                 text: "효율적인 수납",
-                type: "minimal"
+                type: "smart"
             },
             {
                 text: "자연을 느낄 수 있는 요소",
                 type: "natural"
             },
             {
-                text: "나만의 개성을 표현할 요소",
-                type: "modern"
+                text: "사람들과 함께할 수 있는 공간",
+                type: "social"
             }
         ]
     },
@@ -490,8 +482,8 @@ const questions = [
                 type: "natural"
             },
             {
-                text: "세련되고 분위기 있게",
-                type: "modern"
+                text: "분위기 있고 감성적으로",
+                type: "emotional"
             }
         ]
     },
@@ -513,7 +505,7 @@ const questions = [
             },
             {
                 text: "개성이 없는 공간",
-                type: "modern"
+                type: "creative"
             }
         ]
     },
@@ -544,7 +536,7 @@ const questions = [
         question: "집에 식물을 둔다면?",
         answers: [
             {
-                text: "작은 화분 몇 개",
+                text: "작은 화분 몇 개를 둔다.",
                 type: "cozy"
             },
             {
@@ -556,8 +548,8 @@ const questions = [
                 type: "natural"
             },
             {
-                text: "독특한 화분을 고른다.",
-                type: "modern"
+                text: "독특한 화분이나 화병을 고른다.",
+                type: "creative"
             }
         ]
     },
@@ -571,15 +563,15 @@ const questions = [
             },
             {
                 text: "방을 정리하고 계획 세우기",
-                type: "minimal"
+                type: "smart"
             },
             {
                 text: "집에서 요리하고 사람들과 보내기",
-                type: "natural"
+                type: "social"
             },
             {
                 text: "취미와 나만의 시간을 즐기기",
-                type: "modern"
+                type: "emotional"
             }
         ]
     },
@@ -610,7 +602,7 @@ const questions = [
         question: "마지막으로 가장 끌리는 공간은?",
         answers: [
             {
-                text: "따뜻한 베이지톤의 공간",
+                text: "따뜻한 베이지톤의 포근한 공간",
                 type: "cozy"
             },
             {
@@ -622,42 +614,54 @@ const questions = [
                 type: "natural"
             },
             {
-                text: "모던하고 세련된 공간",
-                type: "modern"
+                text: "개성 있는 소품과 작품이 있는 공간",
+                type: "creative"
             }
         ]
     }
 
 ];
-
-
 /* =========================================================
-   06. RESULT DATA
+06. RESULT DATA
 ========================================================= */
 
 const resultData = {
 
+    /* =====================================================
+       01. 코지 힐링
+    ===================================================== */
+
     cozy: {
 
-        title: "코지 힐링",
+        title: "코지 힐링형",
         subtitle: "따뜻하고 편안한 공간을 좋아하는 당신",
 
         description:
             "포근하고 편안한 분위기 속에서 안정감을 느끼는 타입이에요. " +
-            "부드러운 소재와 따뜻한 색감을 활용하면 나만의 편안한 공간을 만들 수 있어요.",
+            "부드러운 패브릭과 따뜻한 조명, 베이지와 아이보리 계열의 색감을 활용하면 " +
+            "나만의 편안한 휴식 공간을 만들 수 있어요.",
 
         tags: [
-            "따뜻함",
+            "안정감",
             "편안함",
-            "포근함"
+            "따뜻함"
         ],
 
-        image: "images/style-cozy.jpg",
+        lifestyle:
+            "여유롭고 안정적인 생활",
+
+        keywords:
+            "패브릭 / 우드 / 따뜻한 조명",
+
+        image:
+            "images/style-cozy.jpg",
 
         color: [
-            "#E9DED0",
-            "#C9B29B",
-            "#8D7460"
+            "#F7F1E8",
+            "#E3CFB2",
+            "#B59B80",
+            "#8D7460",
+            "#C1BDB8"
         ],
 
         styles: [
@@ -670,20 +674,30 @@ const resultData = {
                 name: "내추럴 리빙",
                 description: "자연스럽고 편안한 공간",
                 image: "images/style-natural.jpg"
+            },
+            {
+                name: "감성 아틀리에",
+                description: "감성적인 분위기의 공간",
+                image: "images/style-emotional.jpg"
             }
         ]
 
     },
 
 
+    /* =====================================================
+       02. 미니멀 라이프
+    ===================================================== */
+
     minimal: {
 
-        title: "미니멀 라이프",
+        title: "미니멀 라이프형",
         subtitle: "깔끔하고 정돈된 공간을 좋아하는 당신",
 
         description:
             "불필요한 것을 줄이고 필요한 것에 집중하는 타입이에요. " +
-            "화이트와 뉴트럴 컬러, 간결한 가구를 활용하면 더욱 편안한 공간을 만들 수 있어요.",
+            "화이트와 그레이 같은 뉴트럴 컬러와 간결한 가구를 활용하면 " +
+            "더욱 편안하고 효율적인 공간을 만들 수 있어요.",
 
         tags: [
             "깔끔함",
@@ -691,12 +705,21 @@ const resultData = {
             "심플함"
         ],
 
-        image: "images/style-minimal.jpg",
+        lifestyle:
+            "효율적이고 정돈된 생활",
+
+        keywords:
+            "화이트 / 수납 / 심플한 가구",
+
+        image:
+            "images/style-minimal.jpg",
 
         color: [
-            "#F4F2ED",
-            "#D7D3CB",
-            "#77736C"
+            "#F7F7F5",
+            "#E8E6E1",
+            "#D1CEC7",
+            "#9D9A93",
+            "#55534F"
         ],
 
         styles: [
@@ -704,6 +727,11 @@ const resultData = {
                 name: "미니멀 라이프",
                 description: "깔끔하고 정돈된 공간",
                 image: "images/style-minimal.jpg"
+            },
+            {
+                name: "스마트 라이프",
+                description: "효율적이고 기능적인 공간",
+                image: "images/style-smart.jpg"
             },
             {
                 name: "모던 무드",
@@ -715,14 +743,18 @@ const resultData = {
     },
 
 
+    /* =====================================================
+       03. 내추럴 리빙
+    ===================================================== */
+
     natural: {
 
-        title: "내추럴 리빙",
+        title: "내추럴 리빙형",
         subtitle: "자연스럽고 편안한 공간을 좋아하는 당신",
 
         description:
             "자연과 가까운 분위기를 좋아하고 편안한 공간에서 에너지를 얻는 타입이에요. " +
-            "우드, 라탄, 식물 등의 소재를 활용하면 취향을 잘 표현할 수 있어요.",
+            "우드와 라탄, 식물 등의 자연 소재를 활용하면 취향을 더욱 잘 표현할 수 있어요.",
 
         tags: [
             "자연",
@@ -730,12 +762,21 @@ const resultData = {
             "그린"
         ],
 
-        image: "images/style-natural.jpg",
+        lifestyle:
+            "자연과 함께하는 편안한 생활",
+
+        keywords:
+            "우드 / 라탄 / 식물",
+
+        image:
+            "images/style-natural.jpg",
 
         color: [
-            "#DDD7C5",
+            "#E7E0CF",
+            "#C6B994",
             "#A99B77",
-            "#687256"
+            "#687256",
+            "#445A41"
         ],
 
         styles: [
@@ -748,20 +789,30 @@ const resultData = {
                 name: "코지 힐링",
                 description: "따뜻하고 편안한 공간",
                 image: "images/style-cozy.jpg"
+            },
+            {
+                name: "소셜 리빙",
+                description: "사람들과 함께하는 공간",
+                image: "images/style-social.jpg"
             }
         ]
 
     },
 
 
+    /* =====================================================
+       04. 모던 무드
+    ===================================================== */
+
     modern: {
 
-        title: "모던 무드",
+        title: "모던 무드형",
         subtitle: "세련되고 감각적인 공간을 좋아하는 당신",
 
         description:
             "자신만의 개성을 공간에 표현하고 싶어 하는 타입이에요. " +
-            "감각적인 조명과 디자인 가구, 포인트 컬러를 활용하면 더욱 매력적인 공간이 완성돼요.",
+            "감각적인 조명과 디자인 가구, 뉴트럴 컬러를 활용하면 " +
+            "세련된 분위기를 완성할 수 있어요.",
 
         tags: [
             "세련됨",
@@ -769,11 +820,20 @@ const resultData = {
             "개성"
         ],
 
-        image: "images/style-modern.jpg",
+        lifestyle:
+            "트렌드와 개성을 중요하게 생각하는 생활",
+
+        keywords:
+            "메탈 / 뉴트럴 / 디자인 가구",
+
+        image:
+            "images/style-modern.jpg",
 
         color: [
-            "#E4E0D9",
+            "#ECEAE6",
+            "#C8C4BD",
             "#8C8378",
+            "#5C5750",
             "#3F3A35"
         ],
 
@@ -784,9 +844,243 @@ const resultData = {
                 image: "images/style-modern.jpg"
             },
             {
+                name: "크리에이티브 스튜디오",
+                description: "개성과 아이디어가 살아있는 공간",
+                image: "images/style-creative.jpg"
+            },
+            {
                 name: "미니멀 라이프",
                 description: "깔끔하고 정돈된 공간",
                 image: "images/style-minimal.jpg"
+            }
+        ]
+
+    },
+
+
+    /* =====================================================
+       05. 크리에이티브 스튜디오
+    ===================================================== */
+
+    creative: {
+
+        title: "크리에이티브 스튜디오형",
+        subtitle: "개성과 아이디어를 자유롭게 표현하는 당신",
+
+        description:
+            "정해진 스타일보다 나만의 취향과 개성을 중요하게 생각하는 타입이에요. " +
+            "독특한 오브제와 컬러, 아트 포스터 등을 활용해 개성 있는 공간을 만들어보세요.",
+
+        tags: [
+            "창의성",
+            "개성",
+            "자유로움"
+        ],
+
+        lifestyle:
+            "새로운 것을 시도하고 자유롭게 표현하는 생활",
+
+        keywords:
+            "아트 / 컬러 / 오브제",
+
+        image:
+            "images/style-creative.jpg",
+
+        color: [
+            "#F1E5D7",
+            "#D6B5A5",
+            "#B78372",
+            "#756A85",
+            "#41404A"
+        ],
+
+        styles: [
+            {
+                name: "크리에이티브 스튜디오",
+                description: "개성과 아이디어가 살아있는 공간",
+                image: "images/style-creative.jpg"
+            },
+            {
+                name: "모던 무드",
+                description: "감각적이고 세련된 공간",
+                image: "images/style-modern.jpg"
+            },
+            {
+                name: "감성 아틀리에",
+                description: "취향과 감성이 담긴 공간",
+                image: "images/style-emotional.jpg"
+            }
+        ]
+
+    },
+
+
+    /* =====================================================
+       06. 소셜 리빙
+    ===================================================== */
+
+    social: {
+
+        title: "소셜 리빙형",
+        subtitle: "사람들과 함께하는 공간을 좋아하는 당신",
+
+        description:
+            "혼자만의 공간보다 가족이나 친구와 함께 시간을 보내는 것을 중요하게 생각하는 타입이에요. " +
+            "넓은 소파와 큰 테이블처럼 함께 사용할 수 있는 가구를 활용하면 좋아요.",
+
+        tags: [
+            "소통",
+            "공유",
+            "활기"
+        ],
+
+        lifestyle:
+            "사람들과 함께하며 즐거움을 나누는 생활",
+
+        keywords:
+            "소파 / 테이블 / 넓은 거실",
+
+        image:
+            "images/style-social.jpg",
+
+        color: [
+            "#F4E8D8",
+            "#E4C8A8",
+            "#C69A6B",
+            "#8C735A",
+            "#5B5047"
+        ],
+
+        styles: [
+            {
+                name: "소셜 리빙",
+                description: "사람들과 함께하는 공간",
+                image: "images/style-social.jpg"
+            },
+            {
+                name: "내추럴 리빙",
+                description: "편안하고 자연스러운 공간",
+                image: "images/style-natural.jpg"
+            },
+            {
+                name: "코지 힐링",
+                description: "편하게 쉬어갈 수 있는 공간",
+                image: "images/style-cozy.jpg"
+            }
+        ]
+
+    },
+
+
+    /* =====================================================
+       07. 스마트 라이프
+    ===================================================== */
+
+    smart: {
+
+        title: "스마트 라이프형",
+        subtitle: "편리함과 효율적인 공간을 중요하게 생각하는 당신",
+
+        description:
+            "공간의 아름다움뿐만 아니라 기능과 효율을 중요하게 생각하는 타입이에요. " +
+            "스마트 기기와 효율적인 수납, 다기능 가구를 활용하면 생활이 더욱 편리해져요.",
+
+        tags: [
+            "효율성",
+            "기능성",
+            "편리함"
+        ],
+
+        lifestyle:
+            "효율적이고 편리한 생활",
+
+        keywords:
+            "스마트기기 / 수납 / 다기능 가구",
+
+        image:
+            "images/style-smart.jpg",
+
+        color: [
+            "#F2F3F3",
+            "#D8DDDF",
+            "#A8B0B5",
+            "#68737B",
+            "#39434A"
+        ],
+
+        styles: [
+            {
+                name: "스마트 라이프",
+                description: "효율적이고 기능적인 공간",
+                image: "images/style-smart.jpg"
+            },
+            {
+                name: "미니멀 라이프",
+                description: "불필요한 것을 줄인 공간",
+                image: "images/style-minimal.jpg"
+            },
+            {
+                name: "모던 무드",
+                description: "세련되고 기능적인 공간",
+                image: "images/style-modern.jpg"
+            }
+        ]
+
+    },
+
+
+    /* =====================================================
+       08. 감성 아틀리에
+    ===================================================== */
+
+    emotional: {
+
+        title: "감성 아틀리에형",
+        subtitle: "분위기와 감성을 중요하게 생각하는 당신",
+
+        description:
+            "공간에서 느껴지는 분위기와 감정을 중요하게 생각하는 타입이에요. " +
+            "은은한 조명과 향, 패브릭, 좋아하는 소품을 활용하면 " +
+            "나만의 감성적인 공간을 만들 수 있어요.",
+
+        tags: [
+            "감성",
+            "분위기",
+            "취향"
+        ],
+
+        lifestyle:
+            "나만의 취향과 분위기를 즐기는 생활",
+
+        keywords:
+            "조명 / 향 / 패브릭",
+
+        image:
+            "images/style-emotional.jpg",
+
+        color: [
+            "#F1E5DF",
+            "#D8C0B8",
+            "#B4938D",
+            "#806A6A",
+            "#51464A"
+        ],
+
+        styles: [
+            {
+                name: "감성 아틀리에",
+                description: "취향과 감성이 담긴 공간",
+                image: "images/style-emotional.jpg"
+            },
+            {
+                name: "코지 힐링",
+                description: "따뜻하고 포근한 공간",
+                image: "images/style-cozy.jpg"
+            },
+            {
+                name: "크리에이티브 스튜디오",
+                description: "개성을 자유롭게 표현하는 공간",
+                image: "images/style-creative.jpg"
             }
         ]
 
@@ -796,7 +1090,7 @@ const resultData = {
 
 
 /* =========================================================
-   07. TEST PAGE
+07. TEST PAGE
 ========================================================= */
 
 function initTestPage() {
@@ -809,17 +1103,14 @@ function initTestPage() {
 
         button.addEventListener("click", event => {
 
-            /*
-                실제 링크가 있는 경우에는
-                기본 이동을 그대로 사용한다.
-            */
-
             if (
                 button.tagName.toLowerCase() === "a" &&
                 button.getAttribute("href") === "question.html"
             ) {
+
                 clearTestData();
                 return;
+
             }
 
             event.preventDefault();
@@ -836,16 +1127,12 @@ function initTestPage() {
 
 
 /* =========================================================
-   08. QUESTION PAGE
+08. QUESTION PAGE
 ========================================================= */
 
 let currentQuestion = 0;
 
 function initQuestionPage() {
-
-    /*
-        저장되어 있는 진행 상태가 있다면 불러온다.
-    */
 
     const savedQuestion =
         Number(localStorage.getItem("moodlyCurrentQuestion"));
@@ -855,7 +1142,9 @@ function initQuestionPage() {
         savedQuestion >= 0 &&
         savedQuestion < questions.length
     ) {
+
         currentQuestion = savedQuestion;
+
     }
 
     renderQuestion();
@@ -863,9 +1152,9 @@ function initQuestionPage() {
 }
 
 
-/* ---------------------------------------------------------
-   질문 렌더링
---------------------------------------------------------- */
+/* =========================================================
+질문 렌더링
+========================================================= */
 
 function renderQuestion() {
 
@@ -881,21 +1170,15 @@ function renderQuestion() {
     const progressValue =
         document.querySelector(".progress-value");
 
-
     if (!questionTitle || !answerList) {
         return;
     }
 
+    const question =
+        questions[currentQuestion];
 
-    const question = questions[currentQuestion];
-
-
-    /* 질문 */
-
-    questionTitle.textContent = question.question;
-
-
-    /* 번호 */
+    questionTitle.textContent =
+        question.question;
 
     if (questionCount) {
 
@@ -904,30 +1187,25 @@ function renderQuestion() {
 
     }
 
-
-    /* 진행률 */
-
     if (progressValue) {
 
         const progress =
             ((currentQuestion + 1) / questions.length) * 100;
 
-        progressValue.style.width = `${progress}%`;
+        progressValue.style.width =
+            `${progress}%`;
 
     }
 
-
-    /* 답변 */
-
     answerList.innerHTML = "";
-
 
     question.answers.forEach((answer, index) => {
 
-        const label = document.createElement("label");
+        const label =
+            document.createElement("label");
 
-        label.className = "answer-item";
-
+        label.className =
+            "answer-item";
 
         label.innerHTML = `
             <input
@@ -942,10 +1220,8 @@ function renderQuestion() {
             </span>
         `;
 
-
         const input =
             label.querySelector("input");
-
 
         input.addEventListener("change", () => {
 
@@ -958,13 +1234,10 @@ function renderQuestion() {
 
         });
 
-
         answerList.appendChild(label);
 
     });
 
-
-    /* 이전에 선택한 답변 복원 */
 
     const savedAnswers =
         getSavedAnswers();
@@ -982,25 +1255,29 @@ function renderQuestion() {
 
     }
 
-
     updateNextButton();
 
-    initQuestionNavigation();
+    updatePreviousButton();
 
-    initLucide();
+    initQuestionNavigation();
 
 }
 
 
-/* ---------------------------------------------------------
-   답변 저장
---------------------------------------------------------- */
+/* =========================================================
+답변 저장
+========================================================= */
 
-function saveAnswer(questionIndex, answerType) {
+function saveAnswer(
+    questionIndex,
+    answerType
+) {
 
-    const answers = getSavedAnswers();
+    const answers =
+        getSavedAnswers();
 
-    answers[questionIndex] = answerType;
+    answers[questionIndex] =
+        answerType;
 
     localStorage.setItem(
         "moodlyAnswers",
@@ -1010,9 +1287,9 @@ function saveAnswer(questionIndex, answerType) {
 }
 
 
-/* ---------------------------------------------------------
-   답변 불러오기
---------------------------------------------------------- */
+/* =========================================================
+답변 불러오기
+========================================================= */
 
 function getSavedAnswers() {
 
@@ -1034,9 +1311,9 @@ function getSavedAnswers() {
 }
 
 
-/* ---------------------------------------------------------
-   다음 버튼 활성화
---------------------------------------------------------- */
+/* =========================================================
+다음 버튼
+========================================================= */
 
 function updateNextButton() {
 
@@ -1049,21 +1326,41 @@ function updateNextButton() {
         return;
     }
 
-
     const selected =
         document.querySelector(
             'input[name="answer"]:checked'
         );
 
-
-    nextButton.disabled = !selected;
+    nextButton.disabled =
+        !selected;
 
 }
 
 
-/* ---------------------------------------------------------
-   질문 이동
---------------------------------------------------------- */
+/* =========================================================
+이전 버튼
+========================================================= */
+
+function updatePreviousButton() {
+
+    const previousButton =
+        document.querySelector(
+            ".prev-button, .previous-button"
+        );
+
+    if (!previousButton) {
+        return;
+    }
+
+    previousButton.disabled =
+        currentQuestion === 0;
+
+}
+
+
+/* =========================================================
+질문 이동
+========================================================= */
 
 function initQuestionNavigation() {
 
@@ -1087,11 +1384,9 @@ function initQuestionNavigation() {
                     'input[name="answer"]:checked'
                 );
 
-
             if (!selected) {
                 return;
             }
-
 
             saveAnswer(
                 currentQuestion,
@@ -1135,11 +1430,12 @@ function initQuestionNavigation() {
 
             if (currentQuestion <= 0) {
 
-                window.location.href = "test.html";
+                window.location.href =
+                    "test.html";
 
                 return;
-            }
 
+            }
 
             currentQuestion--;
 
@@ -1163,7 +1459,7 @@ function initQuestionNavigation() {
 
 
 /* =========================================================
-   09. FINISH TEST
+09. FINISH TEST
 ========================================================= */
 
 function finishTest() {
@@ -1171,29 +1467,26 @@ function finishTest() {
     const answers =
         getSavedAnswers();
 
-
     const result =
         calculateResult(answers);
-
 
     localStorage.setItem(
         "moodlyResult",
         result
     );
 
-
     localStorage.removeItem(
         "moodlyCurrentQuestion"
     );
 
-
-    window.location.href = "result.html";
+    window.location.href =
+        "result.html";
 
 }
 
 
 /* =========================================================
-   10. CALCULATE RESULT
+10. CALCULATE RESULT
 ========================================================= */
 
 function calculateResult(answers) {
@@ -1203,30 +1496,71 @@ function calculateResult(answers) {
         cozy: 0,
         minimal: 0,
         natural: 0,
-        modern: 0
+        modern: 0,
+        creative: 0,
+        social: 0,
+        smart: 0,
+        emotional: 0
 
     };
 
 
+    /*
+        기존 질문의 답변 유형을 그대로 사용하면서
+        8가지 스타일로 확장하기 위한 보정 점수
+
+        cozy      → 안정감 / 휴식
+        minimal   → 정돈 / 실용
+        natural   → 자연 / 편안함
+        modern    → 세련 / 개성
+
+        위 기본 성향을 바탕으로
+        creative / social / smart / emotional도
+        함께 점수를 계산한다.
+    */
+
     answers.forEach(answer => {
 
-        if (scores.hasOwnProperty(answer)) {
-            scores[answer]++;
+        if (!answer) {
+            return;
         }
 
-    });
+
+        if (scores.hasOwnProperty(answer)) {
+
+            scores[answer]++;
+
+        }
 
 
-    let resultType = "cozy";
-    let highestScore = -1;
+        if (answer === "cozy") {
+
+            scores.emotional++;
+            scores.natural++;
+
+        }
 
 
-    Object.keys(scores).forEach(type => {
+        if (answer === "minimal") {
 
-        if (scores[type] > highestScore) {
+            scores.smart++;
+            scores.modern++;
 
-            highestScore = scores[type];
-            resultType = type;
+        }
+
+
+        if (answer === "natural") {
+
+            scores.social++;
+            scores.cozy++;
+
+        }
+
+
+        if (answer === "modern") {
+
+            scores.creative++;
+            scores.smart++;
 
         }
 
@@ -1234,8 +1568,33 @@ function calculateResult(answers) {
 
 
     /*
-        결과 점수도 저장
+        가장 높은 점수의 유형을 결과로 선택
     */
+
+    let resultType =
+        "cozy";
+
+    let highestScore =
+        -1;
+
+
+    Object.keys(scores).forEach(type => {
+
+        if (
+            scores[type] >
+            highestScore
+        ) {
+
+            highestScore =
+                scores[type];
+
+            resultType =
+                type;
+
+        }
+
+    });
+
 
     localStorage.setItem(
         "moodlyScores",
@@ -1246,10 +1605,8 @@ function calculateResult(answers) {
     return resultType;
 
 }
-
-
 /* =========================================================
-   11. RESULT PAGE
+11. RESULT PAGE
 ========================================================= */
 
 function initResultPage() {
@@ -1257,65 +1614,44 @@ function initResultPage() {
     const resultType =
         localStorage.getItem("moodlyResult") || "cozy";
 
-
     const result =
         resultData[resultType];
-
 
     if (!result) {
         return;
     }
 
-
     renderResult(result);
-
 
     initResultButtons();
 
 }
 
-
 /* ---------------------------------------------------------
-   결과 화면 출력
+결과 화면 출력
 --------------------------------------------------------- */
 
 function renderResult(result) {
-
-    /*
-        제목
-    */
 
     setText(
         ".result-title",
         result.title
     );
 
-
-    /*
-        설명
-    */
-
     setText(
         ".result-eyebrow",
         result.subtitle
     );
-
 
     setText(
         ".result-description",
         result.description
     );
 
-
-    /*
-        이미지
-    */
-
     const resultImage =
         document.querySelector(
             ".result-hero-image img"
         );
-
 
     if (resultImage) {
 
@@ -1324,14 +1660,8 @@ function renderResult(result) {
 
     }
 
-
-    /*
-        태그
-    */
-
     const tagContainer =
         document.querySelector(".result-tags");
-
 
     if (tagContainer) {
 
@@ -1351,16 +1681,10 @@ function renderResult(result) {
 
     }
 
-
-    /*
-        추천 스타일
-    */
-
     const styleContainer =
         document.querySelector(
             ".recommend-style-list"
         );
-
 
     if (styleContainer) {
 
@@ -1373,7 +1697,6 @@ function renderResult(result) {
 
             card.className =
                 "recommend-style-card";
-
 
             card.innerHTML = `
                 <div class="recommend-style-image">
@@ -1394,23 +1717,16 @@ function renderResult(result) {
                 </div>
             `;
 
-
             styleContainer.appendChild(card);
 
         });
 
     }
 
-
-    /*
-        컬러 팔레트
-    */
-
     const paletteContainer =
         document.querySelector(
             ".color-palette-list"
         );
-
 
     if (paletteContainer) {
 
@@ -1424,7 +1740,6 @@ function renderResult(result) {
             card.className =
                 "palette-card";
 
-
             card.innerHTML = `
                 <div
                     class="palette-color"
@@ -1436,28 +1751,20 @@ function renderResult(result) {
                 </span>
             `;
 
-
             paletteContainer.appendChild(card);
 
         });
 
     }
 
-
-    /*
-        점수
-    */
-
     renderScore();
-
 
     initLucide();
 
 }
 
-
 /* ---------------------------------------------------------
-   점수 렌더링
+점수 렌더링
 --------------------------------------------------------- */
 
 function renderScore() {
@@ -1465,17 +1772,14 @@ function renderScore() {
     const scoreContainer =
         document.querySelector(".score-list");
 
-
     if (!scoreContainer) {
         return;
     }
-
 
     const scores =
         JSON.parse(
             localStorage.getItem("moodlyScores") || "{}"
         );
-
 
     const names = {
 
@@ -1486,24 +1790,19 @@ function renderScore() {
 
     };
 
-
     scoreContainer.innerHTML = "";
-
 
     Object.keys(names).forEach(type => {
 
         const score =
             scores[type] || 0;
 
-
         const item =
             document.createElement("div");
 
         item.className = "score-item";
 
-
         let dots = "";
-
 
         for (let i = 0; i < 5; i++) {
 
@@ -1511,7 +1810,6 @@ function renderScore() {
                 i < Math.round(
                     score / questions.length * 20
                 );
-
 
             dots += `
                 <span
@@ -1523,7 +1821,6 @@ function renderScore() {
 
         }
 
-
         item.innerHTML = `
             <span class="score-name">
                 ${names[type]}
@@ -1534,16 +1831,14 @@ function renderScore() {
             </div>
         `;
 
-
         scoreContainer.appendChild(item);
 
     });
 
 }
 
-
 /* ---------------------------------------------------------
-   결과 버튼
+결과 버튼
 --------------------------------------------------------- */
 
 function initResultButtons() {
@@ -1552,7 +1847,6 @@ function initResultButtons() {
         document.querySelectorAll(
             ".restart-button, .retry-button"
         );
-
 
     restartButtons.forEach(button => {
 
@@ -1567,16 +1861,10 @@ function initResultButtons() {
 
     });
 
-
-    /*
-        쇼핑으로 이동
-    */
-
     const shoppingButtons =
         document.querySelectorAll(
             ".result-shopping-button"
         );
-
 
     shoppingButtons.forEach(button => {
 
@@ -1591,9 +1879,8 @@ function initResultButtons() {
 
 }
 
-
 /* =========================================================
-   12. SHOPPING PAGE
+12. SHOPPING PAGE
 ========================================================= */
 
 function initShoppingPage() {
@@ -1606,9 +1893,8 @@ function initShoppingPage() {
 
 }
 
-
 /* ---------------------------------------------------------
-   카테고리 필터
+카테고리 필터
 --------------------------------------------------------- */
 
 function initCategoryFilter() {
@@ -1618,17 +1904,14 @@ function initCategoryFilter() {
             ".category-button"
         );
 
-
     const products =
         document.querySelectorAll(
             ".shopping-product-card"
         );
 
-
     if (!buttons.length) {
         return;
     }
-
 
     buttons.forEach(button => {
 
@@ -1640,19 +1923,15 @@ function initCategoryFilter() {
 
             });
 
-
             button.classList.add("active");
-
 
             const category =
                 button.dataset.category;
-
 
             products.forEach(product => {
 
                 const productCategory =
                     product.dataset.category;
-
 
                 if (
                     category === "all" ||
@@ -1675,9 +1954,8 @@ function initCategoryFilter() {
 
 }
 
-
 /* ---------------------------------------------------------
-   상품 검색
+상품 검색
 --------------------------------------------------------- */
 
 function initProductSearch() {
@@ -1687,11 +1965,9 @@ function initProductSearch() {
             ".shopping-search-input"
         );
 
-
     if (!searchInput) {
         return;
     }
-
 
     searchInput.addEventListener(
         "input",
@@ -1702,24 +1978,20 @@ function initProductSearch() {
                     .trim()
                     .toLowerCase();
 
-
             const products =
                 document.querySelectorAll(
                     ".shopping-product-card"
                 );
-
 
             products.forEach(product => {
 
                 const title =
                     product.querySelector("h3");
 
-
                 const text =
                     title
                         ? title.textContent.toLowerCase()
                         : "";
-
 
                 if (
                     !keyword ||
@@ -1741,9 +2013,8 @@ function initProductSearch() {
 
 }
 
-
 /* ---------------------------------------------------------
-   찜 버튼
+찜 버튼
 --------------------------------------------------------- */
 
 function initFavoriteButtons() {
@@ -1753,10 +2024,8 @@ function initFavoriteButtons() {
             ".favorite-button, .wishlist-heart"
         );
 
-
     const favorites =
         getFavorites();
-
 
     buttons.forEach(button => {
 
@@ -1765,10 +2034,8 @@ function initFavoriteButtons() {
                 ".shopping-product-card, .wishlist-card"
             );
 
-
         const productName =
             getProductName(productCard);
-
 
         if (
             productName &&
@@ -1779,7 +2046,6 @@ function initFavoriteButtons() {
 
         }
 
-
         button.addEventListener(
             "click",
             event => {
@@ -1787,11 +2053,9 @@ function initFavoriteButtons() {
                 event.preventDefault();
                 event.stopPropagation();
 
-
                 if (!productName) {
                     return;
                 }
-
 
                 toggleFavorite(
                     productName,
@@ -1803,14 +2067,12 @@ function initFavoriteButtons() {
 
     });
 
-
     initLucide();
 
 }
 
-
 /* ---------------------------------------------------------
-   상품명
+상품명
 --------------------------------------------------------- */
 
 function getProductName(card) {
@@ -1819,10 +2081,8 @@ function getProductName(card) {
         return null;
     }
 
-
     const title =
         card.querySelector("h3");
-
 
     return title
         ? title.textContent.trim()
@@ -1830,9 +2090,8 @@ function getProductName(card) {
 
 }
 
-
 /* ---------------------------------------------------------
-   찜 목록 가져오기
+찜 목록 가져오기
 --------------------------------------------------------- */
 
 function getFavorites() {
@@ -1853,9 +2112,8 @@ function getFavorites() {
 
 }
 
-
 /* ---------------------------------------------------------
-   찜 토글
+찜 토글
 --------------------------------------------------------- */
 
 function toggleFavorite(
@@ -1866,10 +2124,8 @@ function toggleFavorite(
     let favorites =
         getFavorites();
 
-
     const index =
         favorites.indexOf(productName);
-
 
     if (index === -1) {
 
@@ -1885,24 +2141,17 @@ function toggleFavorite(
 
     }
 
-
     localStorage.setItem(
         "moodlyFavorites",
         JSON.stringify(favorites)
     );
 
-
-    /*
-        하트 아이콘 다시 생성
-    */
-
     initLucide();
 
 }
 
-
 /* =========================================================
-   13. MY PAGE
+13. MY PAGE
 ========================================================= */
 
 function initMyPage() {
@@ -1915,9 +2164,8 @@ function initMyPage() {
 
 }
 
-
 /* ---------------------------------------------------------
-   나의 결과
+나의 결과
 --------------------------------------------------------- */
 
 function renderMyResult() {
@@ -1927,42 +2175,31 @@ function renderMyResult() {
             "moodlyResult"
         );
 
-
     if (!resultType) {
         return;
     }
 
-
     const result =
         resultData[resultType];
-
 
     if (!result) {
         return;
     }
-
-
-    /*
-        마이페이지의 결과 카드
-    */
 
     setText(
         ".my-style-content h3",
         result.title
     );
 
-
     setText(
         ".my-style-content p",
         result.description
     );
 
-
     const image =
         document.querySelector(
             ".my-style-image img"
         );
-
 
     if (image) {
 
@@ -1971,21 +2208,14 @@ function renderMyResult() {
 
     }
 
-
-    /*
-        태그
-    */
-
     const keywords =
         document.querySelector(
             ".style-keywords"
         );
 
-
     if (keywords) {
 
         keywords.innerHTML = "";
-
 
         result.tags.forEach(tag => {
 
@@ -2002,9 +2232,8 @@ function renderMyResult() {
 
 }
 
-
 /* ---------------------------------------------------------
-   찜 개수
+찜 개수
 --------------------------------------------------------- */
 
 function renderFavoriteCount() {
@@ -2012,12 +2241,10 @@ function renderFavoriteCount() {
     const count =
         getFavorites().length;
 
-
     const countElements =
         document.querySelectorAll(
             ".favorite-count"
         );
-
 
     countElements.forEach(element => {
 
@@ -2027,9 +2254,8 @@ function renderFavoriteCount() {
 
 }
 
-
 /* ---------------------------------------------------------
-   마이페이지 버튼
+마이페이지 버튼
 --------------------------------------------------------- */
 
 function initMyPageButtons() {
@@ -2038,7 +2264,6 @@ function initMyPageButtons() {
         document.querySelectorAll(
             ".my-result-button"
         );
-
 
     resultButtons.forEach(button => {
 
@@ -2069,29 +2294,21 @@ function initMyPageButtons() {
 
 }
 
-
 /* =========================================================
-   14. HOME PAGE
+14. HOME PAGE
 ========================================================= */
 
 function initHomePage() {
-
-    /*
-        홈에서 최근 결과가 있다면
-        결과 관련 UI를 업데이트할 수 있다.
-    */
 
     const resultType =
         localStorage.getItem(
             "moodlyResult"
         );
 
-
     if (resultType) {
 
         const result =
             resultData[resultType];
-
 
         if (result) {
 
@@ -2106,9 +2323,8 @@ function initHomePage() {
 
 }
 
-
 /* =========================================================
-   15. COMMON TEXT HELPER
+15. COMMON TEXT HELPER
 ========================================================= */
 
 function setText(
@@ -2119,7 +2335,6 @@ function setText(
     const element =
         document.querySelector(selector);
 
-
     if (element) {
 
         element.textContent = text;
@@ -2128,9 +2343,8 @@ function setText(
 
 }
 
-
 /* =========================================================
-   16. CLEAR TEST DATA
+16. CLEAR TEST DATA
 ========================================================= */
 
 function clearTestData() {
@@ -2145,16 +2359,9 @@ function clearTestData() {
 
 }
 
-
 /* =========================================================
-   17. PAGE LINK HANDLER
+17. PAGE LINK HANDLER
 ========================================================= */
-
-/*
-    HTML에서 href를 사용하지 않고
-    data-page를 사용하고 싶은 경우를 위한
-    공통 페이지 이동 기능
-*/
 
 document.addEventListener(
     "click",
@@ -2165,23 +2372,18 @@ document.addEventListener(
                 "[data-page]"
             );
 
-
         if (!target) {
             return;
         }
 
-
         const page =
             target.dataset.page;
-
 
         if (!page) {
             return;
         }
 
-
         event.preventDefault();
-
 
         window.location.href =
             page;
@@ -2189,16 +2391,9 @@ document.addEventListener(
     }
 );
 
-
 /* =========================================================
-   18. IMAGE ERROR HANDLING
+18. IMAGE ERROR HANDLING
 ========================================================= */
-
-/*
-    이미지 파일이 없을 때
-    깨진 이미지 아이콘 대신
-    기본 배경을 유지한다.
-*/
 
 document.addEventListener(
     "error",
@@ -2206,7 +2401,6 @@ document.addEventListener(
 
         const target =
             event.target;
-
 
         if (
             target.tagName &&
@@ -2231,19 +2425,13 @@ document.addEventListener(
     true
 );
 
-
 /* =========================================================
-   19. PREVENT FORM SUBMIT
+19. PREVENT FORM SUBMIT
 ========================================================= */
 
 document.addEventListener(
     "submit",
     event => {
-
-        /*
-            실제 서버가 없는 프로젝트이므로
-            기본 submit 동작 방지
-        */
 
         event.preventDefault();
 
