@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moodly - 자주 묻는 질문</title>
+
+    <!-- Pretendard -->
+    <link
+        rel="stylesheet"
+        as="style"
+        crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    >
+
+    <!-- FAQ CSS -->
+    <link rel="stylesheet" href="css/faq.css">
+</head>
+
+<body>
+
+    <div class="faq-app">
+
+        <!-- =========================
+             Header
+        ========================== -->
+        <header class="faq-header">
+
+            <button
+                type="button"
+                class="back-button"
+                onclick="history.back()"
+                aria-label="뒤로가기"
+            >
+                <i data-lucide="chevron-left"></i>
+            </button>
+
+            <h1>
+                자주 묻는 질문
+            </h1>
+
+            <div class="header-space"></div>
+
+        </header>
+
+
+        <!-- =========================
+             Main
+        ========================== -->
+        <main class="faq-main">
+
+            <!-- 안내 -->
+            <section class="faq-intro">
+
+                <span class="faq-intro-label">
+                    MOODLY
+                </span>
+
+                <h2>
+                    무엇이 궁금하신가요?
+                </h2>
+
+                <p>
+                    Moodly를 이용하면서 궁금했던 내용을<br>
+                    여기에서 확인해보세요.
+                </p>
+
+            </section>
+
+
+            <!-- =========================
+                 검색
+            ========================== -->
+            <div class="faq-search">
+
+                <i data-lucide="search"></i>
+
+                <input
+                    type="text"
+                    id="faqSearch"
+                    placeholder="궁금한 내용을 검색해보세요"
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <!-- =========================
+                 카테고리
+            ========================== -->
+            <div class="faq-categories">
+
+                <button
+                    type="button"
+                    class="category-button active"
+                    data-category="all"
+                >
+                    전체
+                </button>
+
+                <button
+                    type="button"
+                    class="category-button"
+                    data-category="diagnosis"
+                >
+                    공간 진단
+                </button>
+
+                <button
+                    type="button"
+                    class="category-button"
+                    data-category="profile"
+                >
+                    프로필
+                </button>
+
+                <button
+                    type="button"
+                    class="category-button"
+                    data-category="recommend"
+                >
+                    추천
+                </button>
+
+                <button
+                    type="button"
+                    class="category-button"
+                    data-category="save"
+                >
+                    저장
+                </button>
+
+                <button
+                    type="button"
+                    class="category-button"
+                    data-category="shopping"
+                >
+                    쇼핑
+                </button>
+
+            </div>
+
+
+            <!-- =========================
+                 FAQ
+            ========================== -->
+            <section class="faq-section">
+
+                <div class="faq-list" id="faqList">
+
+
+                    <!-- 01 -->
+                    <article
+                        class="faq-item"
+                        data-category="diagnosis"
+                    >
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                        >
+                            <span class="question-number">
+                                Q
+                            </span>
+
+                            <span class="question-text">
+                                Moodly 공간 스타일 진단은 어떤 서비스인가요?
+                            </span>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Moodly의 공간 스타일 진단은 사용자의 취향과 생활 방식을
+                                바탕으로 나에게 잘 어울리는 공간 스타일을 찾아주는
+                                서비스입니다. 간단한 질문에 답하면 나에게 어울리는
+                                공간 분위기와 스타일을 확인할 수 있어요.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 02 -->
+                    <article
+                        class="faq-item"
+                        data-category="diagnosis"
+                    >
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                        >
+                            <span class="question-number">
+                                Q
+                            </span>
+
+                            <span class="question-text">
+                                공간 스타일 진단은 어떻게 진행되나요?
+                            </span>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                진단 페이지에서 여러 질문에 답변하면 선택한 내용을
+                                바탕으로 공간 스타일을 분석합니다. 모든 질문에
+                                답변한 후 진단 결과 페이지에서 나의 공간 스타일과
+                                추천 키워드를 확인할 수 있어요.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 03 -->
+                    <article
+                        class="faq-item"
+                        data-category="diagnosis"
+                    >
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                        >
+                            <span class="question-number">
+                                Q
+                            </span>
+
+                            <span class="question-text">
+                                진단 결과는 어떤 기준으로 결정되나요?
+                            </span>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                진단 과정에서 선택한 취향과 생활 방식에 대한 답변을
+                                종합하여 가장 잘 어울리는 공간 스타일을 보여줍니다.
+                                결과에서는 대표적인 공간 분위기와 함께 주요 특징도
+                                확인할 수 있습니다.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 04 -->
+                    <article
+                        class="faq-item"
+                        data-category="diagnosis"
+                    >
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                        >
+                            <span class="question-number">
+                                Q
+                            </span>
+
+                            <span class="question-text">
+                                공간 스타일 진단을 다시 받을 수 있나요?
+                            </span>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                네. 언제든지 진단 페이지에서 다시 진단할 수 있습니다.
+                                새로운 취향이나 생활 환경이 생겼다면 다시 진단하여
+                                달라진 공간 스타일을 확인해보세요.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 05 -->
+                    <article
+                        class="faq-item"
+                        data-category="diagnosis"
+                    >
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                        >
+                            <span class="question-number">
+                                Q
+                            </span>
+
+                            <span class="question-text">
+                                이전에 받은 진단 결과도 확인할 수 있나요?
+                            </span>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                네. 마이페이지의 최근 진단 기록에서 이전에 받은
+                                진단 결과를 확인할 수 있습니다. 진단 기록을 선택하면
+                                해당 결과 페이지로 이동할 수 있어요.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 06 -->
+                    <article
+                        class="faq-item"
+                        data-category="profile"
+                    >
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                        >
+                            <span class="question-number">
+                                Q
+                            </span>
+
+                            <span class="question-text">
+                                프로필 정보를 수정하고 싶어요.
+                            </span>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                마이페이지에서 프로필 카드의 연필 아이콘이나
+                                프로필 관리 메뉴를 선택하면 프로필 수정 페이지로
+                                이동할 수 있습니다. 수정한 내용을 저장하면
+                                마이페이지에 바로 반영됩니다.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 07 -->
+                    <article
+                        class="faq-item"
+                        data-category="profile"
+                    >
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                        >
+                            <span class="question-number">
+                                Q
+                            </span>
+
+                            <span class="question-text">
+                                닉네임은 몇 글자까지 설정할 수 있나요?
+                            </span>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                닉네임은 최대 15자까지 설정할 수 있습니다.
+                                나만의 개성을 표현할 수 있는 이름으로 자유롭게
+                                설정해보세요.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 08 -->
+                    <article
+                        class="faq-item"
+                        data-category="profile"
+                    >
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                        >
+                            <span class="question-number">
+                                Q
+                            </span>
+
+                            <span class="question-text">
+                                프로필 사진을 변경할 수 있나요?
+                            </span>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                네. 프로필 수정 페이지에서 프로필 사진을 변경할 수
+                                있습니다. 원하는 이미지를 선택한 후 저장하면
+                                마이페이지의 프로필 사진에도 적용됩니다.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 09 -->
+                    <article
+                        class="faq-item"
+                        data-category="profile"
+                    >
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                        >
+                            <span class="question-number">
+                                Q
+                            </span>
+
+                            <span class="question-text">
+                                입력한 프로필 정보는 어디에 사용되나요?
+                            </span>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                입력한 프로필 정보는 Moodly 안에서 사용자의 프로필을
+                                표시하고 개인화된 서비스를 제공하기 위한 용도로
+                                사용됩니다. 입력한 정보는 마이페이지에서 확인하고
+                                수정할 수 있습니다.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 10 -->
+                    <article
+                        class="faq-item"
+                        data-category="profile"
+                    >
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                        >
+                            <span class="question-number">
+                                Q
+                            </span>
+
+                            <span class="question-text">
+                                프로필 정보를 초기화할 수 있나요?
+                            </span>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                프로필 수정 페이지에서 현재 정보를 확인하고 원하는
+                                내용으로 변경할 수 있습니다. 서비스 이용 중
+                                프로필 정보가 달라졌다면 언제든지 수정해주세요.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 11 -->
+                    <article
+                        class="faq-item"
+                        data-category="recommend"
+                    >
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                        >
+                            <span class="question-number">
+                                Q
+                            </span>
+
+                            <span class="question-text">
+                                Moodly의 공간 추천은 어떻게 이루어지나요?
+                            </span>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                공간 진단에서 선택한 취향과 진단 결과를 바탕으로
+                                사용자가 관심을 가질 만한 공간 스타일과 인테리어
+                                아이디어를 추천합니다.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 12 -->
+                    <article
+                        class="faq-item"
+                        data-category="recommend"
+                    >
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                        >
+                            <span class="question-number">
+                                Q
+                            </span>
+
+                            <span class="question-text">
+                                관심사를 여러 개 선택하면 추천에 어떻게 반영되나요?
+                            </span>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                여러 관심사를 선택하면 각각의 취향을 함께 고려하여
+                                공간 스타일과 콘텐츠를 추천합니다. 다양한 취향을
+                                선택할수록 나에게 맞는 공간을 찾는 데 도움이 됩니다.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 13 -->
+                    <article
+                        class="faq-item"
+                        data-category="recommend"
+                    >
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                        >
+                            <span class="question-number">
+                                Q
+                            </span>
+
+                            <span class="question-text">
+                                추천 결과가 마음에 들지 않으면 어떻게 하나요?
+                            </span>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                현재 취향과 생활 방식이 달라졌다면 공간 스타일 진단을
+                                다시 진행해보세요. 새로운 답변을 바탕으로 다른
+                                스타일의 결과를 확인할 수 있습니다.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 14 -->
+                    <article
+                        class="faq-item"
+                        data-category="save"
+                    >
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                        >
+                            <span class="question-number">
+                                Q
+                            </span>
+
+                            <span class="question-text">
+                                마음에 드는 공간을 저장할 수 있나요?
+                            </span>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                네. 마음에 드는 공간은 저장 기능을 이용해 나만의
+                                공간 목록에 보관할 수 있습니다. 나중에 다시 보고
+                                싶은 공간을 편하게 모아둘 수 있어요.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 15 -->
+                    <article
+                        class="faq-item"
+                        data-category="save"
+                    >
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                        >
+                            <span class="question-number">
+                                Q
+                            </span>
+
+                            <span class="question-text">
+                                저장한 공간은 어디에서 확인하나요?
+                            </span>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                마이페이지의 '저장한 공간' 메뉴에서 확인할 수 있습니다.
+                                저장해둔 공간을 다시 살펴보면서 나만의 인테리어
+                                아이디어를 모아보세요.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 16 -->
+                    <article
+                        class="faq-item"
+                        data-category="save"
+                    >
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                        >
+                            <span class="question-number">
+                                Q
+                            </span>
+
+                            <span class="question-text">
+                                저장한 공간을 삭제할 수 있나요?
+                            </span>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                네. 저장된 공간의 저장 또는 찜 기능을 다시 선택하면
+                                해당 공간을 저장 목록에서 제거할 수 있습니다.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 17 -->
+                    <article
+                        class="faq-item"
+                        data-category="shopping"
+                    >
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                        >
+                            <span class="question-number">
+                                Q
+                            </span>
+
+                            <span class="question-text">
+                                Moodly에서 추천하는 상품은 어떻게 확인하나요?
+                            </span>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                하단 메뉴의 쇼핑 페이지에서 다양한 인테리어 상품을
+                                확인할 수 있습니다. 공간 스타일과 어울리는 상품을
+                                살펴보면서 나만의 공간을 꾸며보세요.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 18 -->
+                    <article
+                        class="faq-item"
+                        data-category="shopping"
+                    >
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                        >
+                            <span class="question-number">
+                                Q
+                            </span>
+
+                            <span class="question-text">
+                                상품을 찜하면 어디에서 볼 수 있나요?
+                            </span>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                찜한 상품은 마이페이지의 '찜한 상품'에서 확인할 수
+                                있습니다. 관심 있는 상품을 모아두고 나중에
+                                편하게 다시 확인해보세요.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 19 -->
+                    <article
+                        class="faq-item"
+                        data-category="shopping"
+                    >
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                        >
+                            <span class="question-number">
+                                Q
+                            </span>
+
+                            <span class="question-text">
+                                상품 가격이나 정보가 실제 판매처와 다를 수 있나요?
+                            </span>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                상품 가격과 판매 정보는 변경될 수 있습니다.
+                                실제 구매를 진행하기 전에는 연결된 판매처의
+                                최신 상품 정보와 가격을 확인해주세요.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 20 -->
+                    <article
+                        class="faq-item"
+                        data-category="shopping"
+                    >
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                        >
+                            <span class="question-number">
+                                Q
+                            </span>
+
+                            <span class="question-text">
+                                Moodly에서 상품을 직접 구매할 수 있나요?
+                            </span>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Moodly의 쇼핑 페이지에서는 공간에 어울리는 상품을
+                                살펴보고 관련 정보를 확인할 수 있습니다. 실제
+                                구매 가능 여부와 주문 관련 사항은 해당 상품의
+                                판매처에서 확인해주세요.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+                <!-- 검색 결과 없음 -->
+                <div
+                    class="faq-empty"
+                    id="faqEmpty"
+                >
+
+                    <i data-lucide="search-x"></i>
+
+                    <strong>
+                        찾으시는 질문이 없어요.
+                    </strong>
+
+                    <p>
+                        다른 검색어로 다시 찾아보세요.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 문의 안내
+            ========================== -->
+            <section class="faq-contact">
+
+                <div class="contact-icon">
+                    <i data-lucide="message-circle-question"></i>
+                </div>
+
+                <div class="contact-text">
+
+                    <strong>
+                        원하는 답변을 찾지 못하셨나요?
+                    </strong>
+
+                    <p>
+                        궁금한 점이 있다면 언제든지 문의해주세요.
+                    </p>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="contact-button"
+                >
+                    문의하기
+                </button>
+
+            </section>
+
+        </main>
+
+
+        <!-- =========================
+             Bottom Navigation
+        ========================== -->
+        <nav class="bottom-nav">
+
+            <a
+                href="index.html"
+                class="nav-item"
+            >
+                <i data-lucide="house"></i>
+                <span>홈</span>
+            </a>
+
+            <a
+                href="test.html"
+                class="nav-item"
+            >
+                <i data-lucide="circle-check"></i>
+                <span>진단</span>
+            </a>
+
+            <a
+                href="shopping.html"
+                class="nav-item"
+            >
+                <i data-lucide="shopping-bag"></i>
+                <span>쇼핑</span>
+            </a>
+
+            <a
+                href="mypage.html"
+                class="nav-item active"
+            >
+                <i data-lucide="user-round"></i>
+                <span>마이</span>
+            </a>
+
+        </nav>
+
+    </div>
+
+
+    <!-- Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- FAQ JS -->
+    <script src="js/faq.js"></script>
+
+</body>
+</html>

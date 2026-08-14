@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Pretendard", "Noto Sans KR", Arial, sans-serif;
+    background-color: #f3ece1;
+    color: #4b3626;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+/* =========================
+   문의하기 전체
+========================= */
+
+.inquiry-container {
+    width: 100%;
+    max-width: 600px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #fffdf9;
+}
+
+/* =========================
+   상단 헤더
+========================= */
+
+.inquiry-header {
+    height: 72px;
+    padding: 0 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px solid #ebe2d7;
+    background-color: #fffdf9;
+}
+
+.inquiry-header h1 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #4b3626;
+}
+
+/* 뒤로가기 */
+
+.back-btn {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: transparent;
+
+    color: #4b3626;
+    font-size: 25px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+.back-btn:hover {
+    background-color: #f3ece1;
+}
+
+/* =========================
+   본문
+========================= */
+
+.inquiry-content {
+    padding: 34px 24px 50px;
+}
+
+.inquiry-description {
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: -0.2px;
+
+    color: #8a7a6c;
+}
+
+/* =========================
+   입력 영역
+========================= */
+
+.form-group {
+    margin-bottom: 23px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 9px;
+
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+
+    color: #4b3626;
+}
+
+/* input / select / textarea */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 1px solid #ded4c9;
+    border-radius: 12px;
+
+    background-color: #ffffff;
+
+    color: #4b3626;
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #b6aaa0;
+}
+
+/* 클릭했을 때 */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #9a8066;
+    box-shadow: 0 0 0 3px rgba(154, 128, 102, 0.10);
+}
+
+/* select */
+
+.form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+
+    background-image: linear-gradient(45deg, transparent 50%, #8d7967 50%),
+                      linear-gradient(135deg, #8d7967 50%, transparent 50%);
+    background-position:
+        calc(100% - 18px) 50%,
+        calc(100% - 13px) 50%;
+    background-size:
+        5px 5px,
+        5px 5px;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+}
+
+/* textarea */
+
+.form-group textarea {
+    height: 180px;
+
+    resize: none;
+
+    line-height: 1.6;
+    vertical-align: top;
+}
+
+/* =========================
+   문의하기 버튼
+========================= */
+
+.submit-btn {
+    width: 100%;
+    height: 54px;
+
+    margin-top: 8px;
+
+    border: none;
+    border-radius: 13px;
+
+    background-color: #4b3626;
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.15s ease,
+        box-shadow 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #624a36;
+    box-shadow: 0 5px 14px rgba(75, 54, 38, 0.15);
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+/* =========================
+   모바일
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        background-color: #fffdf9;
+    }
+
+    .inquiry-container {
+        max-width: none;
+    }
+
+    .inquiry-content {
+        padding: 28px 20px 40px;
+    }
+
+    .inquiry-header {
+        height: 68px;
+    }
+
+    .inquiry-header h1 {
+        font-size: 19px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px;
+    }
+
+    .submit-btn {
+        height: 54px;
+        font-size: 16px;
+    }
+}

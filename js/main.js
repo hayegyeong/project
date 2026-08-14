@@ -64,6 +64,7 @@ function initPage() {
         default:
             initHomePage();
             break;
+
     }
 
 }
@@ -75,8 +76,11 @@ function initPage() {
 
 function getCurrentPage() {
 
-    const path = window.location.pathname;
-    const fileName = path.split("/").pop();
+    const path =
+        window.location.pathname;
+
+    const fileName =
+        path.split("/").pop();
 
     if (!fileName || fileName === "") {
         return "index";
@@ -641,7 +645,9 @@ const resultData = {
         tags: ["안정감", "편안함", "따뜻함"],
         lifestyle: "여유롭고 안정적인 생활",
         keywords: "패브릭 / 우드 / 따뜻한 조명",
-        image: "images/style-cozy.jpg",
+
+        image: "images/style-cozy.jpg.png",
+
         color: [
             "#F7F1E8",
             "#E3CFB2",
@@ -649,16 +655,17 @@ const resultData = {
             "#8D7460",
             "#C1BDB8"
         ],
+
         styles: [
             {
                 name: "코지 힐링",
                 description: "따뜻하고 포근한 공간",
-                image: "images/style-cozy.jpg"
+                image: "images/style-cozy.jpg.png"
             },
             {
                 name: "내추럴 리빙",
                 description: "자연스럽고 편안한 공간",
-                image: "images/style-natural.jpg"
+                image: "images/natural-style.png"
             },
             {
                 name: "감성 아틀리에",
@@ -667,6 +674,7 @@ const resultData = {
             }
         ]
     },
+
 
     minimal: {
         title: "미니멀 라이프형",
@@ -678,7 +686,9 @@ const resultData = {
         tags: ["깔끔함", "정돈", "심플함"],
         lifestyle: "효율적이고 정돈된 생활",
         keywords: "화이트 / 수납 / 심플한 가구",
+
         image: "images/style-minimal.jpg",
+
         color: [
             "#F7F7F5",
             "#E8E6E1",
@@ -686,6 +696,7 @@ const resultData = {
             "#9D9A93",
             "#55534F"
         ],
+
         styles: [
             {
                 name: "미니멀 라이프",
@@ -705,6 +716,7 @@ const resultData = {
         ]
     },
 
+
     natural: {
         title: "내추럴 리빙형",
         subtitle: "자연스럽고 편안한 공간을 좋아하는 당신",
@@ -714,7 +726,9 @@ const resultData = {
         tags: ["자연", "우드", "그린"],
         lifestyle: "자연과 함께하는 편안한 생활",
         keywords: "우드 / 라탄 / 식물",
+
         image: "images/style-natural.jpg",
+
         color: [
             "#E7E0CF",
             "#C6B994",
@@ -722,6 +736,7 @@ const resultData = {
             "#687256",
             "#445A41"
         ],
+
         styles: [
             {
                 name: "내추럴 리빙",
@@ -731,7 +746,7 @@ const resultData = {
             {
                 name: "코지 힐링",
                 description: "따뜻하고 편안한 공간",
-                image: "images/style-cozy.jpg"
+                image: "images/style-cozy.jpg.png"
             },
             {
                 name: "소셜 리빙",
@@ -740,6 +755,7 @@ const resultData = {
             }
         ]
     },
+
 
     modern: {
         title: "모던 무드형",
@@ -751,7 +767,9 @@ const resultData = {
         tags: ["세련됨", "감각", "개성"],
         lifestyle: "트렌드와 개성을 중요하게 생각하는 생활",
         keywords: "메탈 / 뉴트럴 / 디자인 가구",
+
         image: "images/style-modern.jpg",
+
         color: [
             "#ECEAE6",
             "#C8C4BD",
@@ -759,6 +777,7 @@ const resultData = {
             "#5C5750",
             "#3F3A35"
         ],
+
         styles: [
             {
                 name: "모던 무드",
@@ -778,6 +797,7 @@ const resultData = {
         ]
     },
 
+
     creative: {
         title: "크리에이티브 스튜디오형",
         subtitle: "개성과 아이디어를 자유롭게 표현하는 당신",
@@ -787,7 +807,9 @@ const resultData = {
         tags: ["창의성", "개성", "자유로움"],
         lifestyle: "새로운 것을 시도하고 자유롭게 표현하는 생활",
         keywords: "아트 / 컬러 / 오브제",
+
         image: "images/style-creative.jpg",
+
         color: [
             "#F1E5D7",
             "#D6B5A5",
@@ -795,6 +817,7 @@ const resultData = {
             "#756A85",
             "#41404A"
         ],
+
         styles: [
             {
                 name: "크리에이티브 스튜디오",
@@ -814,6 +837,7 @@ const resultData = {
         ]
     },
 
+
     social: {
         title: "소셜 리빙형",
         subtitle: "사람들과 함께하는 공간을 좋아하는 당신",
@@ -823,7 +847,9 @@ const resultData = {
         tags: ["소통", "공유", "활기"],
         lifestyle: "사람들과 함께하며 즐거움을 나누는 생활",
         keywords: "소파 / 테이블 / 넓은 거실",
+
         image: "images/style-social.jpg",
+
         color: [
             "#F4E8D8",
             "#E4C8A8",
@@ -831,6 +857,7 @@ const resultData = {
             "#8C735A",
             "#5B5047"
         ],
+
         styles: [
             {
                 name: "소셜 리빙",
@@ -845,10 +872,11 @@ const resultData = {
             {
                 name: "코지 힐링",
                 description: "편하게 쉬어갈 수 있는 공간",
-                image: "images/style-cozy.jpg"
+                image: "images/style-cozy.jpg.png"
             }
         ]
     },
+
 
     smart: {
         title: "스마트 라이프형",
@@ -859,7 +887,9 @@ const resultData = {
         tags: ["효율성", "기능성", "편리함"],
         lifestyle: "효율적이고 편리한 생활",
         keywords: "스마트기기 / 수납 / 다기능 가구",
+
         image: "images/style-smart.jpg",
+
         color: [
             "#F2F3F3",
             "#D8DDDF",
@@ -867,6 +897,7 @@ const resultData = {
             "#68737B",
             "#39434A"
         ],
+
         styles: [
             {
                 name: "스마트 라이프",
@@ -886,6 +917,7 @@ const resultData = {
         ]
     },
 
+
     emotional: {
         title: "감성 아틀리에형",
         subtitle: "분위기와 감성을 중요하게 생각하는 당신",
@@ -896,7 +928,9 @@ const resultData = {
         tags: ["감성", "분위기", "취향"],
         lifestyle: "나만의 취향과 분위기를 즐기는 생활",
         keywords: "조명 / 향 / 패브릭",
+
         image: "images/style-emotional.jpg",
+
         color: [
             "#F1E5DF",
             "#D8C0B8",
@@ -904,6 +938,7 @@ const resultData = {
             "#806A6A",
             "#51464A"
         ],
+
         styles: [
             {
                 name: "감성 아틀리에",
@@ -913,7 +948,7 @@ const resultData = {
             {
                 name: "코지 힐링",
                 description: "따뜻하고 포근한 공간",
-                image: "images/style-cozy.jpg"
+                image: "images/style-cozy.jpg.png"
             },
             {
                 name: "크리에이티브 스튜디오",
@@ -932,28 +967,37 @@ const resultData = {
 
 function initTestPage() {
 
-    const startButtons = document.querySelectorAll(
-        ".test-start-button, .start-button, [href='question.html']"
-    );
+    const startButtons =
+        document.querySelectorAll(
+            ".test-start-button, .start-button, [href='question.html']"
+        );
+
 
     startButtons.forEach(button => {
 
-        button.addEventListener("click", event => {
+        button.addEventListener(
+            "click",
+            event => {
 
-            clearTestData();
+                clearTestData();
 
-            if (
-                button.tagName.toLowerCase() === "a" &&
-                button.getAttribute("href") === "question.html"
-            ) {
-                return;
+
+                if (
+                    button.tagName.toLowerCase() === "a" &&
+                    button.getAttribute("href") === "question.html"
+                ) {
+                    return;
+                }
+
+
+                event.preventDefault();
+
+
+                window.location.href =
+                    "question.html";
+
             }
-
-            event.preventDefault();
-
-            window.location.href = "question.html";
-
-        });
+        );
 
     });
 
@@ -970,15 +1014,24 @@ let currentQuestion = 0;
 function initQuestionPage() {
 
     const savedQuestion =
-        Number(localStorage.getItem("moodlyCurrentQuestion"));
+        Number(
+            localStorage.getItem(
+                "moodlyCurrentQuestion"
+            )
+        );
+
 
     if (
         Number.isInteger(savedQuestion) &&
         savedQuestion >= 0 &&
         savedQuestion < questions.length
     ) {
-        currentQuestion = savedQuestion;
+
+        currentQuestion =
+            savedQuestion;
+
     }
+
 
     renderQuestion();
 
@@ -992,26 +1045,46 @@ function initQuestionPage() {
 function renderQuestion() {
 
     const questionTitle =
-        document.querySelector(".question-title");
+        document.querySelector(
+            ".question-title"
+        );
+
 
     const answerList =
-        document.querySelector(".answer-list");
+        document.querySelector(
+            ".answer-list"
+        );
+
 
     const questionCount =
-        document.querySelector(".question-count");
+        document.querySelector(
+            ".question-count"
+        );
+
 
     const progressValue =
-        document.querySelector(".progress-value");
+        document.querySelector(
+            ".progress-value"
+        );
 
-    if (!questionTitle || !answerList) {
+
+    if (
+        !questionTitle ||
+        !answerList
+    ) {
+
         return;
+
     }
+
 
     const question =
         questions[currentQuestion];
 
+
     questionTitle.textContent =
         question.question;
+
 
     if (questionCount) {
 
@@ -1020,76 +1093,111 @@ function renderQuestion() {
 
     }
 
+
     if (progressValue) {
 
         const progress =
-            ((currentQuestion + 1) / questions.length) * 100;
+            (
+                (currentQuestion + 1) /
+                questions.length
+            ) * 100;
+
 
         progressValue.style.width =
             `${progress}%`;
 
     }
 
-    answerList.innerHTML = "";
 
-    question.answers.forEach((answer, index) => {
+    answerList.innerHTML =
+        "";
 
-        const label =
-            document.createElement("label");
 
-        label.className =
-            "answer-item";
+    question.answers.forEach(
+        (answer, index) => {
 
-        label.innerHTML = `
-            <input
-                type="radio"
-                name="answer"
-                value="${answer.type}"
-                data-index="${index}"
-            >
+            const label =
+                document.createElement(
+                    "label"
+                );
 
-            <span class="answer-text">
-                ${answer.text}
-            </span>
-        `;
 
-        const input =
-            label.querySelector("input");
+            label.className =
+                "answer-item";
 
-        input.addEventListener("change", () => {
 
-            saveAnswer(
-                currentQuestion,
-                answer.type
+            label.innerHTML = `
+                <input
+                    type="radio"
+                    name="answer"
+                    value="${answer.type}"
+                    data-index="${index}"
+                >
+
+                <span class="answer-text">
+                    ${answer.text}
+                </span>
+            `;
+
+
+            const input =
+                label.querySelector(
+                    "input"
+                );
+
+
+            input.addEventListener(
+                "change",
+                () => {
+
+                    saveAnswer(
+                        currentQuestion,
+                        answer.type
+                    );
+
+
+                    updateNextButton();
+
+                }
             );
 
-            updateNextButton();
 
-        });
+            answerList.appendChild(
+                label
+            );
 
-        answerList.appendChild(label);
-
-    });
+        }
+    );
 
 
     const savedAnswers =
         getSavedAnswers();
 
-    if (savedAnswers[currentQuestion]) {
+
+    if (
+        savedAnswers[currentQuestion]
+    ) {
 
         const previousAnswer =
             answerList.querySelector(
                 `input[value="${savedAnswers[currentQuestion]}"]`
             );
 
+
         if (previousAnswer) {
-            previousAnswer.checked = true;
+
+            previousAnswer.checked =
+                true;
+
         }
 
     }
 
+
     updateNextButton();
+
     updatePreviousButton();
+
     initQuestionNavigation();
 
 }
@@ -1107,8 +1215,10 @@ function saveAnswer(
     const answers =
         getSavedAnswers();
 
+
     answers[questionIndex] =
         answerType;
+
 
     localStorage.setItem(
         "moodlyAnswers",
@@ -1127,7 +1237,10 @@ function getSavedAnswers() {
     try {
 
         const saved =
-            localStorage.getItem("moodlyAnswers");
+            localStorage.getItem(
+                "moodlyAnswers"
+            );
+
 
         return saved
             ? JSON.parse(saved)
@@ -1153,14 +1266,17 @@ function updateNextButton() {
             ".next-button, .question-next-button"
         );
 
+
     if (!nextButton) {
         return;
     }
+
 
     const selected =
         document.querySelector(
             'input[name="answer"]:checked'
         );
+
 
     nextButton.disabled =
         !selected;
@@ -1179,16 +1295,14 @@ function updatePreviousButton() {
             ".prev-button, .previous-button"
         );
 
+
     if (!previousButton) {
         return;
     }
 
-    /*
-        첫 번째 문제에서도 버튼을 비활성화하지 않음.
-        클릭하면 test.html로 이동.
-    */
 
-    previousButton.disabled = false;
+    previousButton.disabled =
+        false;
 
 }
 
@@ -1203,6 +1317,7 @@ function initQuestionNavigation() {
         document.querySelector(
             ".next-button, .question-next-button"
         );
+
 
     const previousButton =
         document.querySelector(
@@ -1219,9 +1334,11 @@ function initQuestionNavigation() {
                     'input[name="answer"]:checked'
                 );
 
+
             if (!selected) {
                 return;
             }
+
 
             saveAnswer(
                 currentQuestion,
@@ -1236,12 +1353,15 @@ function initQuestionNavigation() {
 
                 currentQuestion++;
 
+
                 localStorage.setItem(
                     "moodlyCurrentQuestion",
                     currentQuestion
                 );
 
+
                 renderQuestion();
+
 
                 window.scrollTo({
                     top: 0,
@@ -1263,12 +1383,9 @@ function initQuestionNavigation() {
 
         previousButton.onclick = () => {
 
-            /*
-                첫 번째 문제에서 이전 버튼을 누르면
-                테스트 시작 화면으로 이동
-            */
-
-            if (currentQuestion <= 0) {
+            if (
+                currentQuestion <= 0
+            ) {
 
                 window.location.href =
                     "test.html";
@@ -1277,14 +1394,18 @@ function initQuestionNavigation() {
 
             }
 
+
             currentQuestion--;
+
 
             localStorage.setItem(
                 "moodlyCurrentQuestion",
                 currentQuestion
             );
 
+
             renderQuestion();
+
 
             window.scrollTo({
                 top: 0,
@@ -1307,17 +1428,23 @@ function finishTest() {
     const answers =
         getSavedAnswers();
 
+
     const result =
-        calculateResult(answers);
+        calculateResult(
+            answers
+        );
+
 
     localStorage.setItem(
         "moodlyResult",
         result
     );
 
+
     localStorage.removeItem(
         "moodlyCurrentQuestion"
     );
+
 
     window.location.href =
         "result.html";
@@ -1329,30 +1456,9 @@ function finishTest() {
    10. CALCULATE RESULT
    ========================================================= */
 
-/*
-    ★ 중요 ★
-
-    기존 코드에서는
-
-    cozy → emotional + natural
-    minimal → smart + modern
-    natural → social + cozy
-    modern → creative + smart
-
-    처럼 추가 점수를 줬기 때문에
-    특정 유형이 지나치게 높은 점수를 얻는 문제가 있었음.
-
-    이번 버전에서는 추가 보정 점수를 제거함.
-
-    대신 각 유형이 답변에 등장하는 횟수가 다르기 때문에
-    "등장 빈도 보정"을 적용함.
-
-    따라서 cozy 답변이 많다고 해서
-    무조건 cozy가 되는 문제가 줄어듦.
-*/
-
-
-function calculateResult(answers) {
+function calculateResult(
+    answers
+) {
 
     const types = [
         "cozy",
@@ -1368,153 +1474,162 @@ function calculateResult(answers) {
 
     const scores = {};
 
-    types.forEach(type => {
-        scores[type] = 0;
-    });
+
+    types.forEach(
+        type => {
+
+            scores[type] =
+                0;
+
+        }
+    );
 
 
-    /*
-        각 유형이 전체 질문에서 몇 번 등장하는지 계산
-    */
-
-    const appearanceCount = {};
-
-    types.forEach(type => {
-        appearanceCount[type] = 0;
-    });
+    const appearanceCount =
+        {};
 
 
-    questions.forEach(question => {
+    types.forEach(
+        type => {
 
-        question.answers.forEach(answer => {
+            appearanceCount[type] =
+                0;
+
+        }
+    );
+
+
+    questions.forEach(
+        question => {
+
+            question.answers.forEach(
+                answer => {
+
+                    if (
+                        Object.prototype.hasOwnProperty.call(
+                            appearanceCount,
+                            answer.type
+                        )
+                    ) {
+
+                        appearanceCount[
+                            answer.type
+                        ]++;
+
+                    }
+
+                }
+            );
+
+        }
+    );
+
+
+    answers.forEach(
+        answer => {
+
+            if (!answer) {
+                return;
+            }
+
 
             if (
-                appearanceCount.hasOwnProperty(answer.type)
+                !Object.prototype.hasOwnProperty.call(
+                    scores,
+                    answer
+                )
             ) {
 
-                appearanceCount[answer.type]++;
+                return;
 
             }
 
-        });
 
-    });
-
-
-    /*
-        실제 답변 점수 계산
-    */
-
-    answers.forEach(answer => {
-
-        if (!answer) {
-            return;
-        }
-
-        if (!scores.hasOwnProperty(answer)) {
-            return;
-        }
-
-        scores[answer]++;
-
-    });
-
-
-    /*
-        등장 횟수가 적은 스타일이
-        불리하지 않도록 비율로 보정
-
-        예:
-        cozy 10번 등장 중 5번 선택
-        → 50%
-
-        smart 5번 등장 중 3번 선택
-        → 60%
-
-        이런 식으로 계산
-    */
-
-    const normalizedScores = {};
-
-    types.forEach(type => {
-
-        if (appearanceCount[type] > 0) {
-
-            normalizedScores[type] =
-                scores[type] /
-                appearanceCount[type];
-
-        } else {
-
-            normalizedScores[type] = 0;
+            scores[answer]++;
 
         }
+    );
 
-    });
+
+    const normalizedScores =
+        {};
 
 
-    /*
-        가장 높은 비율의 스타일 찾기
-    */
+    types.forEach(
+        type => {
+
+            if (
+                appearanceCount[type] > 0
+            ) {
+
+                normalizedScores[type] =
+                    scores[type] /
+                    appearanceCount[type];
+
+            } else {
+
+                normalizedScores[type] =
+                    0;
+
+            }
+
+        }
+    );
+
 
     let resultType =
         "cozy";
+
 
     let highestScore =
         -1;
 
 
-    types.forEach(type => {
+    types.forEach(
+        type => {
 
-        const score =
-            normalizedScores[type];
+            const score =
+                normalizedScores[type];
 
 
-        /*
-            동점일 경우
-            실제 선택 횟수가 많은 유형을 우선
-        */
+            if (
+                score > highestScore
+            ) {
 
-        if (
-            score > highestScore
-        ) {
+                highestScore =
+                    score;
 
-            highestScore =
-                score;
+                resultType =
+                    type;
 
-            resultType =
-                type;
+            } else if (
+                score === highestScore &&
+                scores[type] >
+                scores[resultType]
+            ) {
 
-        } else if (
-            score === highestScore &&
-            scores[type] > scores[resultType]
-        ) {
+                resultType =
+                    type;
 
-            resultType =
-                type;
+            }
 
         }
-
-    });
-
-
-    /*
-        결과 페이지에서 사용할 점수 저장
-    */
-
-    localStorage.setItem(
-        "moodlyScores",
-        JSON.stringify(normalizedScores)
     );
 
 
-    /*
-        실제 선택 횟수도 저장
-    */
+    localStorage.setItem(
+        "moodlyScores",
+        JSON.stringify(
+            normalizedScores
+        )
+    );
+
 
     localStorage.setItem(
         "moodlyRawScores",
-        JSON.stringify(scores)
+        JSON.stringify(
+            scores
+        )
     );
 
 
@@ -1529,19 +1644,39 @@ function calculateResult(answers) {
 
 function initResultPage() {
 
+    /*
+        검사 결과를 localStorage에서 가져옴
+    */
+
     const resultType =
-        localStorage.getItem("moodlyResult") || "cozy";
+        localStorage.getItem(
+            "moodlyResult"
+        ) || "cozy";
+
 
     const result =
         resultData[resultType];
+
 
     if (!result) {
         return;
     }
 
-    renderResult(result);
+
+    renderResult(
+        result
+    );
+
 
     initResultButtons();
+
+
+    /*
+        추천 스타일 카드가
+        동적으로 생성된 이후 실행
+    */
+
+    initStyleSlider();
 
 }
 
@@ -1550,17 +1685,21 @@ function initResultPage() {
    결과 화면 출력
    ========================================================= */
 
-function renderResult(result) {
+function renderResult(
+    result
+) {
 
     setText(
         ".result-title",
         result.title
     );
 
+
     setText(
         ".result-eyebrow",
         result.subtitle
     );
+
 
     setText(
         ".result-description",
@@ -1573,10 +1712,12 @@ function renderResult(result) {
             ".result-hero-image img"
         );
 
+
     if (resultImage) {
 
         resultImage.src =
             result.image;
+
 
         resultImage.alt =
             result.title;
@@ -1589,24 +1730,36 @@ function renderResult(result) {
             ".result-tags"
         );
 
+
     if (tagContainer) {
 
-        tagContainer.innerHTML = "";
+        tagContainer.innerHTML =
+            "";
 
-        result.tags.forEach(tag => {
 
-            const span =
-                document.createElement("span");
+        result.tags.forEach(
+            tag => {
 
-            span.className =
-                "result-tag";
+                const span =
+                    document.createElement(
+                        "span"
+                    );
 
-            span.textContent =
-                tag;
 
-            tagContainer.appendChild(span);
+                span.className =
+                    "result-tag";
 
-        });
+
+                span.textContent =
+                    tag;
+
+
+                tagContainer.appendChild(
+                    span
+                );
+
+            }
+        );
 
     }
 
@@ -1616,44 +1769,57 @@ function renderResult(result) {
             ".recommend-style-list"
         );
 
+
     if (styleContainer) {
 
-        styleContainer.innerHTML = "";
+        styleContainer.innerHTML =
+            "";
 
-        result.styles.forEach(style => {
 
-            const card =
-                document.createElement("article");
+        result.styles.forEach(
+            style => {
 
-            card.className =
-                "recommend-style-card";
+                const card =
+                    document.createElement(
+                        "article"
+                    );
 
-            card.innerHTML = `
-                <div class="recommend-style-image">
 
-                    <img
-                        src="${style.image}"
-                        alt="${style.name}"
-                    >
+                card.className =
+                    "recommend-style-card";
 
-                </div>
 
-                <div class="recommend-style-text">
+                card.innerHTML = `
+                    <div class="recommend-style-image">
 
-                    <strong>
-                        ${style.name}
-                    </strong>
+                        <img
+                            src="${style.image}"
+                            alt="${style.name}"
+                            draggable="false"
+                        >
 
-                    <span>
-                        ${style.description}
-                    </span>
+                    </div>
 
-                </div>
-            `;
+                    <div class="recommend-style-text">
 
-            styleContainer.appendChild(card);
+                        <strong>
+                            ${style.name}
+                        </strong>
 
-        });
+                        <span>
+                            ${style.description}
+                        </span>
+
+                    </div>
+                `;
+
+
+                styleContainer.appendChild(
+                    card
+                );
+
+            }
+        );
 
     }
 
@@ -1663,32 +1829,44 @@ function renderResult(result) {
             ".color-palette-list"
         );
 
+
     if (paletteContainer) {
 
-        paletteContainer.innerHTML = "";
+        paletteContainer.innerHTML =
+            "";
 
-        result.color.forEach(color => {
 
-            const card =
-                document.createElement("div");
+        result.color.forEach(
+            color => {
 
-            card.className =
-                "palette-card";
+                const card =
+                    document.createElement(
+                        "div"
+                    );
 
-            card.innerHTML = `
-                <div
-                    class="palette-color"
-                    style="background:${color}"
-                ></div>
 
-                <span>
-                    ${color}
-                </span>
-            `;
+                card.className =
+                    "palette-card";
 
-            paletteContainer.appendChild(card);
 
-        });
+                card.innerHTML = `
+                    <div
+                        class="palette-color"
+                        style="background:${color}"
+                    ></div>
+
+                    <span>
+                        ${color}
+                    </span>
+                `;
+
+
+                paletteContainer.appendChild(
+                    card
+                );
+
+            }
+        );
 
     }
 
@@ -1711,12 +1889,14 @@ function renderScore() {
             ".score-list"
         );
 
+
     if (!scoreContainer) {
         return;
     }
 
 
     let scores = {};
+
 
     try {
 
@@ -1729,7 +1909,8 @@ function renderScore() {
 
     } catch (error) {
 
-        scores = {};
+        scores =
+            {};
 
     }
 
@@ -1748,64 +1929,76 @@ function renderScore() {
     };
 
 
-    scoreContainer.innerHTML = "";
+    scoreContainer.innerHTML =
+        "";
 
 
-    Object.keys(names).forEach(type => {
+    Object.keys(names).forEach(
+        type => {
 
-        const score =
-            scores[type] || 0;
-
-
-        const item =
-            document.createElement("div");
-
-        item.className =
-            "score-item";
+            const score =
+                scores[type] || 0;
 
 
-        /*
-            0 ~ 1 사이의 비율을
-            5개의 점으로 표현
-        */
-
-        const dotCount =
-            Math.round(score * 5);
+            const item =
+                document.createElement(
+                    "div"
+                );
 
 
-        let dots = "";
+            item.className =
+                "score-item";
 
 
-        for (let i = 0; i < 5; i++) {
+            const dotCount =
+                Math.round(
+                    score * 5
+                );
 
-            const active =
-                i < dotCount;
 
-            dots += `
-                <span
-                    class="score-dot ${
-                        active ? "active" : ""
+            let dots =
+                "";
+
+
+            for (
+                let i = 0;
+                i < 5;
+                i++
+            ) {
+
+                const active =
+                    i < dotCount;
+
+
+                dots += `
+                    <span
+                        class="score-dot ${active
+                        ? "active"
+                        : ""
                     }"
-                ></span>
+                    ></span>
+                `;
+
+            }
+
+
+            item.innerHTML = `
+                <span class="score-name">
+                    ${names[type]}
+                </span>
+
+                <div class="score-dots">
+                    ${dots}
+                </div>
             `;
 
+
+            scoreContainer.appendChild(
+                item
+            );
+
         }
-
-
-        item.innerHTML = `
-            <span class="score-name">
-                ${names[type]}
-            </span>
-
-            <div class="score-dots">
-                ${dots}
-            </div>
-        `;
-
-
-        scoreContainer.appendChild(item);
-
-    });
+    );
 
 }
 
@@ -1822,21 +2015,24 @@ function initResultButtons() {
         );
 
 
-    restartButtons.forEach(button => {
+    restartButtons.forEach(
+        button => {
 
-        button.addEventListener(
-            "click",
-            () => {
+            button.addEventListener(
+                "click",
+                () => {
 
-                clearTestData();
+                    clearTestData();
 
-                window.location.href =
-                    "test.html";
 
-            }
-        );
+                    window.location.href =
+                        "test.html";
 
-    });
+                }
+            );
+
+        }
+    );
 
 
     const shoppingButtons =
@@ -1845,19 +2041,21 @@ function initResultButtons() {
         );
 
 
-    shoppingButtons.forEach(button => {
+    shoppingButtons.forEach(
+        button => {
 
-        button.addEventListener(
-            "click",
-            () => {
+            button.addEventListener(
+                "click",
+                () => {
 
-                window.location.href =
-                    "shopping.html";
+                    window.location.href =
+                        "shopping.html";
 
-            }
-        );
+                }
+            );
 
-    });
+        }
+    );
 
 }
 
@@ -1866,11 +2064,39 @@ function initResultButtons() {
    12. SHOPPING PAGE
    ========================================================= */
 
+
+/* =========================================================
+   SHOPPING STATE
+   ========================================================= */
+
+const shoppingState = {
+
+    category: "all",
+
+    showAll: false,
+
+    keyword: ""
+
+};
+
+
+/* =========================================================
+   SHOPPING PAGE INITIALIZATION
+   ========================================================= */
+
 function initShoppingPage() {
 
     initCategoryFilter();
+
+    initProductMoreButton();
+
     initProductSearch();
+
     initFavoriteButtons();
+
+    initShopCategorySlider();
+
+    updateShoppingProducts();
 
 }
 
@@ -1886,68 +2112,374 @@ function initCategoryFilter() {
             ".category-button"
         );
 
-    const products =
-        document.querySelectorAll(
-            ".shopping-product-card"
-        );
-
 
     if (!buttons.length) {
         return;
     }
 
 
-    buttons.forEach(button => {
+    buttons.forEach(
+        button => {
 
-        button.addEventListener(
-            "click",
-            () => {
+            if (
+                button.dataset.categoryInitialized ===
+                "true"
+            ) {
 
-                buttons.forEach(item => {
+                return;
 
-                    item.classList.remove(
+            }
+
+
+            button.dataset.categoryInitialized =
+                "true";
+
+
+            button.addEventListener(
+                "click",
+                () => {
+
+                    /*
+                        현재 선택된 카테고리
+                    */
+
+                    const category =
+                        button.dataset.category ||
+                        "all";
+
+
+                    /*
+                        active 버튼 변경
+                    */
+
+                    buttons.forEach(
+                        item => {
+
+                            item.classList.remove(
+                                "active"
+                            );
+
+                        }
+                    );
+
+
+                    button.classList.add(
                         "active"
                     );
 
-                });
+
+                    /*
+                        선택한 카테고리 저장
+                    */
+
+                    shoppingState.category =
+                        category;
 
 
-                button.classList.add(
-                    "active"
+                    /*
+                        카테고리를 변경하면
+                        더보기 상태 초기화
+                    */
+
+                    shoppingState.showAll =
+                        false;
+
+
+                    /*
+                        상품 갱신
+                    */
+
+                    updateShoppingProducts();
+
+                }
+            );
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   상품 표시 갱신
+   ========================================================= */
+
+function updateShoppingProducts() {
+
+    const products =
+        document.querySelectorAll(
+            ".shopping-product-card"
+        );
+
+
+    const productGrid =
+        document.getElementById(
+            "allProductGrid"
+        );
+
+
+    const moreButton =
+        document.getElementById(
+            "productMoreButton"
+        );
+
+
+    if (!products.length) {
+        return;
+    }
+
+
+    const category =
+        shoppingState.category;
+
+
+    const keyword =
+        shoppingState.keyword
+            .trim()
+            .toLowerCase();
+
+
+    /*
+        모든 상품 먼저 숨김
+    */
+
+    products.forEach(
+        product => {
+
+            product.style.display =
+                "none";
+
+        }
+    );
+
+
+    /*
+        카테고리 + 검색어 필터링
+    */
+
+    const outsideProducts = [];
+
+    const gridProducts = [];
+
+
+    products.forEach(
+        product => {
+
+            const productCategory =
+                product.dataset.category ||
+                "";
+
+
+            const title =
+                product.querySelector(
+                    "h3"
                 );
 
 
-                const category =
-                    button.dataset.category;
+            const productName =
+                title
+                    ? title.textContent
+                        .trim()
+                        .toLowerCase()
+                    : "";
 
 
-                products.forEach(product => {
+            const categoryMatch =
+                category === "all" ||
+                productCategory === category;
 
-                    const productCategory =
-                        product.dataset.category;
+
+            const keywordMatch =
+                !keyword ||
+                productName.includes(
+                    keyword
+                );
 
 
-                    if (
-                        category === "all" ||
-                        category === productCategory
-                    ) {
+            if (
+                categoryMatch &&
+                keywordMatch
+            ) {
 
-                        product.style.display =
-                            "";
+                /*
+                    전체 상품 그리드 안의 상품인지 확인
+                */
 
-                    } else {
+                if (
+                    productGrid &&
+                    productGrid.contains(product)
+                ) {
 
-                        product.style.display =
-                            "none";
+                    gridProducts.push(
+                        product
+                    );
 
-                    }
+                } else {
 
-                });
+                    outsideProducts.push(
+                        product
+                    );
+
+                }
 
             }
+
+        }
+    );
+
+
+    /*
+        추천 / 인기 상품은
+        조건에 맞으면 모두 표시
+    */
+
+    outsideProducts.forEach(
+        product => {
+
+            product.style.display =
+                "";
+
+        }
+    );
+
+
+    /*
+        전체 상품은 기본 6개 표시
+    */
+
+    const INITIAL_COUNT =
+        6;
+
+
+    gridProducts.forEach(
+        (product, index) => {
+
+            if (
+                shoppingState.showAll ||
+                index < INITIAL_COUNT
+            ) {
+
+                product.style.display =
+                    "";
+
+            }
+
+        }
+    );
+
+
+    /*
+        검색 중에는 더보기 버튼 숨김
+    */
+
+    if (keyword) {
+
+        if (moreButton) {
+
+            moreButton.style.display =
+                "none";
+
+        }
+
+        return;
+
+    }
+
+
+    /*
+        전체 상품이 6개보다 많을 때
+        더보기 버튼 표시
+    */
+
+    if (!moreButton) {
+        return;
+    }
+
+
+    if (
+        gridProducts.length <=
+        INITIAL_COUNT
+    ) {
+
+        moreButton.style.display =
+            "none";
+
+        return;
+
+    }
+
+
+    moreButton.style.display =
+        "flex";
+
+
+    if (
+        shoppingState.showAll
+    ) {
+
+        moreButton.innerHTML = `
+            접기
+            <i data-lucide="chevron-up"></i>
+        `;
+
+    } else {
+
+        moreButton.innerHTML = `
+            상품 더보기
+            <i data-lucide="chevron-down"></i>
+        `;
+
+    }
+
+
+    initLucide();
+
+}
+
+
+/* =========================================================
+   상품 더보기
+   ========================================================= */
+
+function initProductMoreButton() {
+
+    const moreButton =
+        document.getElementById(
+            "productMoreButton"
         );
 
-    });
+
+    if (!moreButton) {
+        return;
+    }
+
+
+    if (
+        moreButton.dataset.initialized ===
+        "true"
+    ) {
+
+        return;
+
+    }
+
+
+    moreButton.dataset.initialized =
+        "true";
+
+
+    moreButton.addEventListener(
+        "click",
+        () => {
+
+            shoppingState.showAll =
+                !shoppingState.showAll;
+
+
+            updateShoppingProducts();
+
+        }
+    );
 
 }
 
@@ -1969,50 +2501,33 @@ function initProductSearch() {
     }
 
 
+    if (
+        searchInput.dataset.initialized ===
+        "true"
+    ) {
+
+        return;
+
+    }
+
+
+    searchInput.dataset.initialized =
+        "true";
+
+
     searchInput.addEventListener(
         "input",
         () => {
 
-            const keyword =
-                searchInput.value
-                    .trim()
-                    .toLowerCase();
+            shoppingState.keyword =
+                searchInput.value;
 
 
-            const products =
-                document.querySelectorAll(
-                    ".shopping-product-card"
-                );
+            shoppingState.showAll =
+                false;
 
 
-            products.forEach(product => {
-
-                const title =
-                    product.querySelector("h3");
-
-
-                const text =
-                    title
-                        ? title.textContent.toLowerCase()
-                        : "";
-
-
-                if (
-                    !keyword ||
-                    text.includes(keyword)
-                ) {
-
-                    product.style.display =
-                        "";
-
-                } else {
-
-                    product.style.display =
-                        "none";
-
-                }
-
-            });
+            updateShoppingProducts();
 
         }
     );
@@ -2036,52 +2551,73 @@ function initFavoriteButtons() {
         getFavorites();
 
 
-    buttons.forEach(button => {
+    buttons.forEach(
+        button => {
 
-        const productCard =
-            button.closest(
-                ".shopping-product-card, .wishlist-card"
-            );
-
-
-        const productName =
-            getProductName(productCard);
+            const productCard =
+                button.closest(
+                    ".shopping-product-card, .wishlist-card"
+                );
 
 
-        if (
-            productName &&
-            favorites.includes(productName)
-        ) {
-
-            button.classList.add(
-                "active"
-            );
-
-        }
+            const productName =
+                getProductName(
+                    productCard
+                );
 
 
-        button.addEventListener(
-            "click",
-            event => {
+            if (
+                productName &&
+                favorites.includes(
+                    productName
+                )
+            ) {
 
-                event.preventDefault();
-                event.stopPropagation();
-
-
-                if (!productName) {
-                    return;
-                }
-
-
-                toggleFavorite(
-                    productName,
-                    button
+                button.classList.add(
+                    "active"
                 );
 
             }
-        );
 
-    });
+
+            if (
+                button.dataset.favoriteInitialized ===
+                "true"
+            ) {
+
+                return;
+
+            }
+
+
+            button.dataset.favoriteInitialized =
+                "true";
+
+
+            button.addEventListener(
+                "click",
+                event => {
+
+                    event.preventDefault();
+
+                    event.stopPropagation();
+
+
+                    if (!productName) {
+                        return;
+                    }
+
+
+                    toggleFavorite(
+                        productName,
+                        button
+                    );
+
+                }
+            );
+
+        }
+    );
 
 
     initLucide();
@@ -2093,7 +2629,9 @@ function initFavoriteButtons() {
    상품명
    ========================================================= */
 
-function getProductName(card) {
+function getProductName(
+    card
+) {
 
     if (!card) {
         return null;
@@ -2101,7 +2639,9 @@ function getProductName(card) {
 
 
     const title =
-        card.querySelector("h3");
+        card.querySelector(
+            "h3"
+        );
 
 
     return title
@@ -2148,14 +2688,19 @@ function toggleFavorite(
 
 
     const index =
-        favorites.indexOf(productName);
+        favorites.indexOf(
+            productName
+        );
 
 
-    if (index === -1) {
+    if (
+        index === -1
+    ) {
 
         favorites.push(
             productName
         );
+
 
         button.classList.add(
             "active"
@@ -2168,6 +2713,7 @@ function toggleFavorite(
             1
         );
 
+
         button.classList.remove(
             "active"
         );
@@ -2177,18 +2723,221 @@ function toggleFavorite(
 
     localStorage.setItem(
         "moodlyFavorites",
-        JSON.stringify(favorites)
+        JSON.stringify(
+            favorites
+        )
     );
 
-
-    /*
-        마이페이지에서 찜 개수도
-        즉시 갱신
-    */
 
     renderFavoriteCount();
 
     initLucide();
+
+}
+
+
+/* =========================================================
+   쇼핑 카테고리 가로 스와이프
+   마우스 드래그 + 모바일 터치
+   ========================================================= */
+
+function initShopCategorySlider() {
+
+    /*
+        HTML에서 사용하는 클래스명
+        .category-list
+    */
+
+    const categoryList =
+        document.querySelector(
+            ".category-list"
+        );
+
+
+    if (!categoryList) {
+        return;
+    }
+
+
+    if (
+        categoryList.dataset.sliderInitialized ===
+        "true"
+    ) {
+
+        return;
+
+    }
+
+
+    categoryList.dataset.sliderInitialized =
+        "true";
+
+
+    let isDown =
+        false;
+
+
+    let startX =
+        0;
+
+
+    let scrollLeft =
+        0;
+
+
+    /*
+        마우스 DOWN
+    */
+
+    categoryList.addEventListener(
+        "mousedown",
+        event => {
+
+            isDown =
+                true;
+
+
+            categoryList.classList.add(
+                "is-dragging"
+            );
+
+
+            startX =
+                event.pageX -
+                categoryList.offsetLeft;
+
+
+            scrollLeft =
+                categoryList.scrollLeft;
+
+        }
+    );
+
+
+    /*
+        마우스 MOVE
+    */
+
+    categoryList.addEventListener(
+        "mousemove",
+        event => {
+
+            if (!isDown) {
+                return;
+            }
+
+
+            event.preventDefault();
+
+
+            const x =
+                event.pageX -
+                categoryList.offsetLeft;
+
+
+            const walk =
+                (x - startX) * 1.5;
+
+
+            categoryList.scrollLeft =
+                scrollLeft - walk;
+
+        }
+    );
+
+
+    /*
+        마우스 UP
+    */
+
+    categoryList.addEventListener(
+        "mouseup",
+        () => {
+
+            isDown =
+                false;
+
+
+            categoryList.classList.remove(
+                "is-dragging"
+            );
+
+        }
+    );
+
+
+    /*
+        마우스가 영역을 벗어난 경우
+    */
+
+    categoryList.addEventListener(
+        "mouseleave",
+        () => {
+
+            isDown =
+                false;
+
+
+            categoryList.classList.remove(
+                "is-dragging"
+            );
+
+        }
+    );
+
+
+    /*
+        모바일 TOUCH
+    */
+
+    let touchStartX =
+        0;
+
+
+    let touchStartScrollLeft =
+        0;
+
+
+    categoryList.addEventListener(
+        "touchstart",
+        event => {
+
+            touchStartX =
+                event.touches[0].pageX;
+
+
+            touchStartScrollLeft =
+                categoryList.scrollLeft;
+
+        },
+        {
+            passive: true
+        }
+    );
+
+
+    categoryList.addEventListener(
+        "touchmove",
+        event => {
+
+            const touchX =
+                event.touches[0].pageX;
+
+
+            const moveX =
+                touchStartX -
+                touchX;
+
+
+            categoryList.scrollLeft =
+                touchStartScrollLeft +
+                moveX;
+
+        },
+        {
+            passive: true
+        }
+    );
 
 }
 
@@ -2214,15 +2963,14 @@ function initMyPage() {
 
 function renderMyResult() {
 
+    /*
+        저장된 검사 결과 가져오기
+    */
+
     const resultType =
         localStorage.getItem(
             "moodlyResult"
-        );
-
-
-    if (!resultType) {
-        return;
-    }
+        ) || "cozy";
 
 
     const result =
@@ -2257,6 +3005,7 @@ function renderMyResult() {
         image.src =
             result.image;
 
+
         image.alt =
             result.title;
 
@@ -2271,26 +3020,29 @@ function renderMyResult() {
 
     if (keywords) {
 
-        keywords.innerHTML = "";
+        keywords.innerHTML =
+            "";
 
 
-        result.tags.forEach(tag => {
+        result.tags.forEach(
+            tag => {
 
-            const span =
-                document.createElement(
-                    "span"
+                const span =
+                    document.createElement(
+                        "span"
+                    );
+
+
+                span.textContent =
+                    tag;
+
+
+                keywords.appendChild(
+                    span
                 );
 
-
-            span.textContent =
-                tag;
-
-
-            keywords.appendChild(
-                span
-            );
-
-        });
+            }
+        );
 
     }
 
@@ -2313,12 +3065,14 @@ function renderFavoriteCount() {
         );
 
 
-    countElements.forEach(element => {
+    countElements.forEach(
+        element => {
 
-        element.textContent =
-            count;
+            element.textContent =
+                count;
 
-    });
+        }
+    );
 
 }
 
@@ -2335,32 +3089,34 @@ function initMyPageButtons() {
         );
 
 
-    resultButtons.forEach(button => {
+    resultButtons.forEach(
+        button => {
 
-        button.addEventListener(
-            "click",
-            () => {
+            button.addEventListener(
+                "click",
+                () => {
 
-                if (
-                    localStorage.getItem(
-                        "moodlyResult"
-                    )
-                ) {
+                    if (
+                        localStorage.getItem(
+                            "moodlyResult"
+                        )
+                    ) {
 
-                    window.location.href =
-                        "result.html";
+                        window.location.href =
+                            "result.html";
 
-                } else {
+                    } else {
 
-                    window.location.href =
-                        "test.html";
+                        window.location.href =
+                            "test.html";
+
+                    }
 
                 }
+            );
 
-            }
-        );
-
-    });
+        }
+    );
 
 }
 
@@ -2377,22 +3133,24 @@ function initHomePage() {
         );
 
 
-    if (resultType) {
-
-        const result =
-            resultData[resultType];
-
-
-        if (result) {
-
-            setText(
-                ".home-result-title",
-                result.title
-            );
-
-        }
-
+    if (!resultType) {
+        return;
     }
+
+
+    const result =
+        resultData[resultType];
+
+
+    if (!result) {
+        return;
+    }
+
+
+    setText(
+        ".home-result-title",
+        result.title
+    );
 
 }
 
@@ -2501,28 +3259,18 @@ document.addEventListener(
     "error",
     event => {
 
-        const target =
+        const image =
             event.target;
 
 
         if (
-            target.tagName &&
-            target.tagName.toLowerCase() === "img"
+            image &&
+            image.tagName === "IMG"
         ) {
 
-            target.style.display =
-                "none";
-
-
-            if (
-                target.parentElement
-            ) {
-
-                target.parentElement.classList.add(
-                    "image-error"
-                );
-
-            }
+            image.classList.add(
+                "image-error"
+            );
 
         }
 
@@ -2543,290 +3291,3 @@ document.addEventListener(
 
     }
 );
-/* =========================================================
-   🛒 MOODLY SHOP
-   카테고리 필터 + 더보기 기능
-   ========================================================= */
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    /* =====================================================
-       필요한 요소 가져오기
-    ===================================================== */
-
-    const categoryButtons =
-        document.querySelectorAll(".category-button");
-
-    const productGrid =
-        document.getElementById("allProductGrid");
-
-    const moreButton =
-        document.getElementById("productMoreButton");
-
-
-    /* =====================================================
-       쇼핑 페이지가 아닌 경우 종료
-       
-       다른 페이지에서 main.js를 같이 사용해도
-       오류가 발생하지 않도록 하는 부분
-    ===================================================== */
-
-    if (!productGrid || !moreButton) {
-        return;
-    }
-
-
-    /* =====================================================
-       전체 상품 가져오기
-       
-       ⭐ 여기 안에는 product-01 ~ product-50
-          총 50개가 들어있음
-    ===================================================== */
-
-    const products =
-        productGrid.querySelectorAll(".shopping-product-card");
-
-
-    /* =====================================================
-       설정
-       
-       처음에는 카테고리별로 6개만 보여줌.
-       
-       "상품 더보기"를 누르면
-       해당 카테고리의 전체 상품을 보여줌.
-    ===================================================== */
-
-    const INITIAL_COUNT = 6;
-
-
-    /* 현재 선택된 카테고리 */
-
-    let currentCategory = "all";
-
-
-    /* 전체 상품을 보고 있는지 */
-
-    let showAll = false;
-
-
-    /* =====================================================
-       상품 화면 업데이트
-    ===================================================== */
-
-    function updateProducts() {
-
-        /*
-         * 현재 카테고리에 맞는 상품만 찾기
-         */
-
-        const filteredProducts = [];
-
-
-        products.forEach(function (product) {
-
-            const category =
-                product.dataset.category;
-
-
-            /*
-             * 전체를 누르면 모든 상품
-             *
-             * 가구를 누르면 furniture
-             * 조명을 누르면 lighting
-             * 패브릭을 누르면 fabric
-             * 소품을 누르면 prop
-             * 식물을 누르면 plant
-             */
-
-            if (
-                currentCategory === "all" ||
-                category === currentCategory
-            ) {
-
-                filteredProducts.push(product);
-
-            }
-
-
-            /*
-             * 일단 모든 상품 숨기기
-             */
-
-            product.style.display = "none";
-
-        });
-
-
-        /* =================================================
-           상품 보여주기
-        ================================================= */
-
-        filteredProducts.forEach(function (product, index) {
-
-            /*
-             * 더보기를 누른 상태라면 전부 보여줌.
-             *
-             * 아직 더보기를 누르지 않았다면
-             * 처음 6개만 보여줌.
-             */
-
-            if (
-                showAll ||
-                index < INITIAL_COUNT
-            ) {
-
-                product.style.display = "";
-
-            }
-
-        });
-
-
-        /* =================================================
-           더보기 버튼 상태 변경
-        ================================================= */
-
-        /*
-         * 상품이 6개 이하라면
-         * 더보기 버튼이 필요 없음
-         */
-
-        if (
-            filteredProducts.length <= INITIAL_COUNT
-        ) {
-
-            moreButton.style.display = "none";
-
-            return;
-        }
-
-
-        /*
-         * 상품이 6개보다 많으면
-         * 더보기 버튼 표시
-         */
-
-        moreButton.style.display = "flex";
-
-
-        /* =================================================
-           버튼 글자 변경
-        ================================================= */
-
-        if (showAll) {
-
-            moreButton.innerHTML = `
-                접기
-                <i data-lucide="chevron-up"></i>
-            `;
-
-        } else {
-
-            moreButton.innerHTML = `
-                상품 더보기
-                <i data-lucide="chevron-down"></i>
-            `;
-
-        }
-
-
-        /*
-         * 버튼의 Lucide 아이콘 다시 생성
-         */
-
-        if (typeof lucide !== "undefined") {
-            lucide.createIcons();
-        }
-
-    }
-
-
-    /* =====================================================
-       ⭐ 카테고리 버튼 클릭
-    ===================================================== */
-
-    categoryButtons.forEach(function (button) {
-
-        button.addEventListener("click", function () {
-
-
-            /* ---------------------------------------------
-               모든 버튼에서 active 제거
-            --------------------------------------------- */
-
-            categoryButtons.forEach(function (btn) {
-
-                btn.classList.remove("active");
-
-            });
-
-
-            /* ---------------------------------------------
-               지금 누른 버튼에 active 추가
-            --------------------------------------------- */
-
-            this.classList.add("active");
-
-
-            /* ---------------------------------------------
-               현재 카테고리 저장
-            --------------------------------------------- */
-
-            currentCategory =
-                this.dataset.category;
-
-
-            /*
-             * 카테고리를 바꾸면
-             * 다시 처음 6개만 보여줌.
-             */
-
-            showAll = false;
-
-
-            /*
-             * 상품 다시 그리기
-             */
-
-            updateProducts();
-
-        });
-
-    });
-
-
-    /* =====================================================
-       ⭐ 더보기 버튼 클릭
-    ===================================================== */
-
-    moreButton.addEventListener("click", function () {
-
-
-        /*
-         * 현재 상태 반대로 변경
-         *
-         * false → true : 전체 상품
-         * true → false : 다시 6개
-         */
-
-        showAll = !showAll;
-
-
-        /*
-         * 상품 다시 표시
-         */
-
-        updateProducts();
-
-    });
-
-
-    /* =====================================================
-       ⭐ 처음 페이지에 들어왔을 때
-       
-       전체 상품 6개만 보여줌
-    ===================================================== */
-
-    updateProducts();
-
-});

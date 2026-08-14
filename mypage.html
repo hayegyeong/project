@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!-- 프로필 수정 -->
+ <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -33,6 +34,7 @@
             <button
                 type="button"
                 class="settings-button"
+                id="settingsBtn"
                 aria-label="설정"
             >
                 <i data-lucide="settings"></i>
@@ -58,6 +60,7 @@
                     <div class="profile-image">
 
                         <img
+                            id="mypageProfileImage"
                             src="images/brown.png"
                             alt="프로필 이미지"
                         >
@@ -68,11 +71,11 @@
                     <!-- 사용자 정보 -->
                     <div class="profile-info">
 
-                        <h2>
-                            예경님
+                        <h2 id="mypageName">
+                            사용자님
                         </h2>
 
-                        <p>
+                        <p id="mypageIntroduction">
                             나만의 공간을 만들어가고 있어요
                         </p>
 
@@ -84,6 +87,7 @@
                         type="button"
                         class="profile-edit-button"
                         aria-label="프로필 수정"
+                        onclick="location.href='profile-edit.html'"
                     >
                         <i data-lucide="pencil"></i>
                     </button>
@@ -121,7 +125,7 @@
                     <div class="my-style-image">
 
                         <img
-                            src="images/result-cozy.jpg"
+                            src="images/imagesstyle-cozy.jpg.png"
                             alt="나의 공간 스타일"
                         >
 
@@ -200,7 +204,7 @@
                         <div class="saved-space-image">
 
                             <img
-                                src="images/saved-space-01.jpg"
+                                src="images/imagesstyle-cozy.jpg.png"
                                 alt="저장한 인테리어 공간"
                             >
 
@@ -238,7 +242,7 @@
                         <div class="saved-space-image">
 
                             <img
-                                src="images/saved-space-02.jpg"
+                                src="images/natural-style.png.png"
                                 alt="저장한 인테리어 공간"
                             >
 
@@ -276,7 +280,7 @@
                         <div class="saved-space-image">
 
                             <img
-                                src="images/saved-space-03.jpg"
+                                src="images/mini-style.png.png"
                                 alt="저장한 인테리어 공간"
                             >
 
@@ -342,8 +346,8 @@
                         <div class="wishlist-image">
 
                             <img
-                                src="images/furniture-table.jpg"
-                                alt="원목 테이블"
+                                src="images/table1.png.jpg"
+                                alt="미니 원목 테이블"
                             >
 
                             <span class="wishlist-heart">
@@ -355,7 +359,7 @@
                         <div class="wishlist-info">
 
                             <strong>
-                                원목 테이블
+                                미니 원목 테이블
                             </strong>
 
                             <span>
@@ -376,8 +380,8 @@
                         <div class="wishlist-image">
 
                             <img
-                                src="images/furniture-sofa.jpg"
-                                alt="패브릭 소파"
+                                src="images/sofa.png.jpg"
+                                alt="베이지 패브릭 소파"
                             >
 
                             <span class="wishlist-heart">
@@ -389,7 +393,7 @@
                         <div class="wishlist-info">
 
                             <strong>
-                                패브릭 소파
+                                베이지 패브릭 소파
                             </strong>
 
                             <span>
@@ -410,8 +414,8 @@
                         <div class="wishlist-image">
 
                             <img
-                                src="images/prop-plant.jpg"
-                                alt="플랜트 화분"
+                                src="images/plants3.png.jpg"
+                                alt="유칼립투스 화분"
                             >
 
                             <span class="wishlist-heart">
@@ -423,11 +427,11 @@
                         <div class="wishlist-info">
 
                             <strong>
-                                플랜트 화분
+                                유칼립투스 화분
                             </strong>
 
                             <span>
-                                39,000원
+                                38,000원
                             </span>
 
                         </div>
@@ -528,7 +532,7 @@
 
                     <!-- 프로필 관리 -->
                     <a
-                        href="#"
+                        href="profile-edit.html"
                         class="menu-item"
                     >
 
@@ -622,7 +626,7 @@
                 <div class="menu-list">
 
                     <a
-                        href="#"
+                        href="faq.html"
                         class="menu-item"
                     >
 
@@ -642,7 +646,7 @@
 
 
                     <a
-                        href="#"
+                        href="inquiry.html"
                         class="menu-item"
                     >
 
@@ -735,7 +739,7 @@
     </div>
 
 
-    <!-- ========================= 
+    <!-- =========================
          Lucide Icons
     ========================== -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -745,6 +749,84 @@
          JavaScript
     ========================== -->
     <script src="js/main.js"></script>
+
+
+    <!-- =========================
+         Moodly 프로필 정보 불러오기
+    ========================== -->
+    <script>
+
+        const savedProfile =
+            localStorage.getItem("moodlyUser");
+
+
+        if (savedProfile) {
+
+            const profile =
+                JSON.parse(savedProfile);
+
+
+            // -------------------------
+            // 이름
+            // -------------------------
+
+            const nameElement =
+                document.getElementById("mypageName");
+
+
+            if (nameElement) {
+
+                nameElement.textContent =
+                    `${profile.name || "사용자"}님`;
+
+            }
+
+
+            // -------------------------
+            // 한 줄 소개
+            // -------------------------
+
+            const introductionElement =
+                document.getElementById(
+                    "mypageIntroduction"
+                );
+
+
+            if (
+                introductionElement &&
+                profile.introduction
+            ) {
+
+                introductionElement.textContent =
+                    profile.introduction;
+
+            }
+
+
+            // -------------------------
+            // 프로필 사진
+            // -------------------------
+
+            const profileImage =
+                document.getElementById(
+                    "mypageProfileImage"
+                );
+
+
+            if (
+                profileImage &&
+                profile.profileImage
+            ) {
+
+                profileImage.src =
+                    profile.profileImage;
+
+            }
+
+        }
+
+    </script>
+
 
     <script>
         lucide.createIcons();

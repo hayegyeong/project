@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moodly - 프로필 수정</title>
+
+    <link rel="stylesheet" href="css/profile-edit.css">
+</head>
+
+<body>
+
+    <!-- 상단 -->
+    <header class="top-bar">
+        <button class="back-btn" onclick="history.back()">‹</button>
+
+        <h1>프로필 수정</h1>
+
+        <div class="top-space"></div>
+    </header>
+
+
+    <main class="edit-container">
+
+        <!-- 프로필 사진 -->
+        <section class="profile-photo-section">
+
+            <div class="profile-image-wrapper">
+
+                <img
+                    id="profileImage"
+                    src=""
+                    alt="프로필 사진"
+                >
+
+                <div class="default-profile" id="defaultProfile">
+                    <span>●</span>
+                </div>
+
+                <label for="photoInput" class="photo-add">
+                    +
+                </label>
+
+            </div>
+
+            <div class="photo-info">
+
+                <h2>프로필 사진</h2>
+
+                <p>
+                    사진을 변경하려면<br>
+                    사진을 선택해주세요.
+                </p>
+
+                <label for="photoInput" class="photo-btn">
+                    사진 선택
+                </label>
+
+                <input
+                    type="file"
+                    id="photoInput"
+                    accept="image/*"
+                    hidden
+                >
+
+            </div>
+
+        </section>
+
+
+        <div class="divider"></div>
+
+
+        <!-- 닉네임 -->
+        <section class="form-section">
+
+            <label for="nickname">닉네임</label>
+
+            <div class="input-wrapper">
+
+                <input
+                    type="text"
+                    id="nickname"
+                    maxlength="15"
+                    placeholder="닉네임을 입력해주세요."
+                >
+
+            </div>
+
+            <p class="length-text">
+                <span id="nicknameLength">0</span>/15자
+            </p>
+
+        </section>
+
+
+        <!-- 성별 -->
+        <section class="form-section">
+
+            <label>성별</label>
+
+            <div class="gender-group">
+
+                <button
+                    type="button"
+                    class="gender-btn"
+                    data-gender="여성">
+                    <span class="radio"></span>
+                    여성
+                </button>
+
+                <button
+                    type="button"
+                    class="gender-btn"
+                    data-gender="남성">
+                    <span class="radio"></span>
+                    남성
+                </button>
+
+                <button
+                    type="button"
+                    class="gender-btn"
+                    data-gender="기타">
+                    <span class="radio"></span>
+                    기타
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- 나이 -->
+        <section class="form-section">
+
+            <label for="age">나이</label>
+
+            <select id="age">
+
+                <option value="">나이를 선택해주세요.</option>
+                <option value="10대">10대</option>
+                <option value="20대">20대</option>
+                <option value="30대">30대</option>
+                <option value="40대">40대</option>
+                <option value="50대">50대</option>
+                <option value="60대 이상">60대 이상</option>
+
+            </select>
+
+        </section>
+
+
+        <!-- 거주 형태 -->
+        <section class="form-section">
+
+            <label for="residence">거주 형태</label>
+
+            <select id="residence">
+
+                <option value="">거주 형태를 선택해주세요.</option>
+                <option value="원룸">원룸</option>
+                <option value="오피스텔">오피스텔</option>
+                <option value="아파트">아파트</option>
+                <option value="빌라">빌라</option>
+                <option value="주택">주택</option>
+                <option value="기숙사">기숙사</option>
+                <option value="기타">기타</option>
+
+            </select>
+
+        </section>
+
+
+        <!-- 관심사 -->
+        <section class="form-section">
+
+            <label>
+                관심사
+                <span class="small">(최대 3개)</span>
+            </label>
+
+            <div class="interest-group">
+
+                <button type="button" class="interest-btn" data-interest="인테리어">
+                    인테리어
+                </button>
+
+                <button type="button" class="interest-btn" data-interest="홈스타일링">
+                    홈스타일링
+                </button>
+
+                <button type="button" class="interest-btn" data-interest="수납/정리">
+                    수납/정리
+                </button>
+
+                <button type="button" class="interest-btn" data-interest="DIY">
+                    DIY
+                </button>
+
+                <button type="button" class="interest-btn" data-interest="식물/가드닝">
+                    식물/가드닝
+                </button>
+
+                <button type="button" class="interest-btn" data-interest="조명">
+                    조명
+                </button>
+
+            </div>
+
+            <p class="help-text">
+                관심사를 선택하면 더 정확한 추천을 받을 수 있어요.
+            </p>
+
+        </section>
+
+
+        <!-- 한 줄 소개 -->
+        <section class="form-section">
+
+            <label for="introduction">
+                한 줄 소개
+            </label>
+
+            <div class="intro-wrapper">
+
+                <textarea
+                    id="introduction"
+                    maxlength="30"
+                    placeholder="나를 소개해주세요."
+                ></textarea>
+
+                <span>
+                    <span id="introLength">0</span>/30자
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- 저장 -->
+        <button id="saveBtn" class="save-btn">
+            저장하기
+        </button>
+
+
+        <!-- 취소 -->
+        <button
+            class="cancel-btn"
+            onclick="history.back()">
+            취소
+        </button>
+
+    </main>
+
+
+    <script src="js/profile-edit.js"></script>
+
+</body>
+</html>

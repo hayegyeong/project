@@ -1,0 +1,935 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, "Noto Sans KR", sans-serif;
+    background: #f7f3ef;
+    color: #4d382b;
+}
+
+
+/* =========================
+   상단 Hero
+========================= */
+
+.hero {
+    height: 370px;
+
+    background:
+        linear-gradient(
+            rgba(250, 247, 242, 0.55),
+            rgba(250, 247, 242, 0.55)
+        ),
+        url("../images/profile-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.logo-area {
+    margin-top: 20px;
+}
+
+.house-icon {
+    width: 60px;
+    height: 50px;
+    margin: 0 auto 15px;
+
+    position: relative;
+}
+
+.house-icon span:first-child {
+    position: absolute;
+
+    width: 38px;
+    height: 38px;
+
+    border-top: 2px solid #5b3b28;
+    border-left: 2px solid #5b3b28;
+
+    transform: rotate(45deg);
+
+    left: 11px;
+    top: 5px;
+}
+
+.house-icon span:last-child {
+    position: absolute;
+
+    width: 2px;
+    height: 32px;
+
+    background: #5b3b28;
+
+    left: 10px;
+    top: 25px;
+}
+
+.logo-area h1 {
+    font-family: Georgia, serif;
+
+    font-size: 66px;
+    font-weight: 500;
+
+    color: #5a3926;
+
+    margin-bottom: 15px;
+}
+
+.logo-area p {
+    font-size: 21px;
+    color: #745744;
+}
+
+
+/* =========================
+   전체 입력 영역
+========================= */
+
+.profile-container {
+    width: 100%;
+
+    margin-top: -1px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.profile-box {
+    width: min(900px, 90%);
+
+    background: #fffdfb;
+
+    border-radius: 35px 35px 0 0;
+
+    padding: 75px 80px 65px;
+
+    box-shadow:
+        0 -10px 30px rgba(70, 45, 30, 0.05);
+}
+
+
+/* =========================
+   제목
+========================= */
+
+.title-area {
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.title-area h2 {
+    font-size: 29px;
+    line-height: 1.5;
+    font-weight: 700;
+
+    color: #4d382b;
+}
+
+.title-area p {
+    margin-top: 25px;
+
+    font-size: 17px;
+
+    color: #806b5d;
+}
+
+
+/* =========================
+   Form
+========================= */
+
+.form-group {
+    margin-bottom: 35px;
+}
+
+.form-group > label {
+    display: block;
+
+    margin-bottom: 13px;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    color: #3e3028;
+}
+
+.form-group > label span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #8d7c70;
+}
+
+
+/* 입력창 */
+
+input[type="text"],
+select {
+    width: 100%;
+    height: 68px;
+
+    padding: 0 25px;
+
+    border: 1px solid #d9d0c9;
+    border-radius: 15px;
+
+    background: #fff;
+
+    font-size: 17px;
+
+    color: #4d382b;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #6b4933;
+
+    box-shadow:
+        0 0 0 3px rgba(107, 73, 51, 0.08);
+}
+
+input::placeholder {
+    color: #aaa3a0;
+}
+
+select {
+    appearance: none;
+
+    background-image:
+        linear-gradient(45deg, transparent 50%, #6a4630 50%),
+        linear-gradient(135deg, #6a4630 50%, transparent 50%);
+
+    background-position:
+        calc(100% - 28px) 29px,
+        calc(100% - 22px) 29px;
+
+    background-size: 7px 7px;
+
+    background-repeat: no-repeat;
+}
+
+
+/* =========================
+   성별
+========================= */
+
+.gender-group {
+    display: flex;
+    gap: 14px;
+}
+
+.gender-btn {
+    flex: 1;
+
+    height: 70px;
+
+    border: 1px solid #ded6d0;
+    border-radius: 15px;
+
+    background: white;
+
+    color: #665a52;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    transition: 0.2s;
+}
+
+.gender-btn.active {
+    border: 2px solid #63442f;
+
+    color: #543822;
+}
+
+.radio {
+    width: 25px;
+    height: 25px;
+
+    border: 1.5px solid #9d9088;
+    border-radius: 50%;
+
+    position: relative;
+}
+
+.gender-btn.active .radio {
+    border-color: #63442f;
+    background: #63442f;
+}
+
+.gender-btn.active .radio::after {
+    content: "✓";
+
+    position: absolute;
+
+    left: 5px;
+    top: 1px;
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   관심사
+========================= */
+
+.interest-group {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+.interest-item {
+    cursor: pointer;
+}
+
+.interest-item input {
+    display: none;
+}
+
+.interest-item span {
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ded6d0;
+    border-radius: 13px;
+
+    background: white;
+
+    font-size: 16px;
+
+    transition: 0.2s;
+}
+
+.interest-item input:checked + span {
+    background: #eadbc9;
+
+    border-color: #69452f;
+
+    color: #593822;
+
+    font-weight: 600;
+}
+
+.interest-guide {
+    margin-top: 10px;
+
+    font-size: 13px;
+
+    color: #9a8c83;
+}
+
+
+/* =========================
+   인테리어 관심도
+========================= */
+
+.interior-group {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    border: 1px solid #ddd4cd;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+.interior-btn {
+    min-height: 95px;
+
+    border: none;
+    border-right: 1px solid #ddd4cd;
+
+    background: white;
+
+    color: #685b53;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    transition: 0.2s;
+}
+
+.interior-btn:last-child {
+    border-right: none;
+}
+
+.interior-btn span {
+    font-size: 28px;
+}
+
+.interior-btn.active {
+    background: #e5d2bc;
+
+    color: #5c3b27;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   개인정보 동의
+========================= */
+
+.agree-box {
+    height: 65px;
+
+    border: 1px solid #ddd5cf;
+    border-radius: 14px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.agree-box label {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    color: #746960;
+}
+
+.agree-box input {
+    width: 22px;
+    height: 22px;
+
+    accent-color: #64432f;
+}
+
+.arrow {
+    font-size: 30px;
+    color: #64432f;
+}
+
+
+/* =========================
+   시작 버튼
+========================= */
+
+.start-btn {
+    width: 100%;
+    height: 75px;
+
+    border: none;
+    border-radius: 15px;
+
+    background: #5a321e;
+
+    color: white;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.start-btn:hover {
+    background: #452515;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   로그인
+========================= */
+
+.login-text {
+    text-align: center;
+
+    margin-top: 28px;
+
+    color: #87766b;
+
+    font-size: 15px;
+}
+
+.login-text a {
+    color: #60412f;
+
+    font-weight: 600;
+
+    text-decoration: underline;
+}
+
+
+/* =========================
+   모바일
+========================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+        height: 280px;
+    }
+
+    .logo-area h1 {
+        font-size: 48px;
+    }
+
+    .logo-area p {
+        font-size: 16px;
+    }
+
+    .profile-box {
+        width: 100%;
+
+        padding: 50px 25px;
+    }
+
+    .title-area h2 {
+        font-size: 23px;
+    }
+
+    .gender-group {
+        flex-direction: column;
+    }
+
+    .interest-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .interior-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .interior-btn {
+        border-bottom: 1px solid #ddd4cd;
+    }
+}
+/* 인테리어 관심도 하트 */
+.heart {
+    display: inline-block;
+    font-size: 26px;
+    line-height: 1;
+    margin-bottom: 6px;
+
+    color: #d9d9d9;
+}
+
+
+/* 1단계 - 전혀 없어요 */
+.heart-1 {
+    color: transparent;
+    -webkit-text-stroke: 1.5px #d9d9d9;
+}
+
+
+/* 2단계 - 낮은 편이에요 */
+.heart-2 {
+    color: #eeeeee;
+    -webkit-text-stroke: 1.5px #cfcfcf;
+}
+
+
+/* 3단계 - 보통이에요 */
+.heart-3 {
+    color: #bdbdbd;
+    -webkit-text-stroke: 1.5px #a8a8a8;
+}
+
+
+/* 4단계 - 높은 편이에요 */
+.heart-4 {
+    color: #666666;
+    -webkit-text-stroke: 1px #666666;
+}
+
+
+/* 5단계 - 매우 높아요 */
+.heart-5 {
+    color: #222222;
+    -webkit-text-stroke: 1px #222222;
+}
+/* =====================================
+   개인정보 처리방침 / 이용약관 팝업
+===================================== */
+
+/* 팝업 전체 배경 */
+.terms-overlay {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    /* 처음에는 숨김 */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease;
+
+    z-index: 9999;
+}
+
+
+/* 약관 버튼을 눌렀을 때 */
+.terms-overlay.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+/* =====================================
+   약관 팝업 박스
+===================================== */
+
+.terms-modal {
+    width: 100%;
+    max-width: 420px;
+
+    max-height: 80vh;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.18);
+
+    transform: translateY(20px);
+
+    transition: transform 0.25s ease;
+}
+
+
+/* 팝업이 나타날 때 */
+.terms-overlay.show .terms-modal {
+    transform: translateY(0);
+}
+
+
+/* =====================================
+   팝업 상단
+===================================== */
+
+.terms-header {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px 50px 18px 20px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+.terms-header h2 {
+    margin: 0;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    color: #222222;
+
+    text-align: center;
+}
+
+
+/* =====================================
+   X 닫기 버튼
+===================================== */
+
+.terms-close {
+    position: absolute;
+
+    top: 50%;
+    right: 14px;
+
+    width: 34px;
+    height: 34px;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    background: transparent;
+
+    color: #777777;
+
+    font-size: 27px;
+    font-weight: 300;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.terms-close:hover {
+    background: #f5f5f5;
+    color: #222222;
+}
+
+
+/* =====================================
+   약관 내용
+===================================== */
+
+.terms-content {
+    max-height: calc(80vh - 80px);
+
+    padding: 22px;
+
+    overflow-y: auto;
+
+    box-sizing: border-box;
+}
+
+
+/* 스크롤바 */
+.terms-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.terms-content::-webkit-scrollbar-thumb {
+    background: #dddddd;
+    border-radius: 10px;
+}
+
+.terms-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+/* 약관 각각의 항목 */
+.terms-content section {
+    margin-bottom: 24px;
+}
+
+
+.terms-content section:last-child {
+    margin-bottom: 0;
+}
+
+
+/* 약관 제목 */
+.terms-content h3 {
+    margin: 0 0 9px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    color: #222222;
+}
+
+
+/* 약관 내용 */
+.terms-content p {
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 1.75;
+
+    color: #666666;
+
+    word-break: keep-all;
+}
+
+
+/* =====================================
+   개인정보 동의 영역
+===================================== */
+
+.agree-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* 기존 label 영역 */
+.agree-box label {
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+
+    flex: 1;
+}
+
+
+/* 체크박스 */
+.agree-box input[type="checkbox"] {
+    margin-right: 8px;
+
+    cursor: pointer;
+}
+
+
+/* 동의 문구 */
+.agree-box label span {
+    font-size: 13px;
+    color: #555555;
+
+    word-break: keep-all;
+}
+
+
+/* =====================================
+   약관 열기 화살표
+===================================== */
+
+.agree-box .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: #999999;
+
+    font-size: 24px;
+    font-weight: 300;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.agree-box .arrow:hover {
+    color: #333333;
+
+    transform: translateX(2px);
+}
+
+
+/* =====================================
+   모바일 대응
+===================================== */
+
+@media (max-width: 480px) {
+
+    .terms-overlay {
+        padding: 16px;
+    }
+
+
+    .terms-modal {
+        max-height: 85vh;
+
+        border-radius: 18px;
+    }
+
+
+    .terms-header {
+        padding: 18px 48px 16px 18px;
+    }
+
+
+    .terms-header h2 {
+        font-size: 16px;
+    }
+
+
+    .terms-content {
+        max-height: calc(85vh - 70px);
+
+        padding: 20px;
+    }
+
+
+    .terms-content h3 {
+        font-size: 13px;
+    }
+
+
+    .terms-content p {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+}

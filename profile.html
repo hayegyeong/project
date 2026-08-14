@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moodly - 회원 정보</title>
+
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+
+    <!-- 상단 Moodly 영역 -->
+    <header class="hero">
+        <div class="logo-area">
+            <div class="house-icon">
+                <span></span>
+                <span></span>
+            </div>
+
+            <h1>Moodly</h1>
+            <p>당신의 무드가 공간이 되다</p>
+        </div>
+    </header>
+
+
+    <!-- 입력 영역 -->
+    <main class="profile-container">
+
+        <section class="profile-box">
+
+            <div class="title-area">
+                <h2>더 정확한 진단을 위해</h2>
+                <h2>회원 정보를 입력해주세요.</h2>
+
+                <p>
+                    입력해주신 정보는 개인화된 추천을 위해 사용돼요.
+                </p>
+            </div>
+
+
+            <!-- 이름 -->
+            <div class="form-group">
+                <label for="name">이름</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="이름을 입력해주세요."
+                    autocomplete="off"
+                >
+            </div>
+
+
+            <!-- 성별 -->
+            <div class="form-group">
+                <label>성별</label>
+
+                <div class="gender-group">
+
+                    <button
+                        type="button"
+                        class="gender-btn active"
+                        data-gender="여성">
+                        <span class="radio"></span>
+                        여성
+                    </button>
+
+                    <button
+                        type="button"
+                        class="gender-btn"
+                        data-gender="남성">
+                        <span class="radio"></span>
+                        남성
+                    </button>
+
+                    <button
+                        type="button"
+                        class="gender-btn"
+                        data-gender="기타">
+                        <span class="radio"></span>
+                        기타
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- 나이 -->
+            <div class="form-group">
+                <label for="age">나이</label>
+
+                <select id="age">
+                    <option value="">나이를 선택해주세요.</option>
+                    <option value="10대">10대</option>
+                    <option value="20대">20대</option>
+                    <option value="30대">30대</option>
+                    <option value="40대">40대</option>
+                    <option value="50대">50대</option>
+                    <option value="60대 이상">60대 이상</option>
+                </select>
+            </div>
+
+
+            <!-- 거주 형태 -->
+            <div class="form-group">
+                <label for="residence">거주 형태</label>
+
+                <select id="residence">
+                    <option value="">거주 형태를 선택해주세요.</option>
+                    <option value="원룸">원룸</option>
+                    <option value="오피스텔">오피스텔</option>
+                    <option value="아파트">아파트</option>
+                    <option value="빌라">빌라</option>
+                    <option value="주택">주택</option>
+                    <option value="기숙사">기숙사</option>
+                    <option value="기타">기타</option>
+                </select>
+            </div>
+
+
+            <!-- 관심사 -->
+<div class="form-group">
+
+    <label>관심사 <span>(선택)</span></label>
+
+    <div class="interest-group">
+
+        <label class="interest-item">
+            <input type="checkbox" value="인테리어">
+            <span>인테리어</span>
+        </label>
+
+        <label class="interest-item">
+            <input type="checkbox" value="홈스타일링">
+            <span>홈스타일링</span>
+        </label>
+
+        <label class="interest-item">
+            <input type="checkbox" value="수납/정리">
+            <span>수납/정리</span>
+        </label>
+
+        <label class="interest-item">
+            <input type="checkbox" value="DIY">
+            <span>DIY</span>
+        </label>
+
+        <label class="interest-item">
+            <input type="checkbox" value="식물/가드닝">
+            <span>식물/가드닝</span>
+        </label>
+
+        <label class="interest-item">
+            <input type="checkbox" value="조명">
+            <span>조명</span>
+        </label>
+
+    </div>
+
+    <p class="interest-guide">
+        최대 3개까지 선택할 수 있어요.
+    </p>
+
+</div>
+
+
+            <!-- 인테리어 관심도 -->
+            <div class="interior-group">
+
+    <button type="button" class="interior-btn" data-value="1">
+        <span class="heart heart-1">♥</span>
+        전혀 없어요
+    </button>
+
+    <button type="button" class="interior-btn" data-value="2">
+        <span class="heart heart-2">♥</span>
+        낮은 편이에요
+    </button>
+
+    <button type="button" class="interior-btn active" data-value="3">
+        <span class="heart heart-3">♥</span>
+        보통이에요
+    </button>
+
+    <button type="button" class="interior-btn" data-value="4">
+        <span class="heart heart-4">♥</span>
+        높은 편이에요
+    </button>
+
+    <button type="button" class="interior-btn" data-value="5">
+        <span class="heart heart-5">♥</span>
+        매우 높아요
+    </button>
+
+</div>
+
+
+            <!-- 개인정보 동의 -->
+            <!-- 개인정보 동의 -->
+<div class="agree-box">
+
+    <label>
+        <input type="checkbox" id="agree">
+        <span>개인정보 처리방침 및 이용약관에 동의합니다.</span>
+    </label>
+
+    <button
+        type="button"
+        class="arrow"
+        id="termsBtn">
+        ›
+    </button>
+
+</div>
+
+
+<!-- 약관 팝업 -->
+<div class="terms-overlay" id="termsOverlay">
+
+    <div class="terms-modal">
+
+        <div class="terms-header">
+
+            <h2>개인정보 처리방침 및 이용약관</h2>
+
+            <button
+                type="button"
+                class="terms-close"
+                id="termsClose">
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="terms-content">
+
+            <section>
+                <h3>개인정보 처리방침</h3>
+                <p>
+                    Moodly는 더 정확한 공간 추천과
+                    개인화된 서비스를 제공하기 위해
+                    회원님의 정보를 수집하고 이용합니다.
+                </p>
+            </section>
+
+
+            <section>
+                <h3>수집하는 정보</h3>
+                <p>
+                    이름, 성별, 연령대, 거주 형태,
+                    관심사, 인테리어 관심도 등의 정보를
+                    수집합니다.
+                </p>
+            </section>
+
+
+            <section>
+                <h3>정보의 이용 목적</h3>
+                <p>
+                    입력해주신 정보는 개인화된 인테리어
+                    추천 및 서비스 개선을 위해 사용됩니다.
+                </p>
+            </section>
+
+
+            <section>
+                <h3>정보의 보관 및 이용</h3>
+                <p>
+                    회원님이 입력한 정보는 서비스 이용을
+                    위해 저장되며, 프로필 수정 메뉴를 통해
+                    변경할 수 있습니다.
+                </p>
+            </section>
+
+
+            <section>
+                <h3>이용약관</h3>
+                <p>
+                    Moodly의 서비스를 이용함으로써
+                    본 이용약관에 동의하는 것으로 간주됩니다.
+                </p>
+            </section>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+            <!-- 시작하기 -->
+            <button id="startBtn" class="start-btn">
+                시작하기
+            </button>
+
+
+        </section>
+
+    </main>
+
+
+    <script src="js/profile.js"></script>
+
+</body>
+</html>
